@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 namespace sung_wook
 {
-    public class Player : MonoBehaviour
+    public class Player : BaseGameEntity
     {
         [SerializeField]
         private float jumpForce, moveSpeed;
