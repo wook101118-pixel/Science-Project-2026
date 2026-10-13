@@ -7,7 +7,7 @@ namespace GearLeverOwnedStates
     {
         public override void Enter(ElectricCharge entity)
         {
-            Debug.Log("전기적으로 중성");
+            Debug.Log("Neutral");
         }
 
         public override void Execute(ElectricCharge entity)
@@ -17,7 +17,7 @@ namespace GearLeverOwnedStates
 
         public override void Exit(ElectricCharge entity)
         {
-            
+            Debug.Log("Neutral Exit");
         }
     }
 

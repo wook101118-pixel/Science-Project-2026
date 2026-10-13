@@ -1,15 +1,21 @@
+using System;
+using UnityEngine;
 
 namespace sung_wook
 {
-    public enum ElectricChargeType { Neutral, Positive, Negative }
+    public enum ElectricChargeType
+    {
+        Neutral,
+        Positive,
+        Negative
+    }
 
     public class ElectricCharge : BaseGameEntity
     {
         private float moveSpeed = 5f;
-        
-        
+
         private ElectricChargeType _currentState;
-        
+
         private State<ElectricCharge>[] _states;
         private StateMachine<ElectricCharge> _stateMachine;
 
@@ -17,10 +23,10 @@ namespace sung_wook
         {
             base.Setup();
 
-            _states                                     = new State<ElectricCharge>[3];
-            _states[(int)ElectricChargeType.Neutral]    = new GearLeverOwnedStates.NeutralState();
-            _states[(int)ElectricChargeType.Positive]   = new GearLeverOwnedStates.PositiveState();
-            _states[(int)ElectricChargeType.Negative]   = new GearLeverOwnedStates.NegativeState();
+            _states = new State<ElectricCharge>[3];
+            _states[(int)ElectricChargeType.Neutral]  = new GearLeverOwnedStates.NeutralState();
+            _states[(int)ElectricChargeType.Positive] = new GearLeverOwnedStates.PositiveState();
+            _states[(int)ElectricChargeType.Negative] = new GearLeverOwnedStates.NegativeState();
 
             _stateMachine = new StateMachine<ElectricCharge>();
             _stateMachine.Setup(this, _states[(int)ElectricChargeType.Neutral]);
@@ -29,7 +35,7 @@ namespace sung_wook
         public void ChangeState(ElectricChargeType newState)
         {
             _currentState = newState;
-            
+
             _stateMachine.ChangeState(_states[(int)newState]);
         }
     }

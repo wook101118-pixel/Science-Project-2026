@@ -1,11 +1,11 @@
-﻿# 디폴트 무시된 파일
+# 디폴트 무시된 파일
 /shelf/
 /workspace.xml
 # Rider에서 무시된 파일
 /modules.xml
+/.idea.Science-Project-2026.iml
 /contentModel.xml
 /projectSettingsUpdater.xml
-/.idea.Science-Project-2026.iml
 # 에디터 기반 HTTP 클라이언트 요청
 /httpRequests/
 # 쿼리 파일을 포함한 무시된 디폴트 폴더
