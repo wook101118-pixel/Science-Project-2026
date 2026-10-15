@@ -11,33 +11,25 @@ namespace sung_wook
 
     public class Player : BaseGameEntity
     {
-       //private float moveSpeed = 5f;
-
-       public bool IsSamePositive {get; private set;} = false;
-       public bool PositiveAndNegative {get; private set;} = false;
-       public bool IsSameNegative {get; private set;} = false;
-
         public PlayerStateType CurrentState { get; private set; }
-
-        public State<Player>[] States { get; private set; }
+        
+        private State<Player>[] _states;
         private StateMachine<Player> _stateMachine;
-        public ChangeVisual ChangeVisual { get; private set; }
-        public PlayerController PlayerController {get; private set;}
+        private ChangeVisual _changeVisual;
         
 
         public override void Setup()
         {
             base.Setup();
-            PlayerController = GetComponent<PlayerController>();
-            ChangeVisual = GetComponentInChildren<ChangeVisual>();
+            _changeVisual = GetComponentInChildren<ChangeVisual>();
 
-            States = new State<Player>[3];
-            States[(int)PlayerStateType.Neutral]  = new PlayerOwnedStates.NeutralState();
-            States[(int)PlayerStateType.Positive] = new PlayerOwnedStates.PositiveState();
-            States[(int)PlayerStateType.Negative] = new PlayerOwnedStates.NegativeState();
+            _states = new State<Player>[3];
+            _states[(int)PlayerStateType.Neutral]  = new PlayerOwnedStates.NeutralState();
+            _states[(int)PlayerStateType.Positive] = new PlayerOwnedStates.PositiveState();
+            _states[(int)PlayerStateType.Negative] = new PlayerOwnedStates.NegativeState();
 
             _stateMachine = new StateMachine<Player>();
-            _stateMachine.Setup(this, States[(int)PlayerStateType.Neutral]);
+            _stateMachine.Setup(this, _states[(int)PlayerStateType.Neutral]);
         }
 
         private void Update()
@@ -50,8 +42,8 @@ namespace sung_wook
         {
             CurrentState = newState;
 
-            _stateMachine.ChangeState(States[(int)newState]);
-            ChangeVisual.VisualChange(newState);
+            _stateMachine.ChangeState(_states[(int)newState]);
+            _changeVisual.VisualChange(newState);
         }
     }
 }

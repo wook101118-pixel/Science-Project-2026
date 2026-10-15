@@ -19,7 +19,7 @@ namespace sung_wook
 
         public void ChangeState(State<T> newState)
         {
-            _currentState?.Exit(_ownEntity);    
+            _currentState?.Exit(_ownEntity);
             _currentState = newState;
             _currentState?.Enter(_ownEntity);
         }

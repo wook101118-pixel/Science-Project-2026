@@ -28,6 +28,8 @@ namespace sung_wook
             _visuals[(int)PlayerStateType.Neutral]    = CreateGameObject(_neutralVisual, "NeutralVisual");
             _visuals[(int)PlayerStateType.Positive]   = CreateGameObject(_positiveVisual, "PositiveVisual");
             _visuals[(int)PlayerStateType.Negative]   = CreateGameObject(_negativeVisual, "NegativeVisual");
+            
+            _visuals[(int)CurrentVisualState].SetActive(true);
         }
 
         private GameObject CreateGameObject(GameObject go, string name = "GameObject")

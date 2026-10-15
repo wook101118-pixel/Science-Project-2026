@@ -33,7 +33,7 @@ namespace sung_wook
 
             if (Equals(playerState, leverState))
             {
-                PlayerController.AddForce(GearLeverController.transform, 1, ForceMode2D.Force);
+                PlayerController.MoveCompo.AddForce(GearLeverController.transform, 1, ForceMode2D.Force);
             }
         }
 

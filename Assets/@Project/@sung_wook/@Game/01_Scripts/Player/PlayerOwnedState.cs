@@ -12,7 +12,7 @@ namespace PlayerOwnedStates
 
         public override void Execute(Player entity)
         {
-            if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasReleasedThisFrame)
+            if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 entity.ChangeState(PlayerStateType.Positive);
             }
@@ -34,7 +34,7 @@ namespace PlayerOwnedStates
         public override void Execute(Player entity)
         {
             Debug.Log("PositiveEnter");
-            if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasReleasedThisFrame)
+            if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 entity.ChangeState(PlayerStateType.Negative);
             }
@@ -56,7 +56,7 @@ namespace PlayerOwnedStates
         public override void Execute(Player entity)
         {
             Debug.Log("NegativeEnter");
-            if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasReleasedThisFrame)
+            if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 entity.ChangeState(PlayerStateType.Neutral);
             }

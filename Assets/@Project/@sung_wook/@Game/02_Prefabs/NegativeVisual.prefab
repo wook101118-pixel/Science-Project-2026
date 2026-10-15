@@ -83,7 +83,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 861066563
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1437115033012301288
@@ -191,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5869425541798473993}
   - component: {fileID: 6307562637193064764}
+  - component: {fileID: 129167998583547991}
   m_Layer: 0
   m_Name: NegativeVisual
   m_TagString: Untagged
@@ -240,7 +241,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: c98d8aa96eb1e4649b3c7f22b468a22a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -273,3 +274,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &129167998583547991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663825650409860054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b743a2418900546b4ba9f4fcf2b8d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::sung_wook.ChangeStateShader
+  spriteMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  changeStateShader: {fileID: 2100000, guid: c98d8aa96eb1e4649b3c7f22b468a22a, type: 2}

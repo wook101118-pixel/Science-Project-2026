@@ -615,6 +615,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1293d12e6004749b265506d9eddfb70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::sung_wook.GearLever
+--- !u!1001 &545910699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7993757
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0786262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209441434553177434, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133761217124863974, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_Name
+      value: Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133761217124863974, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9133761217124863974, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011272118}
+    - targetCorrespondingSourceObject: {fileID: 9133761217124863974, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011272117}
+  m_SourcePrefab: {fileID: 100100000, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +904,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1011272114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9133761217124863974, guid: b3b69e18acdf08841b81dca282396cda, type: 3}
+  m_PrefabInstance: {fileID: 545910699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011272117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011272114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18fc1c1d089c544f974968d128cfa4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::sung_wook.GearLeverController
+  _raycastLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &1011272118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011272114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1293d12e6004749b265506d9eddfb70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::sung_wook.GearLever
 --- !u!1 &1554399938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1218,8 @@ GameObject:
   - component: {fileID: 2135355473}
   - component: {fileID: 3937569883071185133}
   - component: {fileID: 5165316137046985494}
+  - component: {fileID: 7257519822021493298}
+  - component: {fileID: 7257519822021493297}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1267,13 +1368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b73885b31cc0bb4f8dde8efeafd25cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  jumpForce: 8
-  moveSpeed: 5
-  maxMoveSpeed: 7
-  acceleration: 10
-  deceleration: 25
-  myCharge: 1
-  otherCharge: 1
 --- !u!224 &5516400766977652160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1384,6 +1478,37 @@ Transform:
   - {fileID: 6529087885999073748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7257519822021493297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799913835828211945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a44f556f1808af48a535fbbba015b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::sung_wook.PlayerInputReader
+--- !u!114 &7257519822021493298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799913835828211945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e71f4a124543ec88bfea699205c6a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::sung_wook.PlayerMovement
+  jumpForce: 7
+  moveSpeed: 4
+  maxMoveSpeed: 7
+  acceleration: 5
+  deceleration: 3
+  myCharge: 1
+  otherCharge: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1397,3 +1522,4 @@ SceneRoots:
   - {fileID: 497602829}
   - {fileID: 1751864582}
   - {fileID: 333248037}
+  - {fileID: 545910699}
