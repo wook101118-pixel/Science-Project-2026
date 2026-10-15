@@ -13,5 +13,10 @@ namespace sung_wook
         {
             
         }
+
+        // public virtual bool IsSame()
+        // {
+        //     
+        // }
     }
 }

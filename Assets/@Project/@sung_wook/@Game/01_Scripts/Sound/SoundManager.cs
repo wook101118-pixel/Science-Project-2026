@@ -16,9 +16,8 @@ namespace sung_wook
         Win
     }
 
-    public class SoundManager : MonoBehaviour
+    public class SoundManager : Singleton<SoundManager>
     {
-        public static SoundManager Instance { get; private set; }
         [Range(0f, 1f)] public float bgmVolume = 0.1f;
         
         [Header("# SFX")]
@@ -44,14 +43,6 @@ namespace sung_wook
         private void Setup()
         {
             audioSources = GetComponent<AudioSource>();
-            
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            
-            Instance = this;
         }
         
         private void InitializePlayers()

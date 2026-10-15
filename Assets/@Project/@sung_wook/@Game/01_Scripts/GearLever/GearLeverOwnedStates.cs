@@ -3,55 +3,55 @@ using UnityEngine;
 
 namespace GearLeverOwnedStates
 {
-    public class NeutralState : State<ElectricCharge>
+    public class NeutralState : State<GearLever>
     {
-        public override void Enter(ElectricCharge entity)
+        public override void Enter(GearLever entity)
         {
             Debug.Log("Neutral");
         }
 
-        public override void Execute(ElectricCharge entity)
+        public override void Execute(GearLever entity)
         {
             
         }
 
-        public override void Exit(ElectricCharge entity)
+        public override void Exit(GearLever entity)
         {
             Debug.Log("Neutral Exit");
         }
     }
 
-    public class PositiveState : State<ElectricCharge>
+    public class PositiveState : State<GearLever>
     {
-        public override void Enter(ElectricCharge entity)
+        public override void Enter(GearLever entity)
         {
             
         }
 
-        public override void Execute(ElectricCharge entity)
+        public override void Execute(GearLever entity)
         {
             
         }
 
-        public override void Exit(ElectricCharge entity)
+        public override void Exit(GearLever entity)
         {
             
         }
     }
     
-    public class NegativeState : State<ElectricCharge>
+    public class NegativeState : State<GearLever>
     {
-        public override void Enter(ElectricCharge entity)
+        public override void Enter(GearLever entity)
         {
             
         }
 
-        public override void Execute(ElectricCharge entity)
+        public override void Execute(GearLever entity)
         {
             
         }
 
-        public override void Exit(ElectricCharge entity)
+        public override void Exit(GearLever entity)
         {
             
         }

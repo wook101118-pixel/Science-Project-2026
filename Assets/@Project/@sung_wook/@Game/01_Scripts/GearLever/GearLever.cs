@@ -1,39 +1,37 @@
 using System;
-using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace sung_wook
 {
-    public class GearLever : MonoBehaviour
+    public enum GearLeverStateType
     {
-        private Camera _mainCamera;
-        private Vector3 mousePosition;
-        [SerializeField]
-        private LayerMask _raycastLayerMask;
-        
-        private void Awake()
+        Neutral,
+        Positive,
+        Negative
+    }
+    
+    public class GearLever : BaseGameEntity
+    {
+        public GearLeverStateType CurrentState {get; private set;}
+        public State<GearLever>[] State { get; private set; }
+        private StateMachine<GearLever> _stateMachine;
+
+        public override void Setup()
         {
-            _mainCamera = Camera.main;
+            base.Setup();
+
+            State = new State<GearLever>[3];
+            State[(int)GearLeverStateType.Neutral] = new GearLeverOwnedStates.NeutralState();
+            State[(int)GearLeverStateType.Positive] = new GearLeverOwnedStates.PositiveState();
+            State[(int)GearLeverStateType.Negative] = new GearLeverOwnedStates.NegativeState();
+
+            _stateMachine = new StateMachine<GearLever>();
+            _stateMachine.Setup(this, State[(int)GearLeverStateType.Neutral]);
         }
 
-        private void Update()
-        {
-            if (Mouse.current.leftButton.wasPressedThisFrame)
-            {
-                OnClick();
-            }
-        }
-
-        private void OnClick()
-        {
-            Vector2 worldPos = _mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 0f, _raycastLayerMask);
-
-            if (hit.collider != null)
-            {
-                print(hit.collider.name);
-            }
+        public void ChangeState(GearLeverStateType newState)
+        {  
+            CurrentState = newState;
+            _stateMachine.ChangeState(State[(int)newState]);
         }
     }
 }
-

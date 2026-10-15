@@ -1,4 +1,5 @@
 using sung_wook;
+using UnityEngine;
 
 namespace sung_wook
 {
@@ -9,6 +10,7 @@ namespace sung_wook
 
         public void Setup(T owner, State<T> entryState)
         {
+            Debug.Log("Called Setup");
             _ownEntity = owner;
             _currentState = null;
             
@@ -17,15 +19,9 @@ namespace sung_wook
 
         public void ChangeState(State<T> newState)
         {
-            if (newState == null) return;
-
-            if (_currentState != null)
-            {
-                _currentState.Exit(_ownEntity);    
-            }
-            
+            _currentState?.Exit(_ownEntity);    
             _currentState = newState;
-            _currentState.Enter(_ownEntity);
+            _currentState?.Enter(_ownEntity);
         }
         
         public void Execute()
