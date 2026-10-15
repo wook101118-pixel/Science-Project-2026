@@ -60,13 +60,17 @@ namespace apple_wine
 
         private void BoxOnOff()
         {
-            isActive =!isActive;
+            if (OnClick())
+            {
+                isActive =!isActive;
+            }
             if (!isActive)
             {
-                _electricChargeBox.enabled = false;
+                    _electricChargeBox.enabled = false;
             }
             else
             {
+                
                 _electricChargeBox.enabled = true;
             }
         }
