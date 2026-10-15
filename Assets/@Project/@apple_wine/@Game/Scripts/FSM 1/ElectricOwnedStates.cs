@@ -1,13 +1,14 @@
-
+using apple_wine;
 using UnityEngine;
 
-namespace apple_wine
+namespace ElectricOwnedStates
 {
     public class NeutralState : State<ElectricCharge>
     {
         public override void Enter(ElectricCharge entity)
         {
             Debug.Log("전기적으로 중성");
+            ;
         }
 
         public override void Execute(ElectricCharge entity)

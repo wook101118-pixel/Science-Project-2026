@@ -1,7 +1,7 @@
 
 namespace apple_wine
 {
-    public enum ElectricChargeType { Neutral, Positive, Negative }
+    public enum ElectricChargeType { Neutral = -1, Positive = 0, Negative = 1 }
 
     public class ElectricCharge : BaseGameEntity
     {
@@ -18,9 +18,9 @@ namespace apple_wine
             base.Setup();
 
             _states                                     = new State<ElectricCharge>[3];
-            _states[(int)ElectricChargeType.Neutral]    = new apple_wine.NeutralState();
-            _states[(int)ElectricChargeType.Positive]   = new apple_wine.PositiveState();
-            _states[(int)ElectricChargeType.Negative]   = new apple_wine.NegativeState();
+            _states[(int)ElectricChargeType.Neutral]    = new ElectricOwnedStates.NeutralState();
+            _states[(int)ElectricChargeType.Positive]   = new ElectricOwnedStates.PositiveState();
+            _states[(int)ElectricChargeType.Negative]   = new ElectricOwnedStates.NegativeState();
 
             _stateMachine = new StateMachine<ElectricCharge>();
             _stateMachine.Setup(this, _states[(int)ElectricChargeType.Neutral]);
