@@ -18,7 +18,7 @@ namespace sung_wook
                     {
                         GameObject go = new GameObject(typeof(T).Name);
                         _instance = go.AddComponent<T>();
-                        DontDestroyOnLoad(go);
+                        DontDestroyOnLoad(_instance.gameObject);
                     }
                 }
                 return _instance;

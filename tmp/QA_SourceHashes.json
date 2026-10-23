@@ -1,0 +1,1574 @@
+[
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes.meta",
+    "hash": "6AFC34A0B4A271B23622551F8932E420806C682227E59BC31037C6432036570F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts.meta",
+    "hash": "AFC3F61A217BED959D527738FDF5C774317350D3BA85DCF6C90E3407D39E3E66"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs.meta",
+    "hash": "BD267AC2D8F1F17D405EBE40DBB6E390276CF4163215AB93DE915CEE8F3E6955"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds.meta",
+    "hash": "B30DF6DC92C6D77FA1F7F096C20D4438E5EE2942CBE05E273A105D8AC901769F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/04_InputSystem.meta",
+    "hash": "E437C40020AABDCDC6A14D8FE42FEDE0265090BDB29060AD55BBB27D60A0641B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture.meta",
+    "hash": "4269D9BE68F14CCF9C2963B3230F87862C67CB6C7B029B58D0E4F09BAB4C68FF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/06_Tilemap.meta",
+    "hash": "CDC789144C020243486D8C9F4E31CA72E485C998CDCD0730D17284C413BCDACC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/07_Shaders&Materials.meta",
+    "hash": "09D7283A46E3B86AFDBAA1DEB2BD72A538E4F80BE17E2329153C8424E27C0426"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/08_Presentation.meta",
+    "hash": "A3203E0BFC156C02CA1FC03988CAA483A9BF9201B08B80F966E2557E52B001FA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile.meta",
+    "hash": "0E55E2E7BAFC2284B93415F259A6CE8668221FB2D32D474ACB5A1C1232257A0F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font.meta",
+    "hash": "F0E59A50734E5B760DE43EA8BF86DA64657D3E434438A2BE113770F3C6C55ECA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning.meta",
+    "hash": "8559889F0000633A7CFBFF195987267EA9863734BA25240F02188C486D15EC0B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/apple_wine(temp).unity",
+    "hash": "DA9BE5F201B663DE77291221D0DA8A9107B4D6FCC3B5AD2E3123C3D3FADBDDB9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/apple_wine(temp).unity.meta",
+    "hash": "88A52587509D3A8AD0CD4132CD0F2A0C0946F236ACD6D221A94D6885B50A27AC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/MainMenu.unity",
+    "hash": "F77CDC06430DEA3B8953E6450D49EFC1F3C07BE20038739E139F0BD871F11BC8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/MainMenu.unity.meta",
+    "hash": "BCC56D73019F20D6CF93613F908C39FF042D249481A438663176DE9B9EEB1E0E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage.meta",
+    "hash": "D2DF5799E00C5CC5EA649C66844CFFF5BEB809DD088D253D81B2DD7A9B1FB3C2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/sungwook_ElectricBounce.unity",
+    "hash": "A08F183727408951F64E4A16AE9DB41ED86AA188AA0DBC5DCFFA49CBAF2A203E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/sungwook_ElectricBounce.unity.meta",
+    "hash": "D139A8699FDD332CDB7F4E4D3C33B5CD571E123214A6C854ABE4DB34B6CCFC02"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/sungwook.unity",
+    "hash": "47A5BA752F9DC404997867E897A2300DFB3249595C63E102CAE25FEFBBCA824D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/sungwook.unity.meta",
+    "hash": "ECE6AC1749C4E084313FC42374E81EAC4B2420BFE715BD49BC444F9BCB3947FC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_01.unity",
+    "hash": "DFF393ECAC064D36824310FB121530183F0FF1F4CD27FBE1640AFE0AC5C3D1DB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_01.unity.meta",
+    "hash": "FC83582FC7EECC05A55B0E9E270152E4F27EC6EC2ED168BFC93C801C25A925D8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+    "hash": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity.meta",
+    "hash": "4CB55BB6F3D763F26D2023ADD8AD9D770B63ABF523F5A7B07AAF0BA0D992B06B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+    "hash": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity.meta",
+    "hash": "C94D4B27A0CBE6365C4432FCB9700A9D3E41FEC7FE39B0165907FD6FAB10C232"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+    "hash": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity.meta",
+    "hash": "D59C8570221E83579BA7D3219B33D7B8919D216546D887B01493505C4B579C59"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+    "hash": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity.meta",
+    "hash": "D47AA27E361D78509EF35472552D58A86E8A0DFFC2F3D88EF1152C6A414A5BA5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/@Core.meta",
+    "hash": "6808FD8C1BB05E6D985F433901A2C06F2BAB0E6C6125E203B4279CFAF07060E8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/CollapsiblePanel.cs",
+    "hash": "DE111F9F7CEC21D24147B8BA6ABB24D95AE4A611762FECEFC14CE7B406956D97"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/CollapsiblePanel.cs.meta",
+    "hash": "6BDA589255E8B1EA4C55AD9E54ADFA77B04816B71E05964D5063EA867457E46A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/DraggableUI.cs",
+    "hash": "03E95935D5844D9E2C1B0A1829A08B863E0C6DAA3B53E06FC80A3E48A23D497A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/DraggableUI.cs.meta",
+    "hash": "416983522FDAEC74C6F2F73EF2A2B10BB78EF90F0536FDBF749436D49CFB8880"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor.meta",
+    "hash": "5456E7B48CB99F8EA56E47A0B452108A4189ED78125374C1FB286E0484D79C19"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce.meta",
+    "hash": "8F12187F673C03C886A5F696E038B72284840C7FB4AB4C7A6D95BCD284988CED"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM.meta",
+    "hash": "17CF94261F572142BB6E73C16DB3DCADA8B952EE3F52AE39FFF2969F075FFA23"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever.meta",
+    "hash": "3A84F7299AD2A8AD452343335C8E4DBD66B22D3E05045CE96D03804809B9CF0C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player.meta",
+    "hash": "7AD8438B3B91939094AE8E59FD3E9EDF0D05B8EB70991E99E207E20DFF10DD33"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Shader.meta",
+    "hash": "9EE661D9B5F5F08116B4F0965E4802035620ECEDF200D0AF91BDA1CC8D5A7FE1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Sound.meta",
+    "hash": "18A3F81B8FB19D307FD6882DCE48B9716E8257DC8682C4F0CC2563C63307015F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Utils.meta",
+    "hash": "F86D61225023A762CEB5CA96B146A0264828FB03C659ADC67BB48A79E28BAFCE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/@Core/GameManager.cs",
+    "hash": "01D2147A5BEE265ABCF60016E4D9D4E72261A2241347E9765F241FE3F51ABDAD"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/@Core/GameManager.cs.meta",
+    "hash": "4EA53CB5A4134E1DEAB40AC764776092B43CA2F5563F839524C364D1EA4BC9E5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBatchPlayMode.cs",
+    "hash": "7D8718DCC0405C1A04A129FE490D182EDAE77BF3368BC94EF95447C0D3C6E44F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBatchPlayMode.cs.meta",
+    "hash": "2F398B09B5921063EC5B2457AD48689E54C8C7E1847F26199FFDAA0ACFC819FC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBouncePlayModeCheck.cs",
+    "hash": "C153BEF0CEE6F97E7DAD79333073657FD92603A685AB565961E99187BBB6A5CB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBouncePlayModeCheck.cs.meta",
+    "hash": "BE956C23B553D36A78349F4FA6BB7FC0DE183AADDC51191A672F870D2BBD6CD4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBounceSceneInstaller.cs",
+    "hash": "E596488D03841208278BCCD22781BA3BB3FD8A0950A30D7A1AA13D29A6600BF3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBounceSceneInstaller.cs.meta",
+    "hash": "81D0EB2D5206E866D5CEFAED93373ACD1797EA53E6A4FFBE33F3AED8002297D2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBounceValidation.cs",
+    "hash": "9EC2B44BE70016816BA52B489BB17BC5685ACC98D4D4EB7FC2496B957593902D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricBounceValidation.cs.meta",
+    "hash": "9085D34C605737C4FDFC8BE4E409E9A65936FCB963F8BBBCC8D847070556A839"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricCompletionScreenBuilder.cs",
+    "hash": "BD319E5EA21F225636CD9F15A6148ADDB8D6DE7688F7CDA32D59FAF7B1714DB6"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricCompletionScreenBuilder.cs.meta",
+    "hash": "268123C720163036D06B2C0BB8356370E40918996E58F015B620CB424271B53B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricGoalGatePlayModeCheck.cs",
+    "hash": "DED4D0B7E39BEF3B16F5C31C61170A72B9E716E5738157BA4C3E5EEA2AB86EE5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricGoalGatePlayModeCheck.cs.meta",
+    "hash": "6CBB848BF1BB59CA90056F315476690B80C9409A8D1D2FD2B10B48B1562C6224"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricLearningPlayModeCheck.cs",
+    "hash": "B0519316ECE31764C24E73846B9AF616DBFB661CD455583E88BFC75C8A2947F0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricLearningPlayModeCheck.cs.meta",
+    "hash": "11219A0D92FC53778788007FB9A7FB842B9E298B4A4E6255DF112E2A6C365D73"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricLearningSceneInstaller.cs",
+    "hash": "93190349C18133541D44D90EADE3A2F5DA1D479E5AB540C6B353894177AF70F4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricLearningSceneInstaller.cs.meta",
+    "hash": "1B6A94E108B39430A33D294E98F5FC25767765ECF2FF38E1C7037833906F623B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricLearningVisualCheck.cs",
+    "hash": "DDA2D408932D49A8A9E88D0577F0D3FE8FD43E9F239E4A09EEB5D8F1A5B8B757"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricLearningVisualCheck.cs.meta",
+    "hash": "DAF70F6040101F2DD37FF3741913099EE9853B19DF2C9197A67BC4202D1CA3DB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricMapRoutePlayModeCheck.cs",
+    "hash": "1950D600B9E636BD3EA54109D0E30A1E3F71886D7A056C5B1A32E14F648CFA87"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricMapRoutePlayModeCheck.cs.meta",
+    "hash": "6F8EA0805FA2F1D7F9B0A3B8314767BFFEA3D3E2AEE7B21772B602BC37E5E38B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricModularRouteValidation.cs",
+    "hash": "4A340118A42A0BA8DD888152C206FA5F52EF299AFED36E331EB346B3441124DE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricModularRouteValidation.cs.meta",
+    "hash": "6B9331BDD6D48E6817174A5124C35E7DA5DA6A372CC0E2C70EFB38FD3F818482"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricRepairValidation.cs",
+    "hash": "03F29C6EB0ECEE25FC107387EEFD1384A8F092165116FDBCA55B6278CA6B69E3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricRepairValidation.cs.meta",
+    "hash": "5B90CA0320C1D343BB2076B10F60ED71683B0D79019DB5E648F5C459E0FAD22D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricSplitScenePlayModeCheck.cs",
+    "hash": "BAB8ECB2B8B8BF786BD326E14FC7F23DC70B3C922D449BD7ED640D3872D14CB9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricSplitScenePlayModeCheck.cs.meta",
+    "hash": "36303ACB0A9C900AED448D1DF1C58DA7B6E762831CA815DAF56D0C211AFCA0E4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageContactRepair.cs",
+    "hash": "6B356B928A3266672EF0251AE2FACFCACF9DC9C94C895454AB109A3155C06006"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageContactRepair.cs.meta",
+    "hash": "A2699E09383925E2B6785D390C76757DC1C04137C8628410204B24CB8F7C7D57"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageModuleBuilder.cs",
+    "hash": "66E3ABAA477A395D794A49CC2BD8C1472945BD414471FDEB087E50E94DBF51ED"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageModuleBuilder.cs.meta",
+    "hash": "9B3ADC6914BBEDEE3FB97F90A76D6A4530FF95CCAEE1F9366B1805208C8E3A01"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageModuleValidation.cs",
+    "hash": "8C1A9D9DFF63FCCDB427359B2C3F962BDA2F531490B9C431CCB84C8A58A8E0BF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageModuleValidation.cs.meta",
+    "hash": "3D6D47E591B6CA1F7F1A8AB2C7AE058BAC37EFC2BE7FAA4A9EBFD3DAC2299DA6"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageProgressionInstaller.cs",
+    "hash": "AE63699A16A8E066D1318C16283C33B4F5DBCEBB3B2647C5D40F90A705494C3A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageProgressionInstaller.cs.meta",
+    "hash": "A5D7EE08E54EC8DC385B941CDA5E1EB137C27533C56D64148AB13AA1DA2AA400"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageProgressionValidation.cs",
+    "hash": "89C0FC85079EF871363D8C49920F62A6F4683A9F9A4F4D821DDEF713FE0BB297"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageProgressionValidation.cs.meta",
+    "hash": "09127F89D326DBCDDE88187F5C7813894AC54E7062F345BE8DAA659FCFECBD03"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageTerrainBuilder.cs",
+    "hash": "D2FA04BD85424FA37A0753F4EDAC530A53820D0B40683273CD74051E353FEF33"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageTerrainBuilder.cs.meta",
+    "hash": "AEC385672A54F440B1364C08AB4D01E8D4F28A3896DE1292A1995A3AC5A992AA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ContactCharger2D.cs",
+    "hash": "1AADE41F348D94EFEE900DB8BB0CE0774503D7BF5D7DFEBC82006B21384787AD"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ContactCharger2D.cs.meta",
+    "hash": "119BCA71C6B86EF2FB5607A2DF4A41167426A880B9716FD24A7C3BAD2EB37372"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ContactChargeVisual2D.cs",
+    "hash": "13E75F2237F082D640B905AF54EA559B730DB35DEFEE8C33311F5E933C069BF3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ContactChargeVisual2D.cs.meta",
+    "hash": "E4E56C10A44826400E928F4ED82D8639CFF6C4C0F6B644655225C7C32F04C653"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplayPreferences.cs",
+    "hash": "B41C1F66856E9132BE3CA0FC549882D4E218DF913E5DAD5E6BB9460F8D77105A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplayPreferences.cs.meta",
+    "hash": "2D8EC9036C26482492E47ADD1195DBB9FF780CC912E8BCD6DF378E5953B26112"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplaySettingsView.cs",
+    "hash": "95ADD21D3464AC19B66EFCE9B6EB83853B89EC729D904706894E7A11ACD6B9B3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplaySettingsView.cs.meta",
+    "hash": "A31077F0922743BA356B821D40E8DB894523B83D52C15DD0F64EFA30B297966E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DistanceLauncher2D.cs",
+    "hash": "01F264CAE5B4D769DBAAB88784F8B817B467A4BA3F7A22CAE479843879FCFB81"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DistanceLauncher2D.cs.meta",
+    "hash": "1C32469DEEBF8B19D1A57EDC1B892CBE4634B5D0BEFBC7BB7E5F02D45AF351AF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricBall2D.cs",
+    "hash": "4B41BCA7245385B67F5E855C745197BBE82DF493059862E21155F1E2F842402D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricBall2D.cs.meta",
+    "hash": "42F658994DE3C3E8475A90107ACD12AD57C4E279A8E557F2A0322B3628809321"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricComparisonRecord.cs",
+    "hash": "0CE6EF19942FAF547306E9C3DE96840BD43E766FD43382F26E0CFAE6DC55B5E3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricComparisonRecord.cs.meta",
+    "hash": "AB21DDDA66F01769F30551412E8CA509EC48935D5B942E73864E88D1FA57E96D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricForceSample.cs",
+    "hash": "ED4E0D944F6CBC104B2265F01E157DC99D1FFADA5E72FC7B13AE2670C83792C6"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricForceSample.cs.meta",
+    "hash": "CFCABA21A1AA1285BDFE128BB6FFBBEB016CE22F2228062390695E6B169F5623"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricGameCompleteView.cs",
+    "hash": "8775673515BB142CCAB83594B61550646666301D182FC3EB905947D27714BC4C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricGameCompleteView.cs.meta",
+    "hash": "E22252CC26CC6B2E73A5F4E45813E5D32B1EF4999F56A3998A93B2A7855C6303"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricGoal2D.cs",
+    "hash": "1A9AA2FF205CD6C5D83CAB8ECBBBAC4E34454F6151B78F95A990E06418D08469"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricGoal2D.cs.meta",
+    "hash": "A45B37A9AE44A0BA5EC811CE7132B84CACB78C3CA341340B05CA3753D7E2B60B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningController2D.cs",
+    "hash": "D7BCD50847E1C7C185C1ED8070A817E1A09C702F30EF12FAEEAE0C0F999B7DE2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningController2D.cs.meta",
+    "hash": "9A64BBCDD14B03D0945F1A34B5E14C4B0A259AC9BF6059A61B08B56B10C6666C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningInput2D.cs",
+    "hash": "31BB3119E5E641B1D40F7501E940E00FB3BCCAD4BB58A0E56B21D8DF1B4A1347"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningInput2D.cs.meta",
+    "hash": "3D365ECAD4E1F0847D4895270C952BF6E09C0D2FC35E28CF5B23513C9CB746EF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningStatusView.cs",
+    "hash": "886E0A88A0F884A4EC5DF11AD513B0D4CE84D4FD99F7E828AFE2B00FFFAD36DE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningStatusView.cs.meta",
+    "hash": "11544AB759D83E2C3BFD01FE78B018CB51DA3DE95FED83B7909938F03A8E5A7C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricMath.cs",
+    "hash": "91289F64B49F2C2A5082C9A2255DAC23CF82A53AF6F7593F1CA1170CB4B5EA2F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricMath.cs.meta",
+    "hash": "0F0B00C47ECCE4F426B59444E10EBD10190CFBD8830C101D23B69B948ED614E7"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricObstacleMotion2D.cs",
+    "hash": "29E8E71109E272C4C967C3495D399ACDBF82304494F1A8AA9F24DBEAF8FFF7B4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricObstacleMotion2D.cs.meta",
+    "hash": "9FD4E76D58D5D5D86EECDFE91D17A8A94F335751AAB43FEAAC6906631B2F2C9E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricSfxPlayer.cs",
+    "hash": "E942AF180BC631669123D4DB41B0F81411C6AB0666616CA3D12C29083508BA4C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricSfxPlayer.cs.meta",
+    "hash": "EBC184E197BE5B9193F29F34495EBFBAC1BBB1236A148FF8F44F0C5CA36AA64C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageHudView.cs",
+    "hash": "936521B0A8336F0C983E5F127845BBEC9F9607DBD3623F3DBEF88064B0233EF9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageHudView.cs.meta",
+    "hash": "294F26C285C1BDC5E6F47605F5065A6775AE3B23B406589ED91B3D29923418BF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageInput2D.cs",
+    "hash": "A67AA95A6ABCFC8B51A18DD04C57B77FFA47925B23CE6F124500724EC49EB10B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageInput2D.cs.meta",
+    "hash": "BDE7D6D251744AFF6C193DE725D0A56E703A0DBA1AD51ECF0DAB115E4F2265FE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageParticipants2D.cs",
+    "hash": "DDA4F88CA96305FDDFB06ECB7DE5DA8F8CE78AF6E7E417A9CD7CACA62D575CC8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageParticipants2D.cs.meta",
+    "hash": "BF8ADAC352340ED8E76A6D0BA00820271DE06D55E91D07C3BC3EB4380F6A31CB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageProgression.cs",
+    "hash": "2D6C66DC9A835FE9DC5FF600C52B0215F25496917B4FDC982A39C2D73F15240B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageProgression.cs.meta",
+    "hash": "76B060E2A6C1102E0B41658B4A4C3600B913F1B139E3093EFD4FDF26B53BD4BB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSceneBootstrap.cs",
+    "hash": "D560F6613300EC9C71F7EC936AB9376A9D0C52EFA082DFC945678887A4CD6B7F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSceneBootstrap.cs.meta",
+    "hash": "F8BC300CEA779179EB7D1507F75C0DBDDE24F944A663445D819851D30B4B4940"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSelector.cs",
+    "hash": "2FB6ED5BC210C52EB4287FD501CF1477731864A1034FC8F06211C62CC12A0452"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSelector.cs.meta",
+    "hash": "4A5D184B7E33B60B18EB604AAB74465577862ED384C06723C28F2CCC2AA5943E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSession2D.cs",
+    "hash": "B96A3C9FCC4B03AB72AD3F4F985EB9CE0574D9AB951A0026A4F700AE8DD44505"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSession2D.cs.meta",
+    "hash": "4F707F71E41CB0B6E972BB5FCCCEB2A0CDA1ABB20E3A7114FB33FF02D0F9FCC4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStar2D.cs",
+    "hash": "D18479D9F88BE972544335C3558DF878557FF57276EEFC1434C89DD8C4B50E45"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStar2D.cs.meta",
+    "hash": "E90E8403C3F84840076149547A4799200B1D88DAEBAC696E3E28689A3F9D2D40"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricVectorDisplay2D.cs",
+    "hash": "2CEC54F49E2C461D8832C245FDE34DF2D8EFCBE14CDC14883A1D03C509AF90EB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricVectorDisplay2D.cs.meta",
+    "hash": "1C1269A0F11293546C21A09E6A41AD84E24B58619F4BD4CCE8CC2FFE04C5E3CC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/IElectricForceProvider.cs",
+    "hash": "1AA0AE26610B801599AEBFFC4D5598B3703F5BA3CD7652C638BB77B8E5910845"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/IElectricForceProvider.cs.meta",
+    "hash": "68E5ACACB6D4CFC7A961A730DA83635E79129167504C3DE56F86BFCDC183670E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/IElectricStageClearRule.cs",
+    "hash": "74343E7A1DAFD8530B6681441FB8FDBD005FF6D5E1976EE0E6F5FC1EE8CC6938"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/IElectricStageClearRule.cs.meta",
+    "hash": "DA3481DF19D8E479291336630D5E4557FB8C83B2A511495A45D97694949AD5EF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/Integration_README.txt",
+    "hash": "8A6F644A888087FB2A4E84BB9A5CB904F689213573D59FDC3A6AB5805012C369"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/Integration_README.txt.meta",
+    "hash": "E14CB4EB91833332F70DC5FFFF3FB50A3148C551EB4F31C48BD7C9984D08423B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/MainMenuController.cs",
+    "hash": "EF65A95D3AF4AC5E90C214471B81A8B0DDEE1BF338A8A8500C44F7C2602325E8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/MainMenuController.cs.meta",
+    "hash": "DA4B4666FC55E0EC6888B3C006703DB1ED2619F8AC35A072D001B80C9B9F9415"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/PauseMenuController.cs",
+    "hash": "BE882F5E1F2F06E36FEC159C4F2778309A5400B0836579B2F256B6388530CF83"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/PauseMenuController.cs.meta",
+    "hash": "A476CBD3CC3264EF966380F6233B85B12A5EF7B5E42B1C12D9250EF42C8C2806"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/SceneTransitionController.cs",
+    "hash": "CCAF43B62ACE9D447D47AA5403EA1A3A858D7A6F53BD65179405268BABDE4E88"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/SceneTransitionController.cs.meta",
+    "hash": "F7AFA229E0B95A1C4C6ADE00D90587C115EF65201A643AE9A1289259E56E4014"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/SfxPreferences.cs",
+    "hash": "2C1DEBAE086C791DD76617F2AAFCF944954B7232FC31C4248FDD22397C579FCC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/SfxPreferences.cs.meta",
+    "hash": "2868D5F1E65A733673FBDEC4B89CE323F85840B50D9B2AEAF8F5ADDE6F9DF035"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/SfxSettingsView.cs",
+    "hash": "A38E677320AB7E6DB65AEDD832D3CDC03569E42B282D5A216DE5641745308BA1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/SfxSettingsView.cs.meta",
+    "hash": "A500657AD6CDD958596353DF2CF44A739EE8418B2E5088EBCE15D79328B8A9ED"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/StageLever2D.cs",
+    "hash": "87FFE2A6AB88A3DA5412C002258D53E9D56563DBC9FC395A669AE2DFA1B92605"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/StageLever2D.cs.meta",
+    "hash": "486FA1C72DB1A7252187D4D3AEBD7DA15320CC6B3FAFB68DE4F14186FA0FD05B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/UniformField2D.cs",
+    "hash": "BF1DA7544FEBDF4B1920BA157EF58621769B4B150318AB29FB8AA850E4C55CCF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/UniformField2D.cs.meta",
+    "hash": "0E12EAECF62D0AF2E592A22C828E98057F6F7E10BCB76763FED5E2B65530B90C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/VoltageLauncher2D.cs",
+    "hash": "6F1BCB0D32310D9A15596AE074E64D92B8B1B25B3D4C25909EB80ED77C423DE5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/VoltageLauncher2D.cs.meta",
+    "hash": "1068DC73E57F957B01363A62393717EC39EC70909D6347967EB8E04DF8302457"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM/BaseGameEntity.cs",
+    "hash": "768CE95675FB43F9E782FCBB27D377A79A67FABD402166A27B5AD88DDFCC60C1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM/BaseGameEntity.cs.meta",
+    "hash": "B4DA6095B1ABAD12D184647F320EE6F762FC2C0B078E4C586E7229FB9ADFF9F4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM/State.cs",
+    "hash": "C63BAA4234B537D011D666332EB2D29CB3E33BD7CF0197728D9F29B5BBA3D67B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM/State.cs.meta",
+    "hash": "51B7BD4C489CE95EFA8DE7A5A6029FC9D91D6DE2B3BFFEE6F34F2420A0166F8D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM/StateMachine.cs",
+    "hash": "997DB2153B5731504786432173B09F5BA70ADA35C607921BF861EB523E0F189B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/FSM/StateMachine.cs.meta",
+    "hash": "29DB6A3827F3967D9DFAEB834A169CC5B77C43FD0F462D6F2E57818B1B99963A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/ChangeGearLeverVisual.cs",
+    "hash": "D6BD3D18A60FC099062783F1528DF1D5A6932DFDBC13B3B53508A7819E173C7F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/ChangeGearLeverVisual.cs.meta",
+    "hash": "C3156AAFAFF8582DC33473B972A96D226F5AE3F90E65339A3C363FD79E847303"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/GearLever.cs",
+    "hash": "B4C61904B118B266235FC2433D6F5B0FBD8C26A7B492CA4F11B2A774AAF44BD3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/GearLever.cs.meta",
+    "hash": "E9A301BCAB0CED614A0756A4B42E071F272FF02C79EC215959C41476F2772C1B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/GearLeverController.cs",
+    "hash": "06F988B937B1E83A20311641420F910F5DD2237184F4DDB6DE830DF9F73FFBCE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/GearLeverController.cs.meta",
+    "hash": "CC5142196202DA477797F69787E551B94A9456D3A744E3D8B5ADCA0A25B14BB8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/GearLeverOwnedStates.cs",
+    "hash": "A6B2F3B1BE5E59A7E9AB8E81F4F9B5DFFDC2FD16A1BEE64E9E47248897E8B083"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/GearLever/GearLeverOwnedStates.cs.meta",
+    "hash": "F87FAEA1F35E5BE75C34B6943B3119FDF990C9C2F379EE26C6BC8DCF255AE1F7"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/ChangePlayerVisual.cs",
+    "hash": "2733D292DBCD81864FCA6EA1C378A8D0266F864F3E4826B46685A5EDBA19D415"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/ChangePlayerVisual.cs.meta",
+    "hash": "149BF948565E005840662AFD1234B4DA68CFC69D7F1CD2717A697B62695C3335"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/ChangeVisual.cs",
+    "hash": "5B775C77ABB761B8F49B912E55E8E1571A040BBD3EDCC00389B09C34BE6C5199"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/ChangeVisual.cs.meta",
+    "hash": "850A77C6FDA8B42D46060F4E8B949AF8AF74AFF4F9955ACED464793EEA5DD1BF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/Player.cs",
+    "hash": "4E94DFC11BDB22AFFEE8B52590F49C3E9F6BBD4851B8220F9830967E2A5B4667"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/Player.cs.meta",
+    "hash": "505319F8BFDF00EB7785D2E74483C1B78B4F24BD5C3B7804E146DABC4EDF35B9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerController.cs",
+    "hash": "C37ADCA1B37B70F7AEA80A2064F9159234C757056E3197DB3DFD266A9E2C54CB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerController.cs.meta",
+    "hash": "CFB09B8FC6A046D56DBB33F1A077C95193F6D11C826E6215111A55FF48774E4D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerInputReader.cs",
+    "hash": "DA9C0BCD65B7C83065EBBD4B9135A811D36BF626ACED072904167676CAD22E34"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerInputReader.cs.meta",
+    "hash": "AEEC32146640488A7FAA2F3FC03AEBF05AB15C490C9C02853ACA22ADB5A2A4D0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerMovement.cs",
+    "hash": "F7D94C32BCA4A3C80B25F4161010E5FF82FED5A83E3C5228C877905F765B60FF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerMovement.cs.meta",
+    "hash": "1ED8014A73043152855F25347D4CC0DCEBFB3C5317CB2904D920C9EA1BE2FF42"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerOwnedState.cs",
+    "hash": "373A40DE1EBEE9711E009D363837B7DACB9BF44A0B7ECA649255D0A0A73C4CD7"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerOwnedState.cs.meta",
+    "hash": "6E2ABA53B2051E5CE0534C60304E5A74BAFB4F61100CC13570C5D62DCC089378"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Shader/ChangeStateShader.cs",
+    "hash": "2DBD48FF58BD04F42EDD429CFF622EEBD7BB86DE0D72976EAF8268EE5205DA90"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Shader/ChangeStateShader.cs.meta",
+    "hash": "25DFCE18DFDE6F4BEF3FF11058391BC36A64C386594E61CC82E2B67AC3125304"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Sound/SoundManager.cs",
+    "hash": "71249368141EEED79E89B953AE38FC9812C9A4E67EDD021523C7DFDEA216C65E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Sound/SoundManager.cs.meta",
+    "hash": "5FF9657D40557C6425C403E406A986758E0BDE0E9E7AC4FC464A0FF4FA1356BC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Utils/Singleton.cs",
+    "hash": "36C311F2911B0ADE1B4B995F433E8291326F0D059F8071704F4D66D877FF7FAA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Utils/Singleton.cs.meta",
+    "hash": "FD4E10F0ADF7A62F21F73A6F16D5569E30D28A13A2AE858662EEE8FC1187D2D0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/DistanceText.prefab",
+    "hash": "72A08E1E5FC3DD656748986423E7CC0C92149BD086138E464D81D97544C7666F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/DistanceText.prefab.meta",
+    "hash": "5BD0E3B10E4865912CD006ED964FBC5C87A35E475B4F7942D02E0CD35CAFC918"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Lever.prefab",
+    "hash": "B5214DBB02BABBEECE9261E842B165F59086FBB250B914B0107642BB725A34DB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Lever.prefab.meta",
+    "hash": "31AC421670A378E55C3CD005918441528BB209B02DCE101DA1006832C9419EAC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules.meta",
+    "hash": "29106148F6ADF2AEDF60E9C6B8E1DF4DCEC573EDC6C04DB383F4A2D70FB53267"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/NegativeVisual.prefab",
+    "hash": "4D4B62C890C60356C51E345C05426A47891F0A28CB4568EA8C1E4622377D8F93"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/NegativeVisual.prefab.meta",
+    "hash": "24C05B9D4B0415EF9EC693C2F75B55767EFA9A8936F230B7AA40BE68F7D1F740"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/NeutralVisual.prefab",
+    "hash": "437BEE00259B1E1C508CBF1CB3474D8AF78A2924E78E9916452315AAB1798142"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/NeutralVisual.prefab.meta",
+    "hash": "D13738F228D274804CC183DA4676A5703912989044EE3E1615E0F087D40C07B4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/PositiveVisual.prefab",
+    "hash": "ADA9BA83EFB10EE2700E77323C802B14005F9ECC3377D3D760A357DEA04D3A05"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/PositiveVisual.prefab.meta",
+    "hash": "4ACCF9006FA8B9B3ADC19AA9A84E158C7018384FA450B52B9EF74966445810FA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI.meta",
+    "hash": "A84F20628C4B649D46769BA574570C38EA912C3B05619A395B2AB8BE1C7235F8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric.meta",
+    "hash": "B7883A2E474ABBA8B52EF2C25529B33BB75131AC555629583932EB91BD8BA721"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement.meta",
+    "hash": "610AD2DD3DFE0F135BBC010E72B55604A168F706D4FEFB1938238887E8C0446B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress.meta",
+    "hash": "0DDB41B40E6BCEAB21E874CFFAEAEA5D5D043206B0FB246CF26093EBFBA56C40"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain.meta",
+    "hash": "BB2B1268288B6D89E2AA2F7B58381C2EC3AC56AE64961CC339DBC536E61DFDC3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/ContactChargingStation.prefab",
+    "hash": "DE20F10CC019EEB5C04F468203A5A0E26A9A300DC22BE6C42FFD6C4C40CF2A99"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/ContactChargingStation.prefab.meta",
+    "hash": "E61C45B05EF37A65272A16CC7A457C0ED4B26D2015C9F5EEA6B9484289940EFB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/DistanceForceLauncher.prefab",
+    "hash": "C8728FB8A335D166A314935F604ED4DBF5108DCDEFD2B71C988AEFE01FA6D280"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/DistanceForceLauncher.prefab.meta",
+    "hash": "3441E0EF9346DE224B586436F72DA517C02BC75586CAA9D5CE92EEAB274CB1D8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/StageLever.prefab",
+    "hash": "6BFBD223E64055650AFCAAF0807A694E4C0532F305D161913D09CF689C6BCB5C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/StageLever.prefab.meta",
+    "hash": "68CB713086CBC5065D2AEDC1DB1B6A1094FC4373FA89A19E8239F3001741C567"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/UniformElectricField.prefab",
+    "hash": "CA5F179426C3E18E82D68C50E3CAE21F822568FE21545CFCFA5EF6076394D617"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/UniformElectricField.prefab.meta",
+    "hash": "E447507AB7918E67D6D442735560D637AE982F25354C8E32F90021015A96CD06"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/VanDeGraaffLauncher.prefab",
+    "hash": "4CB98DC74C660CF3512F32548ECE0E7D9F49A377A944AD580F327098B10E753F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Electric/VanDeGraaffLauncher.prefab.meta",
+    "hash": "6173DFBE518412937261323351874F6BE33B514EE1DEAB36006DBE1393BDAE6B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement/MovingPlatform_01.prefab",
+    "hash": "FD25274E4736E5A9FA9B9121DF4060EC13E0B2FA5064EC3AD6924637D032A2E1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement/MovingPlatform_01.prefab.meta",
+    "hash": "07CEDE8D90EB1AF93F4A591F234A74D69874DADD33C608F6AA69AA3424C67C55"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement/MovingPlatform_02.prefab",
+    "hash": "86C5E3DB9F831A667512D052E5DA5CDA1E97C57EA8710D3D04D48F2ED8716500"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement/MovingPlatform_02.prefab.meta",
+    "hash": "53A3FAE496A557994CF200A629597F5D164A1B2682554985AAC9F01A415E82B9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement/MovingPlatform_03.prefab",
+    "hash": "12CD06BCF6B9E253C295D7DB6314A99159B70E2CE3384E048C6CA6D8C31C7C31"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Movement/MovingPlatform_03.prefab.meta",
+    "hash": "9FC84B412F192771AB1A720E11AFCFB35920630EBFC467711D2DC042B3120E2A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage02_Exit.prefab",
+    "hash": "62B319808EA9D630509568D9FE2161B7E2F107751C3C01AEF2179DE46FDBBB75"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage02_Exit.prefab.meta",
+    "hash": "201838DEC52E57A63916692DC929A910891E3BF2AB45AF4A2C24E236DDF0D505"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage02_Star.prefab",
+    "hash": "E814B73E5200075EC817255FD770F37271E436E7DAD1EBBC2888BCBF3054DFC3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage02_Star.prefab.meta",
+    "hash": "1D73C32C57BD4F201D06503A13ED1A893B4D677E9A758DB307B06DDC44B99C44"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage03_Exit.prefab",
+    "hash": "6D47F12AC38CCB2E6006C755F84BAA00346487B192229721DF02162042CC566A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage03_Exit.prefab.meta",
+    "hash": "A5B114830F773FF8909FB294931795C97F782FD693F1E5CBCB49E1AD47DB0CA8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage03_Star.prefab",
+    "hash": "B658DE6EEE9E31EAC225AE285A5D428DC34961E792947EA0B0DF7CDA2B0E1F13"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage03_Star.prefab.meta",
+    "hash": "06AD120C9CEB688708C6EAF36CC09A0A6B39810E956FC56969063C95DC2FBC98"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage04_Exit.prefab",
+    "hash": "ED2CBE57C5447CF46CD900CC271CD6DD50DE3CBFFA3D3D07B52CE8E373840BD3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage04_Exit.prefab.meta",
+    "hash": "7BA286D5F29AF76F63ED04AA48525B33B391E1C63BD0CAD4BC643CC185484E59"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage04_Star.prefab",
+    "hash": "1C63CB400A85A390E9B6C83C76EC89C2318402948C2ECF34D58CEEF09675145C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage04_Star.prefab.meta",
+    "hash": "B0F345B4FB79C9978E97C7E1224A54B367D134CE45C289F5E1063EF0FF6A6E61"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage05_Exit.prefab",
+    "hash": "0287D8EBD8FE074F23B0B4902602AA4A4440AAA36054602E2B94C3AD0348BCC9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage05_Exit.prefab.meta",
+    "hash": "6B2439E804E7E353FF342499A0F7A22FB15ECC690C0AB6160E41C3116B8DF797"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage05_Star.prefab",
+    "hash": "56F04FA6D4590BC7C09467675F5CC36D310897385A2DE2080FE89B76ABF20EFE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Progress/Stage05_Star.prefab.meta",
+    "hash": "F7C5150F2B3F192F8A027CC77848D72BDD9BE6D60024909FB856087BE403059F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/HexBackground.prefab",
+    "hash": "5EA45D9650BB9A89FD5ACDB51E574B56B26E9E744B560CFB4A43A2BE10FBCA71"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/HexBackground.prefab.meta",
+    "hash": "3891FA80370CEC3B36D9DB8A747D92416E0122E254F7B2DAFE5CCCDFDDCBD6F5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage02_Terrain.prefab",
+    "hash": "3EC0B7F4B40E7624ECB9FBF668AAEBA63D03A419035046BD633C949361211F8C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage02_Terrain.prefab.meta",
+    "hash": "DE4FFBF0FA76CCA068876560602619C3FBA40BE9B5658F6DB23985ECCA1FBD3B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage03_Terrain.prefab",
+    "hash": "7B7485DB6258B29397D9A41362F07A7A18E19BB8290AB9AC448224B112DC0E2B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage03_Terrain.prefab.meta",
+    "hash": "AF59A5EBD82C4A841B332D42661CD1C892D914B0246C018E61A3310F6440B7AC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage04_Terrain.prefab",
+    "hash": "1E97174F6A5466A0E392C6835B7DB134D348178426678A6A5FFA70CF70AA54FD"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage04_Terrain.prefab.meta",
+    "hash": "0272E2D0F3A6F424D74460AD5E7A4D5B42EBD18E4F207B67F6A3E3AFCD395989"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage05_Terrain.prefab",
+    "hash": "495808C45B1ABB663A232513FB9F1BC09C129EC4D2BC4E057AACAE2D8FB7CA26"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage05_Terrain.prefab.meta",
+    "hash": "C06DD642E145A41A8C30E0B50C92B3A084147DA74BA7099359290D0244913623"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/GameCompleteScreen.prefab",
+    "hash": "D15C77134E3E371F1A9DF5EF9A17CA0A4BEFCCA8879C6B11EDCCD848060D73EA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/GameCompleteScreen.prefab.meta",
+    "hash": "D3BEBC867A8C47C351D75ED253D464925F7979978E9E27C4376486E5F2F8CFC2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab",
+    "hash": "DC63DF8A7D9603999D8F8A288DD1D0605ABB7B34EE497123FF09194756A1BEEE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab.meta",
+    "hash": "9774DC2F6D27C84A76599C386CCEB13FEB4E53D70A8AD96A8E16DA769E40E44B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/PauseMenu.prefab",
+    "hash": "5A08EAB24BA066B92BFD436337678EB792A3128457FA89FF92E596D6F0D06D58"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/PauseMenu.prefab.meta",
+    "hash": "01EC23E71C011162DE44548685E80FABD7B4688693B4B5A48201162A98E9C8F6"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Quest_Container.prefab",
+    "hash": "54FE42396C70444489A913E8BE3458B8820968946498787B417E7F24BB440447"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Quest_Container.prefab.meta",
+    "hash": "48DC3B1C015F7F4316685C87B0D8792838CB122978CEB8381F4A544E53F54CC5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/SceneTransition.prefab",
+    "hash": "9DC3368CC22B5C0AD79DCD1242E0C8ECFEFF630AB55288D1389CD14AD780AFFE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/SceneTransition.prefab.meta",
+    "hash": "59B20E3564171E1DCFBD908405600BF232EAE57FEDBBD635BE442DDB0E93A0DA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab",
+    "hash": "3D97EB594AE39D07E85B79B7B5032A4A5C27E9B3F48BB9BFD99AD96011435EFD"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab.meta",
+    "hash": "D63EB7ED3868CD7A9FF8054C826E56C08961B366F09D3B11C9A5F32734E48A67"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/AudioClips.meta",
+    "hash": "73768CD2AD5ED6A405F3D043E89A05365DA588A6C0F0AC4B55D71C627F7A9D04"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback.meta",
+    "hash": "1E6A6638BD315A3CC8839AF2EDBC23443AEA558AC7E830BC7910663581477920"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/confirmation_001.ogg",
+    "hash": "063564703B6094D70718A3E787A55CC9141611E4ECD6B6637F8828F79B4A8C3A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/confirmation_001.ogg.meta",
+    "hash": "D1442274FD2231E80364F143CA8072F69E9D651D92D9A83B41585AA9590ECA54"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/License.txt",
+    "hash": "F7966C773BBED0ECA6A9C75081C44A178B38EAE112724DBB5FDFBD4192D118A9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/License.txt.meta",
+    "hash": "85408F47FCC8F579BB970B569A33E1A7F27B9FE288A874CC276A9A917DE8FB4F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/pluck_001.ogg",
+    "hash": "BE97EC4893A02D6ECCFB678DAA76C83E34CB2583B834EC2593D2641DEF739FA4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/pluck_001.ogg.meta",
+    "hash": "33BCC6046D6BADC5D207F981BC5A47EBFCB395AEAE4DA277E13F5C64737DBBA7"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/select_001.ogg",
+    "hash": "AEC0C31EA934A35936AE0D2AB8FAC8123C93AA5647F935853A58DBAF90278B7A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/03_Sounds/LearningFeedback/select_001.ogg.meta",
+    "hash": "63B4960AC5EF9820335368AD1CB85B577B571477DB5CABFAF8DF6896735E9BCD"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/04_InputSystem/Controls.cs",
+    "hash": "B4598C69A08CD19DF53533D42875C580D5F5587D59BF08ED49F886542F1262B9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/04_InputSystem/Controls.cs.meta",
+    "hash": "88A9A801C2C49033B0589A1F2262E0D7617D4632FFB81DD7498520E9BF360C78"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/04_InputSystem/Controls.inputactions",
+    "hash": "67780399DB84D00A46037444DF46A72EDDCD1501B0B1E16E0D237DCBFF7073AE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/04_InputSystem/Controls.inputactions.meta",
+    "hash": "2E1483574EB8AA479BF798A81B8298B4E159D2A48B5C8C54FAF11F69098E04F4"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackgroundTileMap (1) 1.aseprite",
+    "hash": "A2FA4EBDE5C9B3FA6EE0C5408BF4538901E65D79698F97A3FF3EB24A3581E957"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackgroundTileMap (1) 1.aseprite.meta",
+    "hash": "1BBD030418351E59E5577EB919E20B3CBC6E37ED41AFC7A3E0F721658A465A7A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackgroundTileMap (1).aseprite",
+    "hash": "A2FA4EBDE5C9B3FA6EE0C5408BF4538901E65D79698F97A3FF3EB24A3581E957"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackgroundTileMap (1).aseprite.meta",
+    "hash": "C4379CC37D9D0C7B6AE010F1C8E9F0FE5BFD0891BD5972797FFB005BFB3E2E7B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackGroundTileMap_1.aseprite",
+    "hash": "DCD8BB68B9A656186FA21517D5F0F24E629978EA1CFA0FEDD7214ACB9EA70623"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackGroundTileMap_1.aseprite.meta",
+    "hash": "B5FF0D00AE9BF0DFE28BE7BB35F5C0D43438A822C420FB9D611922A60D05E04D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackgroundTileMap.aseprite",
+    "hash": "BDAB7A2A6D22B4F95D736839CAC329A4DDCF6386EE472FC9412FE41361DC5803"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/BackgroundTileMap.aseprite.meta",
+    "hash": "923487F33413D8A3E7522BF9E085F1295D29939157111B391A448A6431611F9B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/CirCle.aseprite",
+    "hash": "DB84128188389702E4DF323738AF31614BC3431FD2AD6B18FA4BE911DD618AA3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/CirCle.aseprite.meta",
+    "hash": "6C23B3594F8FFB7E6D7EC96D386207F80065454EE9DD4E80B0C3D023FA314741"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/DarkBlueUI.aseprite",
+    "hash": "CB71E682659B4ECD5A2A4A3C473297E20F32B6EB9B609DAB5CB5157CC2C0C4B1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/DarkBlueUI.aseprite.meta",
+    "hash": "D4E99115CBCA5C09FB7830FE81D3C89356B27A99B00A4AD5A35D89E430640970"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Door.aseprite",
+    "hash": "3813AC4451C1E8E70347E59BC3C41A953C76C27C536D264FE1EB66073408FE8F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Door.aseprite.meta",
+    "hash": "E954B058380584AD5F0AB1FD0E5557A37BA39E7C28F749B6D7C37C8E3FB43A3A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Falling_Block.aseprite",
+    "hash": "1A4DFE189E55EDEF58AF51E960A33AA5D707E02CB1B773D2EA4F828AAD84DEFC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Falling_Block.aseprite.meta",
+    "hash": "88BC5D483D0801387797816AD3C9703615A2DC06A3864FFA4C870A4F9314DA82"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Firefly Generated Image.png",
+    "hash": "7F3EC1881F5E5CB0D08AB06EAC36E1404DFE61F0E32C048F45F211CA1F51CCC3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Firefly Generated Image.png.meta",
+    "hash": "C9B82ECB8B0C5B05F7C952C2B0D237CF341180FFFB31D219F840E3060EB4747F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/GroundTile_0.asset",
+    "hash": "43C031FBBFB6D7B91CF49FB082A50FD8D75B528C36A0B01EDE756C05F05EC0C0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/GroundTile_0.asset.meta",
+    "hash": "A3355468344C452595BE5E1604C35FDFC968BC961AC4D27945BF1BAE52AA91E0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/GroundTilemap.aseprite",
+    "hash": "CB1553F6FEFE8E3C16BEE7B76C30ED9E19749EB790DCFBECAD0249B8F7137100"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/GroundTilemap.aseprite.meta",
+    "hash": "E37E85E1968AD1F4FD9B60EAEC8D18D1C9BDC361D81302CAA677F18F90379041"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Box.aseprite",
+    "hash": "277FF205A0A35B4A2F3E0653B417C4453629E7A6458048D0A6C76A4A41548B93"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Box.aseprite.meta",
+    "hash": "2030BDD74E1CD997746DDF0BD5EDFA5E4E04901338BBA50D97138313E80C1AB2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Circle.aseprite",
+    "hash": "78910B6808CCB12833026144125AE16D1BF65DBEA980C7A26E3DA10804959CD5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Circle.aseprite.meta",
+    "hash": "FE2D3A5B3D546C9A5498E91900C7BF78EE4438B7D9637381FD61C175575DCBC2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Handle.aseprite",
+    "hash": "ADE6FFEE0B367E49D36EE739DCAE564FB92FEDA4027C94201620D632F87596E6"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Handle.aseprite.meta",
+    "hash": "08D4E727B6B69394EAD8B45CADA89319E19BD01DCA531BA144195E88328DAC1C"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Stick.aseprite",
+    "hash": "0A334F3683FC9306C6B1FB19770E51B32ABACF1A410D1C3609B132073CE20A30"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Lever_Stick.aseprite.meta",
+    "hash": "20EC332A9BFF902626C348F6A1DB8F2BE9E0426317C704C2B6073F5B6B7CD44A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/LightBlueUI.aseprite",
+    "hash": "89158F8AC259B892BBA45D19214AC6B43A0A655D8693EBF36405EAFE3C014441"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/LightBlueUI.aseprite.meta",
+    "hash": "CF865B84DA24456C54D60803EBAA344F59739FE1BFCE604479E7D5697A76BEFE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Minus.aseprite",
+    "hash": "C8361D57B7AE9D17782D4631164ECF4915138216A7EA51F8F6488CC6209C1FFC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Minus.aseprite.meta",
+    "hash": "D830AD9C28AF2ABC747026AC49F69BB03BFF7013DF6C4EE960004F77E5D46122"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Normal_Block.aseprite",
+    "hash": "5BD7E9DC9E111D5AAE51ED309FB5558CC33C27995123E1E8D42FE7D5CB5FD3FC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Normal_Block.aseprite.meta",
+    "hash": "A441EC93C879F45E82B69C7AA71DBDFA37D6483CD4C6997E5DF1AD2C79C6F6A0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Plus.aseprite",
+    "hash": "0E1276815A98443F8CC1D29A2E5865441F601C4B6BF1339666D1CB047B7B3A4E"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Plus.aseprite.meta",
+    "hash": "CD8E2B32047A5B2E429FFED4E97913CEAEE2FF980793617524BC39309D0EA1B1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Star.aseprite",
+    "hash": "4D723994123346D46947A207C0EB2ABE2E9903125F50E7A99A43BD48DC858795"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Star.aseprite.meta",
+    "hash": "2266CF274B3911FAC826A1D11C5F4477ECBD9BAA796205C73FADA1A0D93954B8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/UI_Button.aseprite",
+    "hash": "03201DE2166893CD59B073A93672ED7CEA65F8E780946AAD0BE380FA833EC9BB"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/05_Texture/UI_Button.aseprite.meta",
+    "hash": "98926B8E744D58342876AC12F479D52D6DEB8D26960ABB011AF730CFB240A3B7"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/06_Tilemap/Background.prefab",
+    "hash": "24D36F1DB2911971F21013D0D19CE2DA984DEC158AA18DBF4EC1BB6380074EC9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/06_Tilemap/Background.prefab.meta",
+    "hash": "8B5860AE32370CEFA48934ECC84AB6817C5766F100FF21664B245A0E3AB2216D"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/06_Tilemap/Platform.prefab",
+    "hash": "951CECFEBA9D9447809994EBAD57BA7BF738CE45149923E8591E7EEF0E3E6D26"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/06_Tilemap/Platform.prefab.meta",
+    "hash": "16298EF86622FF4A7E560DDD9413DF0387E9872E847585F087523E3CCDBD3858"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/07_Shaders&Materials/Change.meta",
+    "hash": "D4F3B45E9632D7A6B64FD6FD3495068ADE86F1D041C4CF9590B60316FB52DBE7"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/07_Shaders&Materials/Change/ChangeShader.mat",
+    "hash": "5C8BA919229043EC0CA513223425BE2FC37AAF1AAE39D8879169FD724264BD62"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/07_Shaders&Materials/Change/ChangeShader.mat.meta",
+    "hash": "5EA3814B0AE50CB55125FDBCCF50EB86DD050E8EC5ACCE49384CF47C262A83D0"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/07_Shaders&Materials/Change/ConstructionProgress.shadergraph",
+    "hash": "B67919BAEAA86DA7BE3E5CD8B18148D693CAB99F93C1F7E85B148D3F0D8BF620"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/07_Shaders&Materials/Change/ConstructionProgress.shadergraph.meta",
+    "hash": "35F11ACAE69A9F80198CE3B5DB8E3FECF6483C4D254D3946980360A5C2957D52"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/08_Presentation/Fonts.meta",
+    "hash": "A62985B66C438C4017CA2C72B65BE0CE27EFF8E3383649AFED67013F12B4737F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/08_Presentation/Fonts/NanumGothic-Regular.ttf",
+    "hash": "76F45EF4A6BCFF344C837C95A7DCC26E017E38B5846D5AE0CDCB5B86BE2E2D31"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/08_Presentation/Fonts/NanumGothic-Regular.ttf.meta",
+    "hash": "626A9881AA75E64B78448DD041D51EFDF9688B2CBCA9611D1BD8FAD1FF8913E9"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/08_Presentation/Fonts/OFL.txt",
+    "hash": "EEACF16032901D0ED0456876EC77B8F0FDA6B3FECEC7D972F8543EB602E6C30F"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/08_Presentation/Fonts/OFL.txt.meta",
+    "hash": "896E66BAD4266F7D622F56E77DD0CB4F35DE1F8EA0EFE738E4AC075C74873E22"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/BackgroundTileMap_0.asset",
+    "hash": "F3F4A577F22B1EA927F86CB2144B9CC27C4B19376D029D2021D1A862EAF51216"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/BackgroundTileMap_0.asset.meta",
+    "hash": "4050B30A66726E55C1232B6993080C3812C6549214C773AAEA008483715B4C5B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/BackgroundTileMap(Gradation).asset",
+    "hash": "1774DC05641CBCCE9A6C7EB7020715491CF23994028F4FD602B1FD25CE9D8A0A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/BackgroundTileMap(Gradation).asset.meta",
+    "hash": "DB96D9A7BCE2B392103ADB054DB0CCF9ABAC80198B36DF3B6656796A3B513A57"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/Lever_Box_0.asset",
+    "hash": "9E8F319A474A2073FD8C5D9AD0DFC94D6B4719E6E089626F687ED3BC6335C042"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/Lever_Box_0.asset.meta",
+    "hash": "1983CE3D16DF52C392802153B02F22D0D2FD6668B73B4533A7EC0F4DE484F897"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/Normal_Block_0.asset",
+    "hash": "2EA3FAC58829713C50908A65E6C92D5BB3F377CC90610E9AE9376867260CE7B3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/09_Tile/Normal_Block_0.asset.meta",
+    "hash": "A929FBD796581FEB928AE974F58E97F6880230FBEB247EF6C87DDF6341D6A9F2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0.meta",
+    "hash": "9568EA46A53B16D12EF1EE825B597A8B7414569D41189605A0DCD35D63075F9B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/HSSaemaeul-1.005.ttf",
+    "hash": "235390462690BF3D3FF2B36CAC450104B848D73B812E98E88EE1A9377002C175"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/HSSaemaeul-1.005.ttf.meta",
+    "hash": "993E6B4CD4C28A6F31318186A6EA706C6AC5F6B71719201CCAADBBC39786AAAE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/MyKoreanFont.asset",
+    "hash": "6B412828181DCD58C6E1CF562C35C662CA402C810944E5C3BC8A751F8A1D91B5"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/MyKoreanFont.asset.meta",
+    "hash": "E0AFCE1DC3E1A69E383C8F720C57E2EF6FC3C2F4A83CB36A060023E18FE41E15"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/x12y12pxMaruMinyaHangul (1).asset",
+    "hash": "D94A79AC7922F32446C2CEBE22D73FA586270753AC708DD7C5969E701CB304C2"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/x12y12pxMaruMinyaHangul (1).asset.meta",
+    "hash": "2011CBE7D74E03F6C13CA9E50808795B4927DD5D7470F7C2E62920750FCDA0DC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/x12y12pxMaruMinyaHangul (1).ttf",
+    "hash": "60B56992AC5A42781A09D463DFE95E13A42F1B2879BBDB404C124498905EC8AE"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/x12y12pxMaruMinyaHangul (1).ttf.meta",
+    "hash": "3222F01CAF60233ECAA9CB184A6DF0D2E9406EE66CCA20EB2F2163DB88D17445"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0/GraceSerif2.0-Bold.otf",
+    "hash": "EBC6C1C35D762A125A34D7FCE015C325EC97789AA40C0E4136D24D9DD67E16CA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0/GraceSerif2.0-Bold.otf.meta",
+    "hash": "D810829B2F4A89190DDFCA54026A6DFC8F4F1741BDD5E5C135CAB15C74FDB345"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0/GraceSerif2.0-Regular.otf",
+    "hash": "0D92C7FEB5C2E0A53D94FB660E9F2A1B769579F43C4F2EC0366C36100B7A0B7B"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0/GraceSerif2.0-Regular.otf.meta",
+    "hash": "DBF979F3A706D9DCFFA5C42CEC0234221E1F76C27CE50E60E18396D8AAC85753"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0/GraceSerif2.asset",
+    "hash": "B62F3528199577685CCDB09836F75DC0CDC766E3CC7EE1734EE8907F13F51484"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/10_font/GraceSerif2.0/GraceSerif2.asset.meta",
+    "hash": "AC0732620876B6986273C3EFF9962EFB8C4A21D7325F5161D4A5B193513F63C1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning/BounceMapPlan.txt",
+    "hash": "5DECD472852B6E22F08EBCC11538AD75690AEE2D9123E9C95656F384F7B83CD1"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning/BounceMapPlan.txt.meta",
+    "hash": "57FC709D93EEAA8594FAAD221384D7AFB224354C1496F9186B0D5CBDA47464E6"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning/BounceReferenceEvaluation.json",
+    "hash": "63F7D0376BBC87D0A98962E929A0D1B4281BD356C28BB4869966D67AB09C7ADF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning/BounceReferenceEvaluation.json.meta",
+    "hash": "EFE794EAC0B22C6F49FCA65E71D9F3072B97D156B093C12A4F098A6511081FCA"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning/Presentation_DesignNotes.txt",
+    "hash": "C3895F609C20A15D72B60587A27E890CA707773C98C9C1D5C49F67A83D82F565"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/MapPlanning/Presentation_DesignNotes.txt.meta",
+    "hash": "C9204F9F3043C5C7164BA08D8F069201DA919BF6F5C6B78E5074D945B2EFE6A1"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scenes.meta",
+    "hash": "807C87C75F8C84E9EF6C45292DCB3C90C1B31FD72D58BB76CFC12761B4FAA834"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scripts.meta",
+    "hash": "F6F3154BEE32EF25830237F5E315ABBBB83217BB3C89D8C9171C04E4142D9059"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scenes/pu_shill.unity",
+    "hash": "ABC6BB9825262F1FED0C1A30770046C8BA8CA51B4398DEC0692CD8554320C622"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scenes/pu_shill.unity.meta",
+    "hash": "EB4FFB17196DD598CC98DBF9FC4EBF9E51B856D13E2D27445ACDE9E28E1F47F9"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scripts/LeverMover.cs",
+    "hash": "90B8157E1451333B6BC6975D5CEC5055AB5E50322D1BB9EFD0040F118F635CB7"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scripts/LeverMover.cs.meta",
+    "hash": "CAA0800187F4A7776519685D27984F6DC6FFCE8DDDB006C5455D922A29561ECF"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scripts/LeverReader.cs",
+    "hash": "B6F4B6ED43E5FA439611EC6697B4A24527AAADCA1C94C27BB68D08A85D40264E"
+  },
+  {
+    "path": "Assets/@Project/@pu_shill/@Game/Scripts/LeverReader.cs.meta",
+    "hash": "46B8120D8575FEE099795C8CC1110B8E75B2511FD8CA5316E61BD5496DABAE27"
+  },
+  {
+    "path": "ProjectSettings/AudioManager.asset",
+    "hash": "282586EACD02FCA9B7B803B93641647ABEE5A9D1A7369381025546F0C9808CCF"
+  },
+  {
+    "path": "ProjectSettings/ClusterInputManager.asset",
+    "hash": "06A192320121E445DCFF1AE8DDAD2A948FF671CA134603C043D9F4E920427EA9"
+  },
+  {
+    "path": "ProjectSettings/DynamicsManager.asset",
+    "hash": "7BF32032957EB76DEA137D4521B8F057FFDB55259ACBF130D0954C2D201EEC68"
+  },
+  {
+    "path": "ProjectSettings/EditorBuildSettings.asset",
+    "hash": "22ED39596154818245913A6559137AF7F7397B1ABF775FD3C7DCA018118BA4D1"
+  },
+  {
+    "path": "ProjectSettings/EditorSettings.asset",
+    "hash": "6146F67666D3129A8B9846FA9B31D9C886B794CA05E6B7503B5CA3C534728119"
+  },
+  {
+    "path": "ProjectSettings/GraphicsSettings.asset",
+    "hash": "8710AD47ACD750DA1C8795178BF5FDD153AB29708EC5B3A304B11A920BECCB24"
+  },
+  {
+    "path": "ProjectSettings/InputManager.asset",
+    "hash": "776C8B6C71E1101973E1F3AB569CF9058B857372A8A19210B50B3C1C6A1A42A6"
+  },
+  {
+    "path": "ProjectSettings/MemorySettings.asset",
+    "hash": "A660CB9890D880DF92F3B80FA40723F183CC5EF2CB3ECC850B366191F05834C7"
+  },
+  {
+    "path": "ProjectSettings/MultiplayerManager.asset",
+    "hash": "83DED116CA3ED35A6ACAC9B0FED830F04DFE5C008C185BE50B1C132C88AEA505"
+  },
+  {
+    "path": "ProjectSettings/NavMeshAreas.asset",
+    "hash": "DECA65F3094943A1AF148CF64FD6C0DEB503219D12DE0E172B7F948D07A8E6A8"
+  },
+  {
+    "path": "ProjectSettings/NetworkManager.asset",
+    "hash": "AA28E567E0F09D53D4DC57A068C913A4A9A0F09C602C49F0278990BF666550A9"
+  },
+  {
+    "path": "ProjectSettings/PackageManagerSettings.asset",
+    "hash": "83367228C60083820C0CCA52B673EBB841BB9F8AFC0DEA25AB558AE78069A2D7"
+  },
+  {
+    "path": "ProjectSettings/Physics2DSettings.asset",
+    "hash": "5CDCA2DA0C015869216C9976A233C888E636718457729B0C74E6D4032D3576C1"
+  },
+  {
+    "path": "ProjectSettings/PresetManager.asset",
+    "hash": "6BA879310E2BE2E5BA18702578CDA93B26B030ECD88E883FEF22AB456A9F9697"
+  },
+  {
+    "path": "ProjectSettings/ProjectSettings.asset",
+    "hash": "43703E092E0A2B69287633008D2A3D6730674C6BA7ED908A254B4AC0A66AA7BF"
+  },
+  {
+    "path": "ProjectSettings/ProjectVersion.txt",
+    "hash": "4A7D8A44E61F505B116FD33A3D4CC67A5530BEF5CD2D4084CCCF34AE82BB9318"
+  },
+  {
+    "path": "ProjectSettings/QualitySettings.asset",
+    "hash": "9E9C785DE3BEF6C89082EF0888A04C719C0443D32C67551AC3572A84DCA9F984"
+  },
+  {
+    "path": "ProjectSettings/SceneTemplateSettings.json",
+    "hash": "BB9098B3BFCDE78D93E264B96F7B77B5430E64E8C57A7AAD7F5A5D9C3945E16A"
+  },
+  {
+    "path": "ProjectSettings/ShaderGraphSettings.asset",
+    "hash": "5C432C9C73FDF73FEE91C8823EA02AB98E3B7A8EDF341B5AE6901D699CCE52A7"
+  },
+  {
+    "path": "ProjectSettings/TagManager.asset",
+    "hash": "65276A6EE8262AF54FEF991F8C28874A769DBCB65458EEE835EE1736D8F46E4D"
+  },
+  {
+    "path": "ProjectSettings/TimeManager.asset",
+    "hash": "6C320EE59AE1E55AA74558F012437F63CB9DE59D69FDA62FC321C4F1971C52CB"
+  },
+  {
+    "path": "ProjectSettings/UnityConnectSettings.asset",
+    "hash": "EDBC2C8B4E180CA0734F320B51D6F560342563862923509D94D15492B200AD27"
+  },
+  {
+    "path": "ProjectSettings/URPProjectSettings.asset",
+    "hash": "C317FE22B9488785C0611F0642429922E5D324430D929BFFB41648130F30C218"
+  },
+  {
+    "path": "ProjectSettings/VersionControlSettings.asset",
+    "hash": "3FE15395F872B9CFE908A111A1E87BE2055C6EE367E2876E7E83A408C2B89D57"
+  },
+  {
+    "path": "ProjectSettings/VFXManager.asset",
+    "hash": "A8950860670C6FA8F83A43E37DEB966BEACFD7B535721C4CD9C2A7E5B46305E8"
+  },
+  {
+    "path": "ProjectSettings/XRSettings.asset",
+    "hash": "71F175773593BA28D42BF1AF0543B2A465E0316D3B8F435AEBF48EA66B31B621"
+  }
+]

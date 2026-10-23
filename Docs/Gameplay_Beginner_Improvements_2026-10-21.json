@@ -1,0 +1,251 @@
+{
+  "status": "passed",
+  "createdUtc": "2026-10-21T13:21:58.095819+00:00",
+  "implementation": [
+    "Persistent task and separate feedback; field progress/status",
+    "Prepared/flying mode, Backspace/R, safe readable help",
+    "Named challenge results and unlocked practice; async/fade preserved",
+    "Selectable existing-mechanic plans for stages2/3/5",
+    "Stage01 tutorial on the existing map"
+  ],
+  "checks": 267,
+  "checksByRun": [
+    {
+      "name": "Beginner_Locked",
+      "status": "passed",
+      "checks": 20,
+      "report": "Logs/Beginner_Locked.json"
+    },
+    {
+      "name": "Beginner_Tutorial",
+      "status": "passed",
+      "checks": 11,
+      "report": "Logs/Beginner_Tutorial.json"
+    },
+    {
+      "name": "Beginner_Routes",
+      "status": "passed",
+      "checks": 0,
+      "report": "Logs/Beginner_Routes.json"
+    },
+    {
+      "name": "Beginner_Alt2",
+      "status": "passed",
+      "checks": 0,
+      "report": "Logs/Beginner_Alt2.json"
+    },
+    {
+      "name": "Beginner_Alt3",
+      "status": "passed",
+      "checks": 0,
+      "report": "Logs/Beginner_Alt3.json"
+    },
+    {
+      "name": "Beginner_Alt5",
+      "status": "passed",
+      "checks": 0,
+      "report": "Logs/Beginner_Alt5.json"
+    },
+    {
+      "name": "Beginner_MenusRead",
+      "status": "passed",
+      "checks": 27,
+      "report": "Logs/Beginner_MenusRead.json"
+    },
+    {
+      "name": "Beginner_Hud",
+      "status": "passed",
+      "checks": 98,
+      "report": "Logs/Beginner_Hud.json"
+    },
+    {
+      "name": "Beginner_Controls",
+      "status": "passed",
+      "checks": 63,
+      "report": "Logs/Beginner_Controls.json"
+    },
+    {
+      "name": "Beginner_UiAudio",
+      "status": "passed",
+      "checks": 33,
+      "report": "Logs/Beginner_UiAudio.json"
+    },
+    {
+      "name": "Beginner_MasteryRead",
+      "status": "passed",
+      "checks": 15,
+      "report": "Logs/Beginner_MasteryRead.json"
+    },
+    {
+      "name": "Beginner_Smoke",
+      "status": "passed",
+      "checks": 0,
+      "report": "Logs/Beginner_Smoke.json"
+    }
+  ],
+  "tutorial": {
+    "status": "passed",
+    "actualGroundEvents": 12,
+    "actualContactEvents": 1,
+    "actualStarEvents": 1,
+    "actualGoalEvents": 1,
+    "physicsUnchanged": true,
+    "allBallSamplesInsideCamera": true,
+    "maximumRetryCount": 0,
+    "stage2Loaded": true,
+    "unlockedStage2": true
+  },
+  "baseRoutes": [
+    {
+      "stage": 2,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 0.0,
+      "physicsSettingsUnchanged": true,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "chosenPlanSatisfied": true,
+      "earnedChallengeFlags": 1
+    },
+    {
+      "stage": 3,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 0.0,
+      "physicsSettingsUnchanged": true,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "chosenPlanSatisfied": true,
+      "earnedChallengeFlags": 3
+    },
+    {
+      "stage": 4,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 0.0,
+      "physicsSettingsUnchanged": true,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "chosenPlanSatisfied": false,
+      "earnedChallengeFlags": 3
+    },
+    {
+      "stage": 5,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 50.00504684448242,
+      "physicsSettingsUnchanged": true,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "chosenPlanSatisfied": true,
+      "earnedChallengeFlags": 3
+    }
+  ],
+  "alternativeRoutes": [
+    {
+      "stage": 2,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 0.0,
+      "selectedPlan": 1,
+      "chosenPlanSatisfied": true,
+      "planRecordSaved": true,
+      "earnedChallengeFlags": 1
+    },
+    {
+      "stage": 3,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 0.0,
+      "selectedPlan": 1,
+      "chosenPlanSatisfied": true,
+      "planRecordSaved": true,
+      "earnedChallengeFlags": 3
+    },
+    {
+      "stage": 5,
+      "status": "passed",
+      "retryCount": 0,
+      "launchVoltage": 55.00504684448242,
+      "selectedPlan": 1,
+      "chosenPlanSatisfied": true,
+      "planRecordSaved": true,
+      "earnedChallengeFlags": 3
+    }
+  ],
+  "fieldObservations": {
+    "fieldAscentMeters": 3.330089569091797,
+    "neutralFieldDescentMeters": 1.7588180303573608,
+    "negativeFieldBrakeSeconds": 0.119999960064888,
+    "fieldAscentObserved": true,
+    "neutralFieldDescentObserved": true,
+    "negativeFieldBrakeObserved": true
+  },
+  "build": {
+    "status": "passed",
+    "startedUtc": "2026-10-21T13:17:36.6058986Z",
+    "finishedUtc": "2026-10-21T13:17:53.6592945Z",
+    "unity": "6000.3.19f1",
+    "project": "C:/Users/wook1/AppData/Local/Temp/CodexUnityVisualBuild",
+    "output": "C:/Users/wook1/AppData/Local/Temp/CodexUnityVisualBuild/Builds/BeginnerRelease/Scince.exe",
+    "result": "Succeeded",
+    "developmentBuild": false,
+    "scenes": [
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/MainMenu.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_01.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+      "Assets/@Project/@apple_wine/@Game/Scenes/apple_wine.unity"
+    ],
+    "errors": [],
+    "totalErrors": 0,
+    "totalWarnings": 4,
+    "buildSeconds": 16.545093599999998
+  },
+  "productionSourceFilesMatched": 369,
+  "assetAudit": "Logs/Beginner_AssetPreservation.json",
+  "decorationAudit": {
+    "status": "passed",
+    "source": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_01.unity",
+    "beforeSha256": "b022cddc9961d961fa70bb60e2c9bc8704a32bb88dab0a394aa5fa7bac76a2e7",
+    "afterSha256": "dd1e809f0f7f27811e2f8e7e278cf1d5e50b5bfb52e7acdab0b436020fb0711c",
+    "changes": [
+      {
+        "object": "Firefly Generated Image",
+        "transform": 1134893715,
+        "scaleBefore": 20,
+        "scaleAfter": 3
+      },
+      {
+        "renderer": 1134893714,
+        "sortingBefore": 0,
+        "sortingAfter": -90
+      }
+    ],
+    "scope": "Independent existing decoration without collider, Rigidbody, or scripts. Its PNG, sprite reference, color, position and all map/player data are preserved. Reversing exactly two decoration fields reproduces the previous tested tutorial scene byte for byte."
+  },
+  "preferenceRestoration": {
+    "status": "passed",
+    "restored": true,
+    "originalKeyExisted": false,
+    "originalValueCount": 0,
+    "currentKeyExists": false,
+    "finishedUtc": "2026-10-21T13:21:56.6724832Z"
+  },
+  "executable": "Builds/BeginnerRelease/Scince.exe",
+  "validationConfiguration": {
+    "developmentBuild": false,
+    "graphicsApi": "Direct3D11",
+    "cloneRunInBackground": true,
+    "sourcePlayerSettingsPreserved": true,
+    "qaProbes": "Opt-in command line only; inactive in an ordinary launch."
+  },
+  "limitations": [
+    "Automated input/API route validation and isolated functional fixtures, not a human novice playtest.",
+    "Optional strategies use the existing map; optional goals never block ordinary completion.",
+    "The early hidden-window captures were black and were replaced by visible-window final captures.",
+    "The negative-brake PNG can show the result screen because capture is deferred; real braking is verified separately in the route JSON."
+  ]
+}

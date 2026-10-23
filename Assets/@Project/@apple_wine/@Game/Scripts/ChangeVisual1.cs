@@ -15,7 +15,7 @@ namespace apple_wine
 
         private void Awake()
         {
-            // 추후 모든 스크립트의 Setup은 GameManager가 담당
+                                                 
             Setup();
         }
 

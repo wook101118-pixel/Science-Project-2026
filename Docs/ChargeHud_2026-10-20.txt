@@ -1,0 +1,43 @@
+현재 전하와 Space 안내 UI
+작업일: 2026-10-20
+
+원본 씬
+Assets/@Project/@sung_wook/@Game/00_Scenes/sungwook.unity
+
+편집 위치
+Electric Bounce Stages 02-05 > Stage 02~05
+  > Learning UI - Stage XX (Editable World Canvas)
+    > Live Charge: 현재 전하의 위치, 글자 크기, 폰트, 색상.
+    > Common Controls: Space 조작 안내 문구와 위치.
+Canvas의 ElectricLearningStatusView > Charge Format에서 동적 문구 형식을 편집한다.
+{0}은 0 / + / −, {1}은 중성 / 양전하 / 음전하이다.
+
+제작 방식
+Unity Hierarchy에서 기존 Common Controls 3개를 함께 선택해 안내 Text를 편집했다.
+기존 Stage 03의 학습 Canvas를 Ctrl+D로 복제하고, Cut / Paste as Child로 Stage 02 하위에 배치했다.
+복제된 Canvas의 번호, 제목, 부제, 질문, 학습 목표, 실험 안내를 Inspector에서 2번에 맞게 편집했다.
+네 Live Charge의 저장된 기본 문구와 글자 크기(24)를 Inspector에서 함께 편집하고 Ctrl+S로 저장했다.
+임시 스크립트로 씬 데이터를 작성하거나 런타임에 UI 오브젝트/레이아웃/스타일을 생성하지 않았다.
+
+표시 코드
+ElectricLearningStatusView는 기존 Player.CurrentState로 기호와 이름을 표시한다.
+전하량이 0이어도 선택된 상태를 정확히 표시하며, 3번의 q/Q 수치도 유지한다.
+입력, 플레이어 상태, 물리, 레버, 학습 판정은 변경하지 않는다.
+기존 직렬화 참조를 유지하며 C#은 01_Scripts 아래, namespace sung_wook을 사용한다.
+기존 참고 영상: 고박사 비행 슈팅 게임 #02
+https://www.youtube.com/watch?v=t1ucqZYx03E
+확인한 7:44의 직렬화 필드/기존 Text 갱신 구성과 기존 프로젝트 문법을 유지했다.
+
+검증
+원본 씬 스냅샷을 별도 검증 프로젝트의 기존 Scenes 경로에 복사하여 Unity Play Mode로 확인했다.
+49개 검사 통과. 2~5번 각각 실제 Input System KeyboardState의 Space 전환으로 표시와 안내를 확인했다.
+q=0인 0/+/- 상태 표시, 저장된 Text 경계 내 크기, 기존 입력과 학습 조건을 검사했다.
+원본 에디터를 Refresh한 뒤 16:9 Play 화면을 확인하고 Edit Mode로 복귀했다.
+네 실행 화면은 동일한 최종 씬 스냅샷을 렌더링한 2240x1260 ScreenCapture이다.
+이 기록은 네이티브 자동화 키 입력으로 수동 플레이를 완주했다는 의미가 아니다.
+
+증거
+Logs/ChargeHudPlayModeReport.json
+Logs/ChargeHudVisualReport.json
+Logs/ChargeHudEditorProof.png
+Logs/ChargeHudStage02.png ~ ChargeHudStage05.png

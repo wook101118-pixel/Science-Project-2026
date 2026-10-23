@@ -1,0 +1,325 @@
+{
+  "status": "passed",
+  "createdUtc": "2026-10-21T11:06:26.9595692Z",
+  "scope": "Assets/@Project/@sung_wook/@Game",
+  "method": "Read-only SHA256 comparison to Gameplay_BeforeHashes.json. Source files are never written. Scene reversals are in memory only. Visual YAML blocks are matched by original fileID and property name.",
+  "baselineFiles": 391,
+  "unchangedFiles": 373,
+  "changedFiles": [
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+      "before": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448",
+      "after": "1B8520EA4E7750E3D2A677B5F9CB405480AEA7771F5884FD9638614DE786BBA6"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+      "before": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE",
+      "after": "E0E9F7D99F1C980804A0A8364518F3DEE09D0B9120EAD533433B3C5B9B87C130"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+      "before": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8",
+      "after": "59A43B627787BD4B152253FF6CCA83984340E94B7C55C48993EE28CCEFE1363E"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+      "before": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C",
+      "after": "2294EF561E30735A4DC759065FB07CF1696FAC23510D9A415BB01F43D41FA5E1"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/CollapsiblePanel.cs",
+      "before": "DE111F9F7CEC21D24147B8BA6ABB24D95AE4A611762FECEFC14CE7B406956D97",
+      "after": "49D8A050F714C9121AAD7BC71E9AF78FE8816C508F0801AA0DC5DA9D5D14B92F"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DistanceLauncher2D.cs",
+      "before": "01F264CAE5B4D769DBAAB88784F8B817B467A4BA3F7A22CAE479843879FCFB81",
+      "after": "2F85B78E2B59E4B7E942C68C6A0D3D40207CEE5963422125A2096B67086D9DDD"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricBall2D.cs",
+      "before": "4B41BCA7245385B67F5E855C745197BBE82DF493059862E21155F1E2F842402D",
+      "after": "36A28F4256A87F14FE70FD6EF58497A66A5DC3F1D80647BA79D10C4FB02C55DE"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricComparisonRecord.cs",
+      "before": "0CE6EF19942FAF547306E9C3DE96840BD43E766FD43382F26E0CFAE6DC55B5E3",
+      "after": "85BE18EBB096E065E8D5749D5FCFD0219A7259C529683E976410E661EA6D0326"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningController2D.cs",
+      "before": "D7BCD50847E1C7C185C1ED8070A817E1A09C702F30EF12FAEEAE0C0F999B7DE2",
+      "after": "E65E5CD544C20A15D9557944DF8FABCFE6E5AF7D67A25E60B4B8194E7F16BC13"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningInput2D.cs",
+      "before": "31BB3119E5E641B1D40F7501E940E00FB3BCCAD4BB58A0E56B21D8DF1B4A1347",
+      "after": "BCC09A0B7D0D0E7E1B4351D47EE456E4741833B7773F8FD180FED97527797645"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageHudView.cs",
+      "before": "936521B0A8336F0C983E5F127845BBEC9F9607DBD3623F3DBEF88064B0233EF9",
+      "after": "5A5D859DAE3E20D54279A59BBAC481B01BBF9947C04CC7A3BBB696FF374AF1D0"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageInput2D.cs",
+      "before": "A67AA95A6ABCFC8B51A18DD04C57B77FFA47925B23CE6F124500724EC49EB10B",
+      "after": "D786845400A1E346B7168441F7596D3632EE5DBE8D2B88DE81B66E7B17832E70"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSelector.cs",
+      "before": "2FB6ED5BC210C52EB4287FD501CF1477731864A1034FC8F06211C62CC12A0452",
+      "after": "2F911A7B6442127A4E421D23A22AAA394F8ED4C05090314EA9724689B47347F5"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSession2D.cs",
+      "before": "B96A3C9FCC4B03AB72AD3F4F985EB9CE0574D9AB951A0026A4F700AE8DD44505",
+      "after": "90D1EC421DCEB7B681113B4123D8A3CA5180FDBC18577A3AB899AF09A1B4D60B"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/VoltageLauncher2D.cs",
+      "before": "6F1BCB0D32310D9A15596AE074E64D92B8B1B25B3D4C25909EB80ED77C423DE5",
+      "after": "9947EE30955C8CADE9A698113B8718816354D8BCA04169B5C2AA74CFE70FEAC9"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerMovement.cs",
+      "before": "F7D94C32BCA4A3C80B25F4161010E5FF82FED5A83E3C5228C877905F765B60FF",
+      "after": "5EE65F8A83043D0094334CF158156C27BCDC1FA5E104DF7B0912E727A8172B03"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab",
+      "before": "DC63DF8A7D9603999D8F8A288DD1D0605ABB7B34EE497123FF09194756A1BEEE",
+      "after": "CBE74986C959999A79A3F8774DED9BB8D92170A4ADE25694A458BA4E715A1D5F"
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab",
+      "before": "3D97EB594AE39D07E85B79B7B5032A4A5C27E9B3F48BB9BFD99AD96011435EFD",
+      "after": "65D20D371BD392AA46953D1FE18B6AAB59DADE046F71B127BF0BD568A64623E3"
+    }
+  ],
+  "missingFiles": [],
+  "addedFiles": [
+    "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs",
+    "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs.meta"
+  ],
+  "newFilesAudit": {
+    "expectedFunctionalFiles": [
+      "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs",
+      "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs.meta"
+    ],
+    "unexpected": [],
+    "noNewArt": true
+  },
+  "existingMediaAndMaterials": {
+    "count": 30,
+    "changed": [],
+    "allUnchanged": true,
+    "byExtension": [
+      {
+        "Name": ".aseprite",
+        "Count": 19
+      },
+      {
+        "Name": ".mat",
+        "Count": 1
+      },
+      {
+        "Name": ".ogg",
+        "Count": 3
+      },
+      {
+        "Name": ".otf",
+        "Count": 2
+      },
+      {
+        "Name": ".png",
+        "Count": 1
+      },
+      {
+        "Name": ".shadergraph",
+        "Count": 1
+      },
+      {
+        "Name": ".ttf",
+        "Count": 3
+      }
+    ]
+  },
+  "existingMetadata": {
+    "count": 199,
+    "changed": [],
+    "allUnchanged": true
+  },
+  "uiVisualResourceFields": [
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab",
+      "comparedVisualFieldBlocks": 74,
+      "unchanged": true,
+      "differentVisualFields": []
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab",
+      "comparedVisualFieldBlocks": 68,
+      "unchanged": true,
+      "differentVisualFields": []
+    }
+  ],
+  "allowedTypographyChange": "Learning_Objective_Panel help-toggle label keeps its original font asset/material/colors; m_fontSize and m_fontSizeBase change 85 to 30 to display the Korean open/close label. Font resource preservation does not mean unchanged text size.",
+  "sceneReversalChecks": [
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+      "reversedDecelerationFields": 1,
+      "expectedBeforeHash": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448",
+      "reversedHash": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448",
+      "exactBaselineAfterMemoryReversal": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+      "reversedDecelerationFields": 1,
+      "expectedBeforeHash": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE",
+      "reversedHash": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE",
+      "exactBaselineAfterMemoryReversal": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+      "reversedDecelerationFields": 1,
+      "expectedBeforeHash": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C",
+      "reversedHash": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C",
+      "exactBaselineAfterMemoryReversal": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+      "reversedDecelerationFields": 1,
+      "fieldWidthAndRailChanges": [
+        {
+          "document": "1404593038",
+          "before": "  m_LocalPosition: {x: -3, y: -1.95, z: 0}",
+          "after": "  m_LocalPosition: {x: 1.55, y: -1.95, z: 0}"
+        },
+        {
+          "document": "1404593038",
+          "before": "  m_LocalScale: {x: 2.2, y: 3.88, z: 1}",
+          "after": "  m_LocalScale: {x: 11.3, y: 3.88, z: 1}"
+        },
+        {
+          "document": "737160925",
+          "before": "  m_LocalPosition: {x: -1.65, y: -1.8, z: 0}",
+          "after": "  m_LocalPosition: {x: 7.45, y: -1.8, z: 0}"
+        },
+        {
+          "prefabInstance": "6883389185584763296",
+          "target": "4621037390891271464",
+          "property": "m_Offset.x",
+          "addedValue": "4.55"
+        },
+        {
+          "prefabInstance": "6883389185584763296",
+          "target": "4621037390891271464",
+          "property": "m_Size.x",
+          "addedValue": "11.3"
+        },
+        {
+          "prefabInstance": "6883389185584763296",
+          "target": "6206326342329191123",
+          "property": "m_LocalPosition.x",
+          "addedValue": "4.55"
+        },
+        {
+          "prefabInstance": "6883389185584763296",
+          "target": "6206326342329191123",
+          "property": "m_LocalScale.x",
+          "addedValue": "11.3"
+        },
+        {
+          "prefabInstance": "6883389185584763296",
+          "target": "6008083732987843087",
+          "property": "m_LocalPosition.x",
+          "addedValue": "4.55"
+        },
+        {
+          "prefabInstance": "6883389185584763296",
+          "target": "6008083732987843087",
+          "property": "m_LocalScale.x",
+          "addedValue": "11.3"
+        }
+      ],
+      "expectedBeforeHash": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8",
+      "reversedHash": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8",
+      "exactBaselineAfterMemoryReversal": true
+    }
+  ],
+  "launcherSerializedDefaults": [
+    {
+      "file": "DistanceLauncher2D.cs",
+      "parameterCount": 9,
+      "unchanged": true,
+      "parameters": [
+        "        [SerializeField] private Polarity sourcePolarity = Polarity.Positive;",
+        "        [SerializeField, Range(0f, 10f)] private float sourceMagnitude = 1f;",
+        "        [SerializeField] private float coulombConstant = 16f;",
+        "        [SerializeField] private float minimumDistance = 0.5f;",
+        "        [SerializeField] private float maximumForce = 80f;",
+        "        [SerializeField] private float pulseSeconds = 0.4f;",
+        "        [SerializeField] private float activationRadius = 3f;",
+        "        [SerializeField] private float cooldown = 0.5f;",
+        "        [SerializeField] private bool keyboardLaunch = true;"
+      ]
+    },
+    {
+      "file": "VoltageLauncher2D.cs",
+      "parameterCount": 6,
+      "unchanged": true,
+      "parameters": [
+        "        [SerializeField, Min(0.01f)] private float maximumVoltage = 100f;",
+        "        [SerializeField, Min(0f)] private float chargeRate = 25f;",
+        "        [SerializeField, Min(0f)] private float leakRate;",
+        "        [SerializeField, Min(0f)] private float targetVoltage = 50f;",
+        "        [SerializeField, Min(0f)] private float cooldown = 0.5f;",
+        "        [SerializeField] private bool keyboardLaunch = true;"
+      ]
+    }
+  ],
+  "movementSerializedDefaults": {
+    "parameterCount": 5,
+    "unchangedExceptDeclaredDeceleration": true,
+    "allowedChange": "deceleration 3 to 9",
+    "before": [
+      "        [SerializeField] private float jumpForce = 7f;",
+      "        [SerializeField] private float moveSpeed = 4f;",
+      "        [SerializeField] private float maxMoveSpeed = 7f;",
+      "        [SerializeField] private float acceleration = 5f;",
+      "        [SerializeField] private float deceleration = 3f;"
+    ],
+    "after": [
+      "        [SerializeField] private float jumpForce = 7f;",
+      "        [SerializeField] private float moveSpeed = 4f;",
+      "        [SerializeField] private float maxMoveSpeed = 7f;",
+      "        [SerializeField] private float acceleration = 5f;",
+      "        [SerializeField] private float deceleration = 9f;"
+    ]
+  },
+  "unchangedPhysicsSources": [
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricMath.cs",
+      "hashUnchanged": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ContactCharger2D.cs",
+      "hashUnchanged": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/UniformField2D.cs",
+      "hashUnchanged": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricForceSample.cs",
+      "hashUnchanged": true
+    }
+  ],
+  "explicitBehaviorChanges": [
+    "PlayerMovement no-input/opposite-direction braking deceleration: 3 to 9; jump/acceleration/mass/gravity/launch energy are preserved.",
+    "Stage04 existing field/plate width is expanded for the polarity traversal; force magnitude, voltage, vertical field extent and plate separation are preserved.",
+    "Functional checkpoint recovery, mandatory Stage04 traversal records, feedback/help UI and optional challenge persistence are intentional changes."
+  ],
+  "auditLimit": "Baseline covers the 391 files under the sung_wook game folder, not every unrelated asset in the Unity project. This is an asset/data preservation audit, not a replacement for runtime play verification."
+}

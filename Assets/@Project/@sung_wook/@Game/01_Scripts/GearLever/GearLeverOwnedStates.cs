@@ -1,59 +1,33 @@
-using sung_wook;
-using UnityEngine;
-
-namespace GearLeverOwnedStates
+namespace sung_wook
 {
-    public class NeutralState : State<GearLever>
+                 
+                                                    
+                                                 
+                  
+    public static class GearLeverOwnedStates
     {
-        public override void Enter(GearLever entity)
+                                         
+        public sealed class NeutralState : State<GearLever>
         {
-            Debug.Log("Neutral");
+            public override void Enter(GearLever entity) { }
+            public override void Execute(GearLever entity) { }
+            public override void Exit(GearLever entity) { }
         }
 
-        public override void Execute(GearLever entity)
+                                          
+        public sealed class PositiveState : State<GearLever>
         {
-            
+            public override void Enter(GearLever entity) { }
+            public override void Execute(GearLever entity) { }
+            public override void Exit(GearLever entity) { }
         }
 
-        public override void Exit(GearLever entity)
+                                          
+        public sealed class NegativeState : State<GearLever>
         {
-            Debug.Log("Neutral Exit");
-        }
-    }
-
-    public class PositiveState : State<GearLever>
-    {
-        public override void Enter(GearLever entity)
-        {
-            
-        }
-
-        public override void Execute(GearLever entity)
-        {
-            
-        }
-
-        public override void Exit(GearLever entity)
-        {
-            
-        }
-    }
-    
-    public class NegativeState : State<GearLever>
-    {
-        public override void Enter(GearLever entity)
-        {
-            
-        }
-
-        public override void Execute(GearLever entity)
-        {
-            
-        }
-
-        public override void Exit(GearLever entity)
-        {
-            
+            public override void Enter(GearLever entity) { }
+            public override void Execute(GearLever entity) { }
+            public override void Exit(GearLever entity) { }
         }
     }
 }

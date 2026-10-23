@@ -1,0 +1,958 @@
+{
+  "status": "passed",
+  "newSourceAssetFiles": [],
+  "spriteAllowlist": {
+    "Normal_Block": [
+      -4811868259617723127,
+      "722c3c5c68bb3ff4a86ac7c11b654af9"
+    ],
+    "Falling_Block": [
+      149281472327576391,
+      "a13a5052c514b284ca45ea7a86974ec5"
+    ],
+    "Star": [
+      1829968164609653595,
+      "63965c769966e3c408605d28f6d68153"
+    ],
+    "Door": [
+      2997777510098346555,
+      "8686993a80ed8f94cbbfb25d14975ca2"
+    ],
+    "Plus": [
+      7235916251380086844,
+      "65098d0c25ad8a24bbb75c46d2e5ccb9"
+    ],
+    "Minus": [
+      -776779474669583278,
+      "d37ba1e0c26de5e4285a10cdbe811e74"
+    ]
+  },
+  "prefabs": [
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Movement\\MovingPlatform_01.prefab",
+      "changedDocuments": [
+        {
+          "id": "2214383356140738184",
+          "kind": 212
+        },
+        {
+          "id": "6727590077295201580",
+          "kind": 212
+        },
+        {
+          "id": "5585055129523970222",
+          "kind": 212
+        },
+        {
+          "id": "8153114950159434222",
+          "kind": 212
+        },
+        {
+          "id": "1032288003088064887",
+          "kind": 4
+        },
+        {
+          "id": "3661944540277814231",
+          "kind": 212
+        },
+        {
+          "id": "5948854383946002979",
+          "kind": 212
+        },
+        {
+          "id": "5066804292874341546",
+          "kind": 212
+        },
+        {
+          "id": "618667732772736531",
+          "kind": 212
+        },
+        {
+          "id": "243959378948112008",
+          "kind": 212
+        },
+        {
+          "id": "3846286589557601434",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Lower Edge - Editable",
+          "sprite": "{fileID: 149281472327576391, guid: a13a5052c514b284ca45ea7a86974ec5, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Movement\\MovingPlatform_02.prefab",
+      "changedDocuments": [
+        {
+          "id": "9081777064702695685",
+          "kind": 212
+        },
+        {
+          "id": "2255021420411195949",
+          "kind": 212
+        },
+        {
+          "id": "7722160783326232756",
+          "kind": 212
+        },
+        {
+          "id": "7795336067030140556",
+          "kind": 212
+        },
+        {
+          "id": "5220779655489334165",
+          "kind": 4
+        },
+        {
+          "id": "7031547247468643152",
+          "kind": 212
+        },
+        {
+          "id": "8802249078564904871",
+          "kind": 212
+        },
+        {
+          "id": "8075889603042444705",
+          "kind": 212
+        },
+        {
+          "id": "2220751840785639137",
+          "kind": 212
+        },
+        {
+          "id": "5619680131386276964",
+          "kind": 212
+        },
+        {
+          "id": "2462683566918904215",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Lower Edge - Editable",
+          "sprite": "{fileID: 149281472327576391, guid: a13a5052c514b284ca45ea7a86974ec5, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Movement\\MovingPlatform_03.prefab",
+      "changedDocuments": [
+        {
+          "id": "1140886410565951164",
+          "kind": 4
+        },
+        {
+          "id": "7770413341675933848",
+          "kind": 212
+        },
+        {
+          "id": "896770910176547777",
+          "kind": 212
+        },
+        {
+          "id": "3504443294181658508",
+          "kind": 212
+        },
+        {
+          "id": "3193860303151931424",
+          "kind": 212
+        },
+        {
+          "id": "6462318509102716634",
+          "kind": 212
+        },
+        {
+          "id": "4777455626384876373",
+          "kind": 212
+        },
+        {
+          "id": "8817075599996516723",
+          "kind": 212
+        },
+        {
+          "id": "7052734802606415574",
+          "kind": 212
+        },
+        {
+          "id": "2031375998328180709",
+          "kind": 212
+        },
+        {
+          "id": "6354171764321981013",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Lower Edge - Editable",
+          "sprite": "{fileID: 149281472327576391, guid: a13a5052c514b284ca45ea7a86974ec5, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage02_Star.prefab",
+      "changedDocuments": [
+        {
+          "id": "6366111924528823363",
+          "kind": 212
+        },
+        {
+          "id": "2849983893509647836",
+          "kind": 212
+        },
+        {
+          "id": "4833141864673345328",
+          "kind": 212
+        },
+        {
+          "id": "2227915995987584229",
+          "kind": 212
+        },
+        {
+          "id": "8990958186291661518",
+          "kind": 212
+        },
+        {
+          "id": "7299133970843946386",
+          "kind": 212
+        },
+        {
+          "id": "8013607885975473564",
+          "kind": 212
+        },
+        {
+          "id": "262749416723069492",
+          "kind": 212
+        },
+        {
+          "id": "1062440636902467103",
+          "kind": 4
+        },
+        {
+          "id": "2631763250458136230",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Star Center",
+          "sprite": "{fileID: 1829968164609653595, guid: 63965c769966e3c408605d28f6d68153, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage03_Star.prefab",
+      "changedDocuments": [
+        {
+          "id": "8163199114905761903",
+          "kind": 212
+        },
+        {
+          "id": "8272889589415032784",
+          "kind": 212
+        },
+        {
+          "id": "7944060837937290118",
+          "kind": 212
+        },
+        {
+          "id": "9220401344121872390",
+          "kind": 4
+        },
+        {
+          "id": "8228253667022045078",
+          "kind": 212
+        },
+        {
+          "id": "8705525138677816408",
+          "kind": 212
+        },
+        {
+          "id": "6170129880567612959",
+          "kind": 212
+        },
+        {
+          "id": "3825820667586427453",
+          "kind": 212
+        },
+        {
+          "id": "7396108451763566781",
+          "kind": 212
+        },
+        {
+          "id": "2414650008925202013",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Star Center",
+          "sprite": "{fileID: 1829968164609653595, guid: 63965c769966e3c408605d28f6d68153, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage05_Star.prefab",
+      "changedDocuments": [
+        {
+          "id": "4423164630985812736",
+          "kind": 212
+        },
+        {
+          "id": "3247643679790694553",
+          "kind": 212
+        },
+        {
+          "id": "5485868912322803208",
+          "kind": 212
+        },
+        {
+          "id": "8368191788238835981",
+          "kind": 212
+        },
+        {
+          "id": "2515707788630095138",
+          "kind": 212
+        },
+        {
+          "id": "1738103109208514911",
+          "kind": 212
+        },
+        {
+          "id": "1478821590548143326",
+          "kind": 4
+        },
+        {
+          "id": "5841558747809076558",
+          "kind": 212
+        },
+        {
+          "id": "2836793073187429434",
+          "kind": 212
+        },
+        {
+          "id": "199881489055369513",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Star Center",
+          "sprite": "{fileID: 1829968164609653595, guid: 63965c769966e3c408605d28f6d68153, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage04_Star.prefab",
+      "changedDocuments": [
+        {
+          "id": "3334721104027126040",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Visual",
+          "sprite": "{fileID: 1829968164609653595, guid: 63965c769966e3c408605d28f6d68153, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage03_Exit.prefab",
+      "changedDocuments": [
+        {
+          "id": "6339577966823952520",
+          "kind": 212
+        },
+        {
+          "id": "356359019215152766",
+          "kind": 212
+        },
+        {
+          "id": "8132845374056811195",
+          "kind": 212
+        },
+        {
+          "id": "5992619824487364958",
+          "kind": 212
+        },
+        {
+          "id": "8583823333746752426",
+          "kind": 212
+        },
+        {
+          "id": "8323940607875489987",
+          "kind": 212
+        },
+        {
+          "id": "8021320793072780781",
+          "kind": 212
+        },
+        {
+          "id": "87166446415976120",
+          "kind": 212
+        },
+        {
+          "id": "5861329491918597796",
+          "kind": 212
+        },
+        {
+          "id": "1860996291415565720",
+          "kind": 212
+        },
+        {
+          "id": "6889884630092890311",
+          "kind": 212
+        },
+        {
+          "id": "3518321377877905687",
+          "kind": 212
+        },
+        {
+          "id": "1111572827609074215",
+          "kind": 212
+        },
+        {
+          "id": "1724110335027846969",
+          "kind": 212
+        },
+        {
+          "id": "354934145252211404",
+          "kind": 212
+        },
+        {
+          "id": "5536035751822629923",
+          "kind": 4
+        },
+        {
+          "id": "705263131752545965",
+          "kind": 212
+        },
+        {
+          "id": "1090233175334007507",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Frame Base",
+          "sprite": "{fileID: 2997777510098346555, guid: 8686993a80ed8f94cbbfb25d14975ca2, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage04_Exit.prefab",
+      "changedDocuments": [
+        {
+          "id": "6778614189218084627",
+          "kind": 212
+        },
+        {
+          "id": "7276301977367583892",
+          "kind": 212
+        },
+        {
+          "id": "2126764362545679370",
+          "kind": 212
+        },
+        {
+          "id": "7745472346918152215",
+          "kind": 212
+        },
+        {
+          "id": "1677830128472190268",
+          "kind": 212
+        },
+        {
+          "id": "95183724364644703",
+          "kind": 212
+        },
+        {
+          "id": "873289861406931322",
+          "kind": 212
+        },
+        {
+          "id": "419207598677159955",
+          "kind": 212
+        },
+        {
+          "id": "1035964474491015705",
+          "kind": 212
+        },
+        {
+          "id": "7168761316303216749",
+          "kind": 212
+        },
+        {
+          "id": "8843177461832211149",
+          "kind": 4
+        },
+        {
+          "id": "5638062916363855114",
+          "kind": 212
+        },
+        {
+          "id": "4799321601895607758",
+          "kind": 212
+        },
+        {
+          "id": "6885239293290400257",
+          "kind": 212
+        },
+        {
+          "id": "7463082111389678645",
+          "kind": 212
+        },
+        {
+          "id": "8650452002803027710",
+          "kind": 212
+        },
+        {
+          "id": "1480696606030243753",
+          "kind": 212
+        },
+        {
+          "id": "7742868205348597667",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Frame Base",
+          "sprite": "{fileID: 2997777510098346555, guid: 8686993a80ed8f94cbbfb25d14975ca2, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Progress\\Stage05_Exit.prefab",
+      "changedDocuments": [
+        {
+          "id": "2770631517645594531",
+          "kind": 212
+        },
+        {
+          "id": "6857220652398532358",
+          "kind": 4
+        },
+        {
+          "id": "6336414279832449393",
+          "kind": 212
+        },
+        {
+          "id": "1717966557229365629",
+          "kind": 212
+        },
+        {
+          "id": "623255800685611996",
+          "kind": 212
+        },
+        {
+          "id": "7516074877863657906",
+          "kind": 212
+        },
+        {
+          "id": "5859499271846427821",
+          "kind": 212
+        },
+        {
+          "id": "5007605068470807024",
+          "kind": 212
+        },
+        {
+          "id": "484079624574333402",
+          "kind": 212
+        },
+        {
+          "id": "1756560231808762993",
+          "kind": 212
+        },
+        {
+          "id": "8170704022793937372",
+          "kind": 212
+        },
+        {
+          "id": "2278497902577839099",
+          "kind": 212
+        },
+        {
+          "id": "6658271651490425269",
+          "kind": 212
+        },
+        {
+          "id": "246155897232664404",
+          "kind": 212
+        },
+        {
+          "id": "5536966443292269846",
+          "kind": 212
+        },
+        {
+          "id": "9190233599161608378",
+          "kind": 212
+        },
+        {
+          "id": "4984981432231598237",
+          "kind": 212
+        },
+        {
+          "id": "4088826798737115088",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Frame Base",
+          "sprite": "{fileID: 2997777510098346555, guid: 8686993a80ed8f94cbbfb25d14975ca2, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Electric\\DistanceForceLauncher.prefab",
+      "changedDocuments": [
+        {
+          "id": "4890093039944316060",
+          "kind": 212
+        },
+        {
+          "id": "4804172420847533667",
+          "kind": 212
+        },
+        {
+          "id": "5367378698207695372",
+          "kind": 212
+        },
+        {
+          "id": "1508977857883375223",
+          "kind": 212
+        },
+        {
+          "id": "5619171502752333267",
+          "kind": 212
+        },
+        {
+          "id": "2855342186213819329",
+          "kind": 212
+        },
+        {
+          "id": "4167329858141622845",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Moving Charge Source",
+          "sprite": "{fileID: 7235916251380086844, guid: 65098d0c25ad8a24bbb75c46d2e5ccb9, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Electric\\UniformElectricField.prefab",
+      "changedDocuments": [
+        {
+          "id": "211402456985957487",
+          "kind": 212
+        },
+        {
+          "id": "6093381383570859691",
+          "kind": 212
+        },
+        {
+          "id": "8496799536055019706",
+          "kind": 212
+        },
+        {
+          "id": "1742527962206862256",
+          "kind": 212
+        },
+        {
+          "id": "2854164238757038621",
+          "kind": 212
+        },
+        {
+          "id": "3135766633063855977",
+          "kind": 212
+        },
+        {
+          "id": "7572696244158226025",
+          "kind": 212
+        },
+        {
+          "id": "3823474589725042777",
+          "kind": 212
+        },
+        {
+          "id": "9078498329310500572",
+          "kind": 212
+        },
+        {
+          "id": "5434406380889033076",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Lower Plate",
+          "sprite": "{fileID: -4811868259617723127, guid: 722c3c5c68bb3ff4a86ac7c11b654af9, type: 3}"
+        },
+        {
+          "object": "Upper Plate",
+          "sprite": "{fileID: -4811868259617723127, guid: 722c3c5c68bb3ff4a86ac7c11b654af9, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Electric\\VanDeGraaffLauncher.prefab",
+      "changedDocuments": [
+        {
+          "id": "4870917307823139737",
+          "kind": 212
+        },
+        {
+          "id": "2018075103537689855",
+          "kind": 212
+        },
+        {
+          "id": "2880455220596339443",
+          "kind": 212
+        },
+        {
+          "id": "3505747174693002815",
+          "kind": 212
+        },
+        {
+          "id": "5006562050149961777",
+          "kind": 212
+        },
+        {
+          "id": "7684457995307120228",
+          "kind": 212
+        },
+        {
+          "id": "456897346012972816",
+          "kind": 212
+        },
+        {
+          "id": "6990204635102394923",
+          "kind": 212
+        },
+        {
+          "id": "8123338562396809555",
+          "kind": 212
+        },
+        {
+          "id": "4514979616912261489",
+          "kind": 212
+        },
+        {
+          "id": "5856562629659468215",
+          "kind": 212
+        },
+        {
+          "id": "533126505645885118",
+          "kind": 212
+        },
+        {
+          "id": "6892241446401095225",
+          "kind": 212
+        },
+        {
+          "id": "5354007217389539075",
+          "kind": 212
+        },
+        {
+          "id": "1275463070545165989",
+          "kind": 212
+        },
+        {
+          "id": "2691064142288702450",
+          "kind": 212
+        },
+        {
+          "id": "9077691457802650979",
+          "kind": 212
+        },
+        {
+          "id": "6516778547413503743",
+          "kind": 212
+        },
+        {
+          "id": "7040939849861773250",
+          "kind": 212
+        },
+        {
+          "id": "6697995820685706920",
+          "kind": 212
+        },
+        {
+          "id": "2266367119689993602",
+          "kind": 212
+        },
+        {
+          "id": "1389557285841602195",
+          "kind": 212
+        },
+        {
+          "id": "8007873238680528577",
+          "kind": 212
+        },
+        {
+          "id": "5324456482800068767",
+          "kind": 212
+        },
+        {
+          "id": "3240055892249655078",
+          "kind": 212
+        },
+        {
+          "id": "4417439892114537898",
+          "kind": 212
+        },
+        {
+          "id": "6641391910437095574",
+          "kind": 212
+        },
+        {
+          "id": "445528114362927447",
+          "kind": 212
+        },
+        {
+          "id": "4835225049988714744",
+          "kind": 212
+        },
+        {
+          "id": "8607644915110493083",
+          "kind": 212
+        },
+        {
+          "id": "7258418178735359690",
+          "kind": 212
+        },
+        {
+          "id": "5694460761537927303",
+          "kind": 212
+        },
+        {
+          "id": "5248209032578809369",
+          "kind": 212
+        },
+        {
+          "id": "5053350058988330787",
+          "kind": 212
+        },
+        {
+          "id": "8113586624065365040",
+          "kind": 212
+        },
+        {
+          "id": "5013168179385313418",
+          "kind": 212
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [
+        {
+          "object": "Negative Plate",
+          "sprite": "{fileID: -4811868259617723127, guid: 722c3c5c68bb3ff4a86ac7c11b654af9, type: 3}"
+        },
+        {
+          "object": "Charge Dome",
+          "sprite": "{fileID: 7235916251380086844, guid: 65098d0c25ad8a24bbb75c46d2e5ccb9, type: 3}"
+        },
+        {
+          "object": "Belt Housing",
+          "sprite": "{fileID: -4811868259617723127, guid: 722c3c5c68bb3ff4a86ac7c11b654af9, type: 3}"
+        },
+        {
+          "object": "Positive Plate",
+          "sprite": "{fileID: -4811868259617723127, guid: 722c3c5c68bb3ff4a86ac7c11b654af9, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Electric\\ContactChargingStation.prefab",
+      "changedDocuments": [
+        {
+          "id": "1203550420755669649",
+          "kind": 212
+        },
+        {
+          "id": "2481403581249980238",
+          "kind": 212
+        },
+        {
+          "id": "1116288182258979800",
+          "kind": 212
+        },
+        {
+          "id": "6938728993814054935",
+          "kind": 212
+        },
+        {
+          "id": "5793827817059527934",
+          "kind": 4
+        },
+        {
+          "id": "5129962684056963254",
+          "kind": 212
+        },
+        {
+          "id": "2093923957761826071",
+          "kind": 114
+        }
+      ],
+      "addedDocuments": [
+        "710210001000000001",
+        "710210001000000002",
+        "710210001000000003"
+      ],
+      "activeSprites": [
+        {
+          "object": "Contact Electrode",
+          "sprite": "{fileID: -4811868259617723127, guid: 722c3c5c68bb3ff4a86ac7c11b654af9, type: 3}"
+        }
+      ],
+      "gameplayComponentsAndCollidersPreserved": true
+    },
+    {
+      "prefab": "Assets\\@Project\\@sung_wook\\@Game\\02_Prefabs\\Modules\\Terrain\\HexBackground.prefab",
+      "changedDocuments": [
+        {
+          "id": "2740304450976579873",
+          "kind": 1839735485
+        }
+      ],
+      "addedDocuments": [],
+      "activeSprites": [],
+      "gameplayComponentsAndCollidersPreserved": true
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+from pathlib import Path
+import json,datetime,hashlib
+
+root=Path(__file__).resolve().parents[1]
+def read(name): return json.loads((root/f'Logs/{name}.json').read_text(encoding='utf-8-sig'))
+suite=read('Beginner_SuiteStatus')
+if suite['status']!='passed':raise RuntimeError('Do not publish an unfinished suite.')
+names=[r['name'] for r in suite['completed']]
+reports={n:read(n) for n in names}
+if any(r['status']!='passed' for r in reports.values()):raise RuntimeError('A required report failed.')
+build=read('Beginner_BuildReport');assets=read('Beginner_AssetPreservation')
+hashes=read('Beginner_SourceBuildHashes');decoration=read('Beginner_TutorialDecoration')
+if build['status']!='passed' or assets['status']!='passed' or any(not h['cloneMatches'] for h in hashes):raise RuntimeError('Build/asset provenance failed.')
+for item in hashes:
+    if hashlib.sha256((root/item['path']).read_bytes()).hexdigest().upper()!=item['sha256'].upper():raise RuntimeError('Source changed after QA: '+item['path'])
+checks=sum(len(r.get('checks',[])) for r in reports.values())
+tutorial=reports['Beginner_Tutorial'];routes=reports['Beginner_Routes']['routes']
+alternatives=[reports[n]['routes'][0] for n in ('Beginner_Alt2','Beginner_Alt3','Beginner_Alt5')]
+stage4=next(r for r in routes if r['stage']==4);stage5=next(r for r in routes if r['stage']==5)
+persist=reports['Beginner_MenusRead'];hud=reports['Beginner_Hud'];smoke=reports['Beginner_Smoke']
+summary={
+ 'status':'passed','createdUtc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ 'implementation':['Persistent task and separate feedback; field progress/status','Prepared/flying mode, Backspace/R, safe readable help',
+ 'Named challenge results and unlocked practice; async/fade preserved','Selectable existing-mechanic plans for stages2/3/5',
+ 'Stage01 tutorial on the existing map'],
+ 'checks':checks,'checksByRun':[{k:v for k,v in x.items()} for x in suite['completed']],
+ 'tutorial':{k:tutorial.get(k) for k in ('status','actualGroundEvents','actualContactEvents','actualStarEvents','actualGoalEvents','physicsUnchanged','allBallSamplesInsideCamera','maximumRetryCount','stage2Loaded','unlockedStage2')},
+ 'baseRoutes':[{k:r.get(k) for k in ('stage','status','retryCount','launchVoltage','physicsSettingsUnchanged','realStarEvent','realGoalEvent','chosenPlanSatisfied','earnedChallengeFlags')} for r in routes],
+ 'alternativeRoutes':[{k:r.get(k) for k in ('stage','status','retryCount','launchVoltage','selectedPlan','chosenPlanSatisfied','planRecordSaved','earnedChallengeFlags')} for r in alternatives],
+ 'fieldObservations':{k:stage4.get(k) for k in ('fieldAscentMeters','neutralFieldDescentMeters','negativeFieldBrakeSeconds','fieldAscentObserved','neutralFieldDescentObserved','negativeFieldBrakeObserved')},
+ 'build':build,'productionSourceFilesMatched':len(hashes),'assetAudit':'Logs/Beginner_AssetPreservation.json',
+ 'decorationAudit':decoration,'preferenceRestoration':read('Beginner_PreferencesRestored'),
+ 'executable':'Builds/BeginnerRelease/Scince.exe',
+ 'validationConfiguration':{'developmentBuild':False,'graphicsApi':'Direct3D11','cloneRunInBackground':True,
+ 'sourcePlayerSettingsPreserved':True,'qaProbes':'Opt-in command line only; inactive in an ordinary launch.'},
+ 'limitations':['Automated input/API route validation and isolated functional fixtures, not a human novice playtest.',
+ 'Optional strategies use the existing map; optional goals never block ordinary completion.',
+ 'The early hidden-window captures were black and were replaced by visible-window final captures.',
+ 'The negative-brake PNG can show the result screen because capture is deferred; real braking is verified separately in the route JSON.']}
+doc=root/'Docs/Gameplay_Beginner_Improvements_2026-10-21'
+doc.with_suffix('.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+rows='\n'.join(f"  {r['stage']}번 | 통과 | 기본 물리 유지 | 복귀 {r['retryCount']}회"+(f" | 실제 {r['launchVoltage']:.8f} V 발사" if r['stage']==5 else '') for r in routes)
+case_rows='\n'.join(f"  {x['name']}: {x['checks']}건 통과" for x in suite['completed'] if x['checks'])
+text=f'''초보자 재평가 개선 및 튜토리얼 구현·실행 빌드 검증 | 2026-10-21
+결과: 재평가 1~4순위 개선과 기존 1번 맵의 튜토리얼 연결을 적용했다.
+기존 이미지·스프라이트·음원·글꼴·재질·색상은 유지했고 새 아트 에셋은 만들지 않았다.
+2~5번의 저장된 맵과 물리 설정 파일은 이번 작업 전과 동일하다.
+
+1. 우선순위에 따른 적용
+
+1순위 — 현재 행동과 4번 판정 상태
+  상단 현재 할 일은 항상 남긴다. 입력 거절·성공·복귀 메시지는 하단 별도 행에 표시한다.
+  4번은 장 안/밖, 연속 상승·중성 하강 거리, 하강 중 음전하 제동 상태와 진행을 보여 준다.
+  새 메시지 때문에 다음 제동 행동이 사라지지 않는다. 필수 상승·하강·제동 조건은 유지했다.
+
+2순위 — 준비/이동 구분, 복귀 발견성, 읽기 안전성
+  3번 준비에는 공 고정을, 발사 뒤에는 A/D 착지를 명시한다.
+  Backspace 최근 발판/진행 유지와 R 전체 초기화를 기본 조작 안내에서 구분한다.
+  도움말을 열면 기존 일시정지 관리자가 게임과 입력을 멈춘다. 닫기/Esc는 원래 시간 배율과 입력을 복원한다.
+  기존 Text/Rect/버튼을 반응형으로 배치해 640×480에서도 핵심·본문·선택 버튼에 실제 화면 14px 이상을 확보한다.
+  같은 글꼴과 색을 사용하며, 큰 화면에서도 현재 행동·측정·피드백을 분리한다.
+
+3순위 — 달성 결과와 연습 진입
+  도전별 진행, 이번 완주 획득, 이전 기록, 신기록을 이름과 함께 표시한다.
+  4번은 전환 4회 이내와 현재 횟수를 구분한다.
+  완료 후 결과창이 남아 다음 단계/현재 스테이지 재도전/메인 메뉴를 고를 수 있다.
+  마지막 결과에서는 튜토리얼부터 새 캠페인을 시작할 수 있다.
+  메인 메뉴의 스테이지 연습은 해금된 1~5번을 직접 연다. 잠긴 단계는 버튼과 공개 명령 양쪽에서 거절한다.
+  해금·선택 도전·풀이 기록은 재실행 후 유지된다. 기존 SFX/화면 설정 공유도 유지했다.
+
+4순위 — 기존 장치를 활용하는 선택 풀이
+  기존 도움말 버튼 스타일 두 개로 다음 계획을 선택한다. 새 지형·그림이나 추가 필수 출구 조건은 없다.
+  2번: 접촉 후 중성으로 안전 이동 / 전하를 유지하며 힘과 관성 조절.
+    전극에서 실제로 떨어진 뒤 중성으로 바꾸도록 안내한다. 선택 부호로 실제 수평 이동 2 이상을 관찰한다.
+  3번: 전하량을 유지하고 거리만 비교 / 거리를 유지하고 공 전하량만 비교.
+    대안은 준비 중 q=0.5로 기준 저장 후 q=1로 비교하는 절차를 안내한다.
+    적격 준비 발사의 별도 표본을 보관해 공중 재발사가 풀이 기록을 만들거나 지우지 못한다.
+  5번: 50 V 효율 발사 / 55 V 여유 발사. 기존 발판으로 A/D 착지 조절을 이어 간다.
+    실제 발사 전압으로 선택 풀이를 판정한다. 기본 목표 50 V 이상은 유지된다.
+  선택 풀이 미달은 일반 완주를 막지 않는다. 두 풀이의 완주 기록을 따로 저장한다.
+
+2. 기존 Stage01 맵의 튜토리얼
+
+  실제 자동 바운스 → A/D 양방향 이동 → Space 0/+/-/0 한 바퀴 → 실제 레버 드래그 →
+  중성 공의 실제 접촉 대전 → 기존 왼쪽 별 → 기존 오른쪽 출구로 진행한다.
+  Backspace/R 사용을 강요하지 않고 설명한다. 전체 재시작은 튜토리얼 시도도 초기화한다.
+  기존 충전장치 하나를 레버 옆으로 옮겨 원격 조작 왕복을 줄였다.
+    전극 대기 (-14.7,-3.7), 접촉 (-13.8,-3.7), 레버 (-13.5,-4.5).
+  지형·별·출구·카메라 경로는 유지했다. 일반 제동만 본게임과 같은 9로 맞췄다.
+  독립된 기존 얼굴 장식은 배율 20→3, 정렬 0→-90으로 줄여 공과 경로가 보이게 했다.
+  해당 PNG·색·위치·충돌/스크립트 구성은 그대로다. 두 장식 필드만 되돌리면 직전 검증 씬과 바이트 단위로 일치한다.
+  메인 시작 → Stage01 → Stage02~05를 공통 비동기 로딩·페이드로 연결했다.
+  기존 2~5번 배열을 사용하는 실험 씬의 연결도 호환한다.
+
+3. 검증 중 추가 수정
+
+  가. 효율 도전의 55 V 경계
+    원시 55.005 V가 화면에는 55.0 V로 보이는데 효율 도전에서 미달로 나왔던 불일치를 수정했다.
+    효율 도전은 원시값 >=50 V를 유지하고, 소수점 한 자리 표시값 <=55.0 V로 판정한다.
+    50.0/55.0050468 성공, 49.999/55.1 실패를 검사했다. 원시 전압 저장·필수 목표·물리는 유지했다.
+
+  나. 도움말 정지 중 준비 안내/측정 소실
+    읽기 일시정지가 발사 공급자까지 비활성화해 준비 안내와 측정값이 바뀌던 문제를 수정했다.
+    공급자는 읽기 위해 활성 상태를 유지하고, 정지/전환 중 E 입력과 직접 발사 요청은 거절한다.
+    정지 직전 대기 요청도 동기 취소한다. 재개 후 숨은 발사가 발생하지 않는지 검사했다.
+
+4. 최종 Windows 실행 빌드 결과
+
+  Unity {build['unity']} / Windows x64 / Direct3D11 / 비개발 빌드.
+  빌드 오류 {build['totalErrors']}건. 실제 실행 기기: NVIDIA GeForce RTX 5070 Ti Laptop GPU.
+  저장된 실제 씬·충돌·전하·별·출구·결과창·비동기 씬 전환을 사용했다.
+  경로 검증에서 위치·속도·힘·질량·중력·점프를 덮어쓰거나 가짜 수집/완료 이벤트를 호출하지 않았다.
+
+  단계 | 결과 | 설정 | 복귀
+{rows}
+  1번 튜토리얼: 통과. 실제 바닥 {tutorial['actualGroundEvents']}회, 접촉 {tutorial['actualContactEvents']}회,
+    별 {tutorial['actualStarEvents']}회, 출구 {tutorial['actualGoalEvents']}회 이벤트를 관찰했다.
+    기본 물리 불변, 카메라 범위 유지, 복귀 {tutorial['maximumRetryCount']}회, 실제 Stage02 로드와 해금을 확인했다.
+  2/3/5번 대안 풀이 세 경로도 선택 목표·별·출구·기록 저장까지 통과했다.
+  5번 55 V 대안 실제 전압: {alternatives[-1]['launchVoltage']:.8f} V; 이번 효율 배지 획득도 확인했다.
+  4번 실제 상승 {stage4['fieldAscentMeters']:.5f}, 중성 하강 {stage4['neutralFieldDescentMeters']:.5f},
+    하강 중 음전하 제동 {stage4['negativeFieldBrakeSeconds']:.3f}초를 관찰했다.
+
+  자동 기능 검사 {checks}건 통과:
+{case_rows}
+  이와 별도로 2~5 기본 4경로·대안 3경로, 적격 비교 표본 회귀 4조건, 7개 씬 스모크를 확인했다.
+  실제 UI 640×480/1600×900, 도움말 정지 소유권·원래 배속 복원·발사 큐 차단, 메뉴/설정/SFX,
+  해금·도전·풀이 기록의 새 프로세스 읽기까지 포함한다.
+
+5. 보존·결과물
+
+  생산 파일 {len(hashes)}개가 검증 복사본과 일치하고 최종 QA 뒤에도 동일하다.
+  작업 범위 기존 미디어/재질 {len(assets['existingMediaAndMaterials']['changed'])}개 변경,
+  원본 UI/씬 {len(assets['visualResourceAndColorFields'])}개 파일의 기존 색·스프라이트·글꼴·재질 참조 차이 0.
+  2~5번 저장 씬 전체 해시는 작업 시작 전과 같다. 추가 Assets 파일은 기능 C#과 그 meta뿐이다.
+  QA가 변경한 해상도·음량·음소거·진행 기록은 검증 전 레지스트리 상태로 복원했다.
+  검증용 실행 파일: {root.as_posix()}/Builds/BeginnerRelease/Scince.exe
+  검증 복사본만 Direct3D11·runInBackground=true로 빌드했다. 원본 PlayerSettings는 유지했다.
+  검증용 프로브는 명시적인 QA 명령행에서만 실행되며 일반 실행에는 동작하지 않는다.
+
+6. 검증 해석과 근거
+
+  튜토리얼은 가상 InputSystem 키보드/마우스를 실제 Reader·Controller·LeverMover에 전달했다.
+  2~5번은 A/D에 해당하는 디지털 이동과 공개 전하·레버·학습 명령으로 기본 물리를 진행했다.
+  이는 자동 입력 경로 검증이다. 실제 초보자 모집·수동 완주·재미/독해 시간 조사는 수행하지 않았다.
+  기능 fixture의 위치 격리·상태 검사는 경로 완주 근거와 분리했다.
+  시각 보간 회귀의 대기는 실제 애니메이션과 같은 게임 시간을 사용하며 실시간 watchdog도 둔다.
+  초기에 숨긴 창에서 얻은 검은 캡처는 최종 화면 근거로 쓰지 않았고 표시 창의 실제 캡처로 대체했다.
+  제동 캡처는 EndOfFrame 전에 완료되면 결과창이 보일 수 있어 진행 문구의 증거로 쓰지 않는다.
+  실제 제동 성공은 경로 JSON의 독립 관측값으로 확인했다.
+
+  재평가 원문: Docs/Gameplay_Beginner_Reevaluation_2026-10-21.txt
+  실행/기능/저장/스모크: Logs/Beginner_SuiteStatus.json 및 각 completed[].report
+  기본·대안 경로: Logs/Beginner_Routes.json, Beginner_Alt2.json, Beginner_Alt3.json, Beginner_Alt5.json
+  튜토리얼: Logs/Beginner_Tutorial.json
+  화면/기록: Logs/Beginner_Hud.json, Beginner_MenusRead.json
+  보존: Logs/Beginner_AssetPreservation.json, Beginner_TutorialDecoration.json, Beginner_SourceBuildHashes.json
+  복원: Logs/Beginner_PreferencesRestored.json
+  위 경로는 모두 {root.as_posix()} 아래에 있다.
+'''
+doc.with_suffix('.txt').write_text(text,encoding='utf-8')
+print(json.dumps({'report':str(doc.with_suffix('.txt')),'checks':checks,'baseStage5Voltage':stage5['launchVoltage'],'status':'passed'},ensure_ascii=False))

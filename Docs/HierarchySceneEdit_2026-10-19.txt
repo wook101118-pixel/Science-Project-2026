@@ -1,0 +1,65 @@
+원본 sungwook 씬: Unity 에디터 직접 배치 기록
+작업일: 2026-10-19
+
+대상
+Assets/@Project/@sung_wook/@Game/Scenes/sungwook.unity
+
+이번 수정 방법
+Unity Hub에서 Science-Project-2026 / Unity 6000.3.19f1을 열고,
+Unity의 Load Scene 대화상자로 원본 sungwook 씬을 열었다.
+Hierarchy 검색·선택·Ctrl+D 복제와 Inspector Transform/이름 입력으로 수정하고 Ctrl+S로 저장했다.
+씬 데이터를 작성하는 임시 스크립트, Unity API 배치 도구, 디자인 생성기, 새 C# 파일을 사용하지 않았다.
+기존 스프라이트 Square(guid 311925a002f4447b3a28927169b83ea6)만 복제해 장식 15개를 배치했다.
+각 장식에는 Transform과 SpriteRenderer만 있고 Collider나 기능 스크립트가 없다.
+기존 씬을 바탕으로 한 추가 수정이다. 이전 작업의 모든 그래픽을 수동으로 새로 제작한 것은 아니다.
+
+2번 — 채석장
+Stage 02 > Presentation - Stage 02 (Editable) > Architecture - No Collision
+Quarry Gantry Beam - Hand Placed: 위치 (-0.5, 4.85), 크기 (3.1, 0.18).
+Quarry Cable Joint - Hand Placed / (1): x=-1.65 / 0.65, y=4.85, 크기 0.35.
+Background - No Collision의 기존 Distant Geological Stratum 4개 두께를 0.24에서 0.75로 조정했다.
+매달린 발판의 케이블 연결부와 배경 암반층을 강조했다.
+
+3번 — 낙석 횡단 실험장
+Stage 03 > Presentation - Stage 03 (Editable) > Background - No Collision
+Observation Brace - Hand Placed 3개: 기존 창 프레임 스프라이트를 복제했다.
+x=1 / 4.6 / 8.4, y=3.6, 회전 Z=30, 크기 (0.12, 3).
+Architecture - No Collision의 Gantry Mount 3개 크기를 (0.8, 0.5)로 조정했다.
+파란 낙석의 위치·왕복 범위·속도·충돌체, 섬과 안전 대기 지점은 유지했다.
+
+4번 — 전기장 실험 시설
+Stage 04 > Presentation - Stage 04 (Editable) > Background - No Collision
+Facility Feeder - Hand Placed / (1) / (2): 기존 상부 배선을 복제했다.
+x=1.4 / 4.6 / 6.9, y=3.8, 회전 Z=90, 크기 (1.7, 0.07).
+상부 모선에서 아래로 갈라지는 시설 배선이며, E/F 실험 구역을 가리지 않는다.
+
+5번 — 충전탑 교량
+Stage 05 > Presentation - Stage 05 (Editable) > Architecture - No Collision
+Bridge Cross Brace - Hand Placed 6개: 기존 교량 트러스를 Hierarchy에서 함께 복제했다.
+기존 위치·길이를 유지하고 회전 Z=-62.592, 두께 0.045로 설정해 교차 보강 형태로 배치했다.
+실제 발판·회복 턱·우물·별·출구·전압계·50V 목표선은 유지했다.
+
+저장 및 보존 검사
+편집 중 Stage 02~05의 활성 상태를 Inspector에서 바꾸어 각 맵을 확인했다.
+마지막에 Stage 02만 활성화하고 나머지는 비활성으로 복원한 뒤 저장했다.
+새 오브젝트 ID 15개, Transform 15개, SpriteRenderer 15개가 추가됐다.
+기존 씬 ID는 모두 유지했고, 물리 Transform 및 조상 78개의 위치·회전·크기가 동일하다.
+플레이어·레버·학습 스크립트 및 참조에 예상하지 않은 변화는 없다.
+Unity 저장 시 한국어 문자열의 유니코드 이스케이프와 일부 따옴표 표현이 정규화됐다.
+출구의 기존 null 학습 참조가 명시적으로 직렬화됐고, 비상호작용 Slider의 TargetGraphic은
+Unity OnValidate가 자기 오브젝트의 기존 Image를 연결했다. FillRect와 전압 발사기 참조는 동일하다.
+
+검증 방식
+원본 Unity 에디터에서 Play 렌더링을 확인했다.
+네 스테이지의 기존 자동 완주/학습/클리어/최소 전압 검사와 캡처 도구는 별도 검증 복사본에서 실행한다.
+검증 복사본에는 Ctrl+S로 저장한 원본 씬을 바이트 그대로 복사한다. 배치를 생성하거나 수정하지 않는다.
+검증 코드와 기능 코드는 이번 수정에서 추가하거나 변경하지 않았다.
+마우스·키보드로 직접 완주한 것으로 주장하지 않는다. 완주 결과는 기존 자동 검사 보고서가 기준이다.
+프로젝트 루트 Logs/ElectricHierarchyEdit*Report.json과 ElectricHierarchyStage02~05.png를 참고한다.
+
+최종 검증 결과
+학습 41개, 클리어 조건 35개, 실제 물리 경로 4개, 최소 전압 약 50.5V 경로 통과.
+16:9 실제 Play 캡처 4장 (2240×1260), Missing Script 0개, 실행 오류 0개.
+원본 에디터의 Console 오류/경고 카운트도 0개를 확인했다.
+저장된 씬 SHA256: c8ccf189cec0c0bad7f47e3e1c5a277206af5b22de27ac787277cd5b6b26698e
+Logs/ElectricHierarchyEditSummary.json에 전체 보고서와 캡처 경로를 기록했다.

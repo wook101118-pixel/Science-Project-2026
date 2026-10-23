@@ -1,0 +1,63 @@
+Stage 02~05 공통 UI 및 기믹 모듈
+저장일: 2026-10-21
+
+씬
+Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity ~ Stage_05.unity
+
+프리팹 위치
+Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/
+  Electric/ContactChargingStation: 접촉 대전 전극, 전기력, 고정 이동 기준점.
+  Electric/DistanceForceLauncher: 거리/전하량 비교 발사, 이동 전극과 Far/Near 기준점.
+  Electric/UniformElectricField: 평행판, 전기장 영역, 판 극성과 F=qE.
+  Electric/VanDeGraaffLauncher: 반데그라프 그림, 전극, 발사 영역, 전압 게이지, 충전/발사.
+  Electric/StageLever: 기존 마우스 레버 입력.
+  Movement/MovingPlatform_01~03: 실제 충돌을 유지하는 왕복 발판과 각 이동 주기.
+  Terrain/HexBackground: Stage 2의 육각 배경.
+  Terrain/Stage02_Terrain~Stage05_Terrain: 각 스테이지의 저장된 충돌 타일맵.
+  Progress/Stage02~05_Star 및 _Exit: 실제 수집/클리어 이벤트가 연결된 별과 출구.
+
+Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/
+  Learning_Objective_Panel: 드래그, 0.25초 접기/펼치기, RectMask2D.
+  StageHUD: Stage 2 기준 상단/하단 배치와 중첩 학습 패널.
+
+재사용
+전기 장치와 이동 발판 프리팹은 해당 씬의 Stage XX 아래에 배치한다.
+GameManager의 ElectricStageSceneBootstrap에 현재 Player의 ElectricBall2D,
+현재 Lever의 StageLever2D, Stage Root, Stage Number를 연결한다.
+공/레버는 프리팹 에셋에 저장하지 않으며 씬 인스턴스 또는 같은 씬의 시작 연결을 사용한다.
+이동체와 Rest/Contact/Far/Near 기준점을 함께 포함한 프리팹 루트를 이동해야 한다.
+MovingPlatform의 이동 좌표는 프리팹 내부 부모 좌표이므로 루트를 옮겨도 경로가 따라간다.
+실행 중 새 장치를 추가한 경우 ElectricStageSelector.RefreshModules()로 학습/관측을 갱신할 수 있다.
+
+동작 및 배치
+Stage 3~5에 빠져 있던 시작 연결을 저장하여 각 씬 단독 실행 시 기믹과 학습 판정이 연결된다.
+R은 공/별/기록/전압뿐 아니라 이동 발판의 위치와 이동 주기도 초기화한다.
+상단 HUD는 단계, 학습/별/출구 상태와 거리/힘/전하량/전기장/전압 측정값을 표시한다.
+Stage 3~5의 기존 월드 학습 Canvas는 표시만 끄고 상태 갱신과 효과음은 유지했다.
+Stage 5의 실제 전압 게이지는 계속 표시한다.
+Stage 3~4의 정적 지지면을 Stage 2의 Normal_Block_0 타일로 옮겼다.
+원래 발판의 정확한 지지 높이와 충돌 범위를 보존하고 원래 사각 Collider는 비활성화했다.
+Stage 5의 타일 좌표/전기 에너지는 보존하고 최대 전압의 비행이 보이도록 카메라 크기를 9.2로 조정했다.
+
+입력
+공통: A/D 이동, Space 전하 전환, 마우스 레버, R 재시작.
+Stage 3: T 준비, B 기준 저장, Z/X/C 공 전하량, V/N 전극 전하량, E 비교 발사.
+Stage 4: Z 양전하, X 음전하, C 중성, 레버로 전기장 방향 조절.
+Stage 5: 레버로 충전, 전극 사이에서 E 발사. 학습 조건은 50 V 이상이다.
+
+편집 도구
+Tools > sung_wook > Electric Bounce > Save Stage 02-05 Modules
+저장된 씬을 Stage 2 공통 배치로 다시 맞추고 모듈을 저장한다. 미저장 씬 편집이 있으면 실행하지 않는다.
+수동으로 편집한 UI를 유지하고 싶으면 해당 프리팹을 직접 편집한다.
+
+검증 자료
+Logs/ElectricStageModuleReport.json: 저장된 프리팹/씬, 일시정지 중 버튼 접기, 실제 전기 기믹, 이동 발판/재시작.
+Logs/ElectricModularRouteReport.json: Stage 3~5 기존 이동 입력과 실제 물리 수집/클리어 이벤트 완주.
+Logs/StageModules_Stage02.png ~ StageModules_Stage05.png: 저장한 최종 씬의 16:9 Play 화면.
+검사는 별도 검증 프로젝트에서 실행했으며 검증 중 바꾼 공 위치나 입력 상태를 씬에 저장하지 않는다.
+최종 결과: 기능/저장/표시 검사 60개 통과, Stage 3~5 실제 물리 완주 통과, 누락 스크립트/실행 오류 0개.
+Stage 5 최대 비행 충돌체 높이 8.71은 최종 카메라 상단 9.2 안에 유지된다.
+전달한 프리팹 23개 및 씬 4개는 통과한 검증 복사본과 파일 해시가 동일하다.
+
+후속 진행 연결: StageProgression_2026-10-21.txt 참고.
+공통 HUD에 GameCompleteScreen 프리팹 1개가 추가됐으며 Stage 5 클리어 후 표시한다.

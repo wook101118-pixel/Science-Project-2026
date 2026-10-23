@@ -1,0 +1,22 @@
+[
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplayPreferences.cs",
+    "hash": "B41C1F66856E9132BE3CA0FC549882D4E218DF913E5DAD5E6BB9460F8D77105A"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplaySettingsView.cs",
+    "hash": "95ADD21D3464AC19B66EFCE9B6EB83853B89EC729D904706894E7A11ACD6B9B3"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/MainMenu.unity",
+    "hash": "F77CDC06430DEA3B8953E6450D49EFC1F3C07BE20038739E139F0BD871F11BC8"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/PauseMenu.prefab",
+    "hash": "5A08EAB24BA066B92BFD436337678EB792A3128457FA89FF92E596D6F0D06D58"
+  },
+  {
+    "path": "ProjectSettings/ProjectSettings.asset",
+    "hash": "43703E092E0A2B69287633008D2A3D6730674C6BA7ED908A254B4AC0A66AA7BF"
+  }
+]

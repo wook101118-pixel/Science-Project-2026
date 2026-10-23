@@ -16,6 +16,16 @@ public class LeverMover : MonoBehaviour
 
     void Awake() => cam = Camera.main;
 
+    void OnDisable() => dragging = false;
+
+                                                            
+    public void ResetToRest()
+    {
+        dragging = false;
+        Angle = Value = 0f;
+        if (pivot != null) pivot.localRotation = Quaternion.identity;
+    }
+
     void Update()
     {
         var mouse = Mouse.current;

@@ -16,7 +16,7 @@ struct pixel_t
     float4	faceColor		: COLOR;
     float4	outlineColor	: COLOR1;
     float4	texcoord0		: TEXCOORD0;
-    float4	param			: TEXCOORD1;		// x = weight, y = no longer used
+    float4	param			: TEXCOORD1;		                                 
     float2	mask			: TEXCOORD2;
     #if (UNDERLAY_ON || UNDERLAY_INNER)
     float4	texcoord2		: TEXCOORD3;
@@ -52,7 +52,7 @@ pixel_t VertShader(vertex_t input)
     float weight = lerp(_WeightNormal, _WeightBold, bold) / 4.0;
     weight = (weight + _FaceDilate) * _ScaleRatioA * 0.5;
 
-    // Generate UV for the Masking Texture
+                                          
     float4 clampedRect = clamp(_ClipRect, -2e10, 2e10);
     float2 maskUV = (vert.xy - clampedRect.xy) / (clampedRect.zw - clampedRect.xy);
 
@@ -145,7 +145,7 @@ float4 PixShader(pixel_t input) : SV_Target
     faceColor *= a;
     #endif
 
-    // Alternative implementation to UnityGet2DClipping with support for softness
+                                                                                 
     #if UNITY_UI_CLIP_RECT
     half2 maskSoftness = half2(max(_UIMaskSoftnessX, _MaskSoftnessX), max(_UIMaskSoftnessY, _MaskSoftnessY));
     float2 maskZW = 0.25 / (0.25 * maskSoftness + 1 / scale);

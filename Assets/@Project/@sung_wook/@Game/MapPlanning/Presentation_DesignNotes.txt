@@ -1,0 +1,106 @@
+전기 바운스 — 원본 씬 디자인 정리 (2026-10-19)
+
+적용 씬
+Assets/@Project/@sung_wook/@Game/Scenes/sungwook.unity
+네 스테이지는 다른 씬 파일이 아니라 이 씬의 Electric Bounce Stages 02-05 아래에 있다.
+별도 연결 씬 sungwook_ElectricBounce.unity와 다른 개발자 씬은 이번에 수정하지 않았다.
+
+편집 위치
+- Presentation - Shared Hardware (Editable): 공통 제어함·레버 받침·표시등.
+- Stage 02~05 > Presentation - Stage XX (Editable)
+  Background - No Collision: 배경색, 창, 암반층, 시설의 깊이 표현.
+  Architecture - No Collision: 지지대, 교량 보강재, 케이블, 장치 연결부.
+  Route Markings - No Collision: 이동 구역·안전 대기 지점·하강 표식.
+- Stage 02~05 > Learning UI - Stage XX (Editable World Canvas)
+  Header, 학습/별/출구 배지, 실험 카드, 조작 안내는 저장된 Canvas와 Text/Image이다.
+  Text의 글꼴/문구/크기, Image 색, RectTransform 위치를 Inspector에서 편집한다.
+  Learning UI의 ElectricLearningStatusView는 동적 문구와 상태 배지 참조만 가진다.
+  같은 오브젝트의 AudioSource와 세 AudioClip 슬롯에서 결과 피드백 소리를 바꾼다.
+- Stage 05 > Voltage Gauge - Editable World Canvas: 기존 Slider와 50V 목표선.
+- 각 Map Layout - Stage XX: 실제 Route 발판과 Obstacles - Solid Scene Objects.
+- 각 Star > Star Artwork - Editable / Exit > Exit Gate Artwork - Editable.
+- 각 Electrode Housing - Editable: 실제 전극을 따라 움직이는 테두리와 나사.
+
+Play 전 기본 활성 스테이지는 02이다. 편집하려는 Stage만 활성화하면 다른 맵도 볼 수 있다.
+Play 중에는 2~5, R 재시작, A/D 또는 방향키, 기존 마우스 레버를 사용한다.
+Stage 03: B 기준, E 발사, T 복귀, Z/X/C 공 전하량, V/N 전극 전하량.
+Stage 04: Z 양전하, X 음전하, C 중성. Stage 05: 레버 충전 후 E 발사.
+
+공통 시각 규칙
+충돌 발판의 상단은 밝고 선명한 금속 캡, 몸체는 중간 명도, 배경 구조는 낮은 대비로 구분한다.
+리벳·이음선·끝단·표시등을 동일한 부품 언어로 사용한다. 노란 별과 민트 출구를 강조한다.
+공의 기존 +/−/0 표시와 E/F 화살표는 유지한다. UI 색과 글꼴은 씬에 미리 저장한다.
+기존 큰 영어 제목·긴 월드 TextMesh·이전 배경 그룹은 비활성 보관했다.
+저장된 카메라의 orthographic size는 6.6이며 화면 위·아래에 공통 UI 여백을 두었다.
+
+스테이지별 변경
+02: 따뜻한 암반층·블록 이음선·계단 기둥, 케이블로 매단 천장, 금속 전극과 아래 귀환선.
+03: 짙은 관측창·토성 실루엣·분리된 섬의 추진 지지부, 파란 낙석 3개의 레일과 아래 방향 표식.
+    두 번째 섬 왼쪽에 녹색 안전 대기 지점을 표시했다. 낙석의 원래 이동/충돌은 그대로이다.
+04: 밝은 청록 시설 패널·절연체 장 구역, 우측 통로와 귀환 배선, ①/② 하강 안내.
+    주황 F와 보라 E는 밝은 장 구역 안에서 구분되며 UI에도 방향을 함께 표시한다.
+05: 어두운 고전압 시설·구리색 교량·하부 보강재·충전탑 배선과 깊이 표시등.
+    실제 충전 Slider를 실험 카드 옆에 두고 50V 선과 현재/발사 전압을 표시한다.
+    교량 아래 회복용 턱과 우물의 실제 충돌체는 유지했다.
+
+맵 선정과 학습 판정 보존
+월드 1/7/13/19, 선정 맵 1-19/7-3/13-5/19-11은 BounceMapPlan.txt와 동일하다.
+사이에 5개 테마, 각 테마 학습 적합성·동선·재미 평가 3위 규칙을 바꾸지 않았다.
+모든 원래 학습/입력/레버/물리 MonoBehaviour 직렬화 데이터와 물리 Transform을 유지한다.
+새 충돌체, 플레이어, 입력 처리기는 추가하지 않았다. UI와 장식은 충돌하지 않는다.
+공통 학습 완료+별+출구, 02 실제 접촉, 03 기준 후 조건 변경과 실제 발사,
+04 음전하/아래 장에서 위 힘과 출구의 극성·장 방향, 05 50V 이상 실제 발사를 유지한다.
+
+추가 기능 코드
+01_Scripts/ElectricBounce/ElectricLearningStatusView.cs (namespace sung_wook)
+기존 선택기·학습 상태·힘 관측값을 읽어 미리 제작한 Text, 배지, AudioSource에 연결한다.
+오브젝트·스프라이트·폰트·색·UI 배치·장식 생성이나 저장된 디자인 덮어쓰기는 하지 않는다.
+기준 기록/충전 목표, 학습/별, 클리어 전환 시에만 짧게 소리를 재생한다.
+스테이지 재선택으로 이미 완료된 상태가 보일 때 중복 성공 소리를 내지 않는다.
+관련 Editor 완주 검사에 저장된 UI 참조·한국어 글리프·완료 배지·AudioClip 연결 검사를 더했다.
+기존 ElectricBounceSceneInstaller의 자동 설치와 지형/외형 생성·재배치 코드를 제거했다.
+클래스명·GUID·공개 진입점은 유지하지만 메뉴는 Validate Existing Scene Connections로 바뀌었고,
+저장된 연결을 읽어 보고서만 남긴다. 기존 수작업 씬을 다시 생성하거나 저장하지 않는다.
+ElectricLearningPlayModeCheck는 검증 복사본의 기존 Game View 16:9 프리셋만 선택한다.
+에디터 설정 확인은 Unity 공식 C# 소스를 참고했다. 게임 디자인이나 런타임 기능이 아니다.
+https://github.com/Unity-Technologies/UnityCsReference/blob/master/Editor/Mono/GameView/GameView.cs
+https://github.com/Unity-Technologies/UnityCsReference/blob/master/Editor/Mono/GameView/GameViewSizes.cs
+
+실제로 확인한 참고 코드
+요청 재생목록: https://www.youtube.com/playlist?list=PLC2Tit6NyVicvqMTDJl8e-2IB4v_I7ddd
+고박사의 유니티 노트:
+[Unity 2D Game] 비행 슈팅 게임 #02 - UI 구성, 씬 추가, 애니메이션 재생과 이펙트/효과음
+https://www.youtube.com/watch?v=t1ucqZYx03E
+7:44 화면의 점수 UI 코드: [SerializeField] private 필드, Awake의 GetComponent 캐시,
+Update에서 기존 TextMeshProUGUI의 text 값을 갱신하는 컴포넌트 방식을 확인했다.
+29:45 화면의 Weapon 코드: private AudioSource와 Awake 초기화, 동작 시 audioSource.Play(),
+직렬화 필드, Allman 중괄호·들여쓰기·Unity 이벤트 함수 구성을 확인했다.
+이번 상태 연결은 해당 컴포넌트 구성과 필드/메서드 문법을 참고한 새 코드이다.
+기존 씬의 uGUI Text를 유지하고 세 가지 짧은 소리를 구분하기 위해 PlayOneShot을 사용했다.
+영상에 이번 전기 학습 판정이 구현돼 있다고 주장하거나 재생목록 전체를 확인한 것은 아니다.
+영상의 자동 맵 생성 방식은 사용하지 않았다.
+
+에셋 조사와 출처
+기존 Square/Circle/Triangle, 전극·플레이어·별·문, 기본 재질을 먼저 조사하고 재조합했다.
+프로젝트의 16px 풀/흙 Aseprite 타일은 이번 시설의 재질과 맞지 않아 새 발판에 사용하지 않았다.
+새 유료 에셋이나 패키지는 없다. 추가 정적 에셋은 한국어 글꼴과 짧은 효과음뿐이다.
+Nanum Gothic Regular, SIL OFL 1.1:
+https://github.com/google/fonts/tree/main/ofl/nanumgothic
+08_Presentation/Fonts/NanumGothic-Regular.ttf 및 OFL.txt.
+Kenney Interface Sounds, CC0:
+https://kenney.nl/assets/interface-sounds
+03_Sounds/LearningFeedback/confirmation_001.ogg, select_001.ogg, pluck_001.ogg 및 License.txt.
+
+검증 증거
+프로젝트와 같은 Unity 6000.3.19f1의 별도 검증 복사본에서 원본 씬 파일을 그대로 실행한다.
+원본 씬 해시 일치, 기존 물리·컴포넌트 보존, 학습/차단/실제 경로/최소 전압/실행 화면을 검사한다.
+완주 검사는 기존 PlayerMovement.SetMovex와 공개 학습/레버 명령을 사용하며,
+도중 순간이동·별 수집/클리어 강제 호출을 하지 않고 실제 물리 이벤트를 관찰한다.
+화면 캡처는 실제 Unity Play 렌더링이다. 비교 기준·음전하·55.5V 상황을 보여주기 위한
+화면 확인용 준비 상태는 완주 검사와 별개이며, 학습 판정의 증거는 완주/목표 보고서이다.
+최종 결과: 프로젝트 루트 Logs/ElectricPolish*Report.json과 ElectricPolishStage02~05.png.
+학습 41개, 클리어 차단 35개, 실제 경로 4개, 약 50.5V 최소 충전 경로가 통과했다.
+기존 컴포넌트 110개와 물리 Transform 및 조상 78개의 설정이 동일하다.
+Missing Script 0개, 실행 중 오류 0개이며 2240×1260의 실제 16:9 캡처를 확인했다.
+오류/검사 수치와 씬 SHA256은 해당 보고서가 기준이다.
+청각적 음량 평가는 수행하지 않았으며, 저장된 저음량 AudioSource와 클립 로딩/상태 연결을 검사했다.

@@ -1,0 +1,82 @@
+[
+  {
+    "stage": 2,
+    "art": 1001000052,
+    "canvas": 1001000271,
+    "binder": 1001000425,
+    "fields": {
+      "learning": 0,
+      "selector": 644561890,
+      "progressText": 1001000368,
+      "measurementText": 1001000372,
+      "chargeText": 1001000376,
+      "learningPending": 1001000297,
+      "learningComplete": 1001000305,
+      "starPending": 1001000313,
+      "starComplete": 1001000321,
+      "exitLocked": 1001000329,
+      "exitReady": 1001000337,
+      "clearedBadge": 1001000393
+    }
+  },
+  {
+    "stage": 3,
+    "art": 1001000427,
+    "canvas": 1001000709,
+    "binder": 1001000859,
+    "fields": {
+      "learning": 0,
+      "selector": 644561890,
+      "progressText": 1001000806,
+      "measurementText": 1001000810,
+      "chargeText": 1001000814,
+      "learningPending": 1001000735,
+      "learningComplete": 1001000743,
+      "starPending": 1001000751,
+      "starComplete": 1001000759,
+      "exitLocked": 1001000767,
+      "exitReady": 1001000775,
+      "clearedBadge": 1001000831
+    }
+  },
+  {
+    "stage": 4,
+    "art": 1001000861,
+    "canvas": 1001001017,
+    "binder": 1001001179,
+    "fields": {
+      "learning": 0,
+      "selector": 644561890,
+      "progressText": 1001001114,
+      "measurementText": 1001001118,
+      "chargeText": 1001001122,
+      "learningPending": 1001001043,
+      "learningComplete": 1001001051,
+      "starPending": 1001001059,
+      "starComplete": 1001001067,
+      "exitLocked": 1001001075,
+      "exitReady": 1001001083,
+      "clearedBadge": 1001001139
+    }
+  },
+  {
+    "stage": 5,
+    "art": 1001001181,
+    "canvas": 1001001457,
+    "binder": 1001001627,
+    "fields": {
+      "learning": 0,
+      "selector": 644561890,
+      "progressText": 1001001554,
+      "measurementText": 1001001558,
+      "chargeText": 1001001562,
+      "learningPending": 1001001483,
+      "learningComplete": 1001001491,
+      "starPending": 1001001499,
+      "starComplete": 1001001507,
+      "exitLocked": 1001001515,
+      "exitReady": 1001001523,
+      "clearedBadge": 1001001579
+    }
+  }
+]

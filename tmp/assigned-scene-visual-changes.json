@@ -1,0 +1,2801 @@
+[
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\Stage\\Stage_01.unity",
+    "overlay": {
+      "go": 821000000000000011,
+      "transform": 821000000000000012,
+      "renderer": 821000000000000013,
+      "parent": 1509018125,
+      "neutral": 1509018124
+    },
+    "replaced": [
+      {
+        "id": 360347527,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1038378938,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01",
+        "action": "existing Normal_Block"
+      }
+    ],
+    "disabled": [
+      {
+        "id": 122601288,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 218496825,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 422451322,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Descent Marker 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 459759803,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 494126621,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 516988668,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 658789638,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 838086989,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 874360326,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 896365273,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 989404467,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Descent Marker 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1041385267,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1107556026,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1148559013,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1161976078,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1209138699,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1222259375,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1225602288,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1258449527,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1397757913,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1406812563,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1514316160,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1547997417,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1558797548,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 0",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1674466298,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1783584818,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1805753348,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1815975660,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Theme Backdrop - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2088342454,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Descent Marker 2",
+        "action": "decoration renderer disabled"
+      }
+    ],
+    "vectors": [],
+    "newDocuments": 3,
+    "oldDocuments": 203,
+    "newSha256": "244c40f19339372142603354742bf14d4e1310755c3d63dbab71d3a555a8268f"
+  },
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\Stage\\Stage_02.unity",
+    "overlay": {
+      "go": 821000000000000021,
+      "transform": 821000000000000022,
+      "renderer": 821000000000000023,
+      "parent": 1509018125,
+      "neutral": 1509018124
+    },
+    "replaced": [
+      {
+        "id": 360347527,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1038378938,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01",
+        "action": "existing Normal_Block"
+      }
+    ],
+    "disabled": [
+      {
+        "id": 122601288,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 218496825,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 422451322,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Descent Marker 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 459759803,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 494126621,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 516988668,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 658789638,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 838086989,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 874360326,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Cap 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 896365273,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 989404467,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Descent Marker 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1041385267,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1107556026,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1148559013,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1161976078,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1209138699,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1222259375,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1225602288,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Quarry Column 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1258449527,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1397757913,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1406812563,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1514316160,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1547997417,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1558797548,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Horizon Layer 0",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1674466298,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1783584818,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1805753348,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1815975660,
+        "path": "Stage 02/Map Theme - 01 UNDERWORLD / MAP 19/Theme Backdrop - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2088342454,
+        "path": "Stage 02/Previous Simple Layout - Stage 02 (Disabled)/Descent Marker 2",
+        "action": "decoration renderer disabled"
+      }
+    ],
+    "vectors": [],
+    "newDocuments": 3,
+    "oldDocuments": 201,
+    "newSha256": "82a4991fa08053f577e4154cb38932af6badbbea84b2b5db4104070977f2ddff"
+  },
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\Stage\\Stage_03.unity",
+    "overlay": {
+      "go": 821000000000000031,
+      "transform": 821000000000000032,
+      "renderer": 821000000000000033,
+      "parent": 1175509296,
+      "neutral": 1175509295
+    },
+    "replaced": [
+      {
+        "id": 94485189,
+        "path": "GearLever/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 145019487,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 276473524,
+        "path": "Stage 03/Goal Platform",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 612087689,
+        "path": "GearLever/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 907167349,
+        "path": "GearLever (1)/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1295085223,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1472348007,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1476933288,
+        "path": "GearLever (1)/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1650521414,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1774708135,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01",
+        "action": "existing Normal_Block"
+      }
+    ],
+    "disabled": [
+      {
+        "id": 3792191,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 9258915,
+        "path": "Stage 03/Goal Platform/Platform Edge Details/Stone Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 17248042,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 63760555,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 77076440,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 101000366,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 11",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 114448786,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Island Thruster",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 195027289,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 223842792,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Distance Tick 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 236204444,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 13",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 238992300,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 253103607,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Gantry Mount",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 260957346,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 264420948,
+        "path": "Stage 03/Map Layout - Stage 03/Structure Details - Editable Sprites/Island Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 264639162,
+        "path": "Stage 03/Goal Platform/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 271606811,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 274310101,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 283691463,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 299014214,
+        "path": "Stage 03/Goal Platform/Platform Edge Details/Underside",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 301752199,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 325715623,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 340123790,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Observation Window Glass",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 345055355,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 353478255,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 360083455,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 372409658,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 385743733,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Fall Rail",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 397304759,
+        "path": "Stage 03/Goal Platform/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 404482316,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 421489928,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 458744757,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 479091174,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 498835944,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Descent Marker 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 512355823,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 537911938,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Fall Rail",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 570392025,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 578119205,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 601310216,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant World Ring",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 606554427,
+        "path": "Stage 03/Goal Platform/Platform Edge Details/Grass Lip",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 609390393,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Fall Rail",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 612585426,
+        "path": "Stage 03/Map Layout - Stage 03/Structure Details - Editable Sprites/Island Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 617033021,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 622925200,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 632915485,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 644846547,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 646010011,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Window Mullion",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 676541775,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 689495651,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Observation Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 705029156,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 718882800,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 727659490,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 741175071,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 748036845,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 751815368,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 753306033,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 761743546,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 768930166,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 780884472,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 781096549,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 781976322,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Route Markings - No Collision/Safe Waiting Stripe",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 784207099,
+        "path": "Stage 03/Goal Platform/Platform Edge Details/Stone Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 791777232,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 804604916,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 0",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 805669142,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 818369350,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Island Thruster",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 821704021,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 14",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 824129126,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 832705466,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 851538974,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 868945487,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 873061709,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 888030902,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Baseline Grid",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 903978990,
+        "path": "Stage 03/Scene Art - Stage 03/Stage Underline",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 914119297,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 922728375,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 944528131,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Observation Window Frame",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 986020967,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 999523454,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1012703463,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1017051771,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1020628076,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1028920843,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1035559144,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1047231993,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1048563410,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1066210822,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1103681954,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Baseline Grid",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1106337277,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Distance Tick 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1134808633,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Observation Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1135072483,
+        "path": "Stage 03/Map Layout - Stage 03/Structure Details - Editable Sprites/Island Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1158720433,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01/Panel Joint 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1175139090,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Distance Tick 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1178204048,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1189902690,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1208240188,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1229263628,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1237880382,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1265214147,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Island Thruster",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1291421390,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Window Mullion",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1296124640,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1296793543,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Saturn Ring",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1331522554,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Guide Shadow",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1347960115,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Distance Tick 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1352883108,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1355895107,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Guide Rail",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1367072093,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1375580324,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1376118683,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant World",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1394720079,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1413060071,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1428520318,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 8",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1437311516,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1444204412,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Falling Stone Gantry",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1451403044,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1477862519,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1484777220,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1508132697,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1525773321,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1530509412,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Descent Marker 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1548119190,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1551782972,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Gantry Mount",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1552331289,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 7",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1557608629,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1557951556,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1576317960,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1589682605,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1610524300,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1632361393,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1634945502,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1635000549,
+        "path": "Stage 03/Map Layout - Stage 03/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1635480911,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1680873615,
+        "path": "Stage 03/Map Layout - Stage 03/Structure Details - Editable Sprites/Island Underlay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1690060931,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1692017478,
+        "path": "Stage 03/Goal Platform/Platform Edge Details/Stone Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1711097116,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1743335073,
+        "path": "Stage 03/Goal Platform/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1794652103,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Descent Marker 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1800547161,
+        "path": "Stage 03/Map Layout - Stage 03/Structure Details - Editable Sprites/Island Underlay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1834306568,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1834570202,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1835234977,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 9",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1840268833,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1870754679,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Theme Backdrop - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1876468291,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1876695380,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1878668624,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 10",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1881972794,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1886384967,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1894128228,
+        "path": "Stage 03/Map Layout - Stage 03/Route 03/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1913503190,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Saturn",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1915483842,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1915836689,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1916759082,
+        "path": "Stage 03/Map Layout - Stage 03/Structure Details - Editable Sprites/Island Underlay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1931153844,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/World Highlight",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1951924534,
+        "path": "Stage 03/Previous Simple Layout - Stage 03 (Disabled)/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1958780578,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1967164515,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Horizon Layer 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1969473684,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1975401744,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1977299225,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1988366342,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1992870343,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2016765839,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 12",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2034358212,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2044110738,
+        "path": "Stage 03/Scene Art - Stage 03/Distance Adjustment Track/Distance Tick 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2063306764,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2064577546,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Observation Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2065585799,
+        "path": "Stage 03/Map Theme - 07 SATURN / MAP 03/Distant Light 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2069448144,
+        "path": "Stage 03/Map Layout - Stage 03/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2076299845,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Background - No Collision/Window Mullion",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2081160352,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2089101206,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2108791569,
+        "path": "Stage 03/Presentation - Stage 03 (Editable)/Architecture - No Collision/Gantry Mount",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2122308036,
+        "path": "Stage 03/Map Layout - Stage 03/Obstacles - Solid Scene Objects/Drop Track - No Collision",
+        "action": "decoration renderer disabled"
+      }
+    ],
+    "vectors": [],
+    "newDocuments": 3,
+    "oldDocuments": 901,
+    "newSha256": "49e46ab77061684d5ad80a2462fd8065d383e961d88f4f1ca337cac7411ba115"
+  },
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\Stage\\Stage_04.unity",
+    "overlay": {
+      "go": 821000000000000041,
+      "transform": 821000000000000042,
+      "renderer": 821000000000000043,
+      "parent": 1175509296,
+      "neutral": 1175509295
+    },
+    "replaced": [
+      {
+        "id": 94485189,
+        "path": "GearLever/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 184637542,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 315371723,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 347911998,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 612087689,
+        "path": "GearLever/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 622598694,
+        "path": "Stage 04/Goal Platform",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 768541416,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 802192449,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 907167349,
+        "path": "GearLever (1)/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 989692872,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1455103238,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Upper Divider",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1476933288,
+        "path": "GearLever (1)/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1538075565,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Right Shaft Wall",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 2020329528,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01",
+        "action": "existing Normal_Block"
+      }
+    ],
+    "disabled": [
+      {
+        "id": 5827879,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 24400718,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Upper Return Conduit",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 29372246,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 46079754,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Bay Edge",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 54627508,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/World Highlight",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 92323834,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant World",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 131006327,
+        "path": "Stage 04/Goal Platform/Platform Edge Details/Underside",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 135214605,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 8",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 194539556,
+        "path": "Stage 04/Scene Art - Stage 04/Ceramic Collar",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 200494185,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Bay Edge",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 206573897,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Descent Marker 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 220649925,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Facility Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 227785427,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Descent Marker 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 228918880,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 238733462,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 246902553,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Descent Marker 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 261686518,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 11",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 263430428,
+        "path": "Stage 04/Goal Platform/Platform Edge Details/Stone Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 286706651,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 301572951,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 307025131,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 324500186,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 354135696,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 361423170,
+        "path": "Stage 04/Scene Art - Stage 04/Ceramic Collar",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 367470057,
+        "path": "Stage 04/Goal Platform/Platform Edge Details/Grass Lip",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 371226915,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 383173749,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 9",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 384157050,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 432408696,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Facility Feeder - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 440038093,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Upper Divider/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 442185771,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 451122336,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 458722325,
+        "path": "Stage 04/Scene Art - Stage 04/Ceramic Collar",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 468012868,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 485186854,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 498830024,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 534677536,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Upper Divider/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 538811627,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 542927913,
+        "path": "Stage 04/Goal Platform/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 547245049,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 550359497,
+        "path": "Stage 04/Map Layout - Stage 04/Structure Details - Editable Sprites/Lower Return Back",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 574171116,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 608568946,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 616773253,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 622287680,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 10",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 634535917,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 678048912,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Right Shaft Wall/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 701560555,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 720676158,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 737160926,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Field Chamber Rail",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 738743974,
+        "path": "Stage 04/Scene Art - Stage 04/Ceramic Collar",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 804027554,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 812642886,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 840334174,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Star Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 860502820,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 874863695,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 876004083,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 892219186,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 898249654,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 953382299,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 973410528,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 989464328,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 993146123,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 993478569,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1027465915,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1030464042,
+        "path": "Stage 04/Scene Art - Stage 04/Stage Underline",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1038853400,
+        "path": "Stage 04/Goal Platform/Platform Edge Details/Stone Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1040443569,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1044025497,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1046364859,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1075776265,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Baseline Grid",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1095965908,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 14",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1132634094,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Baseline Grid",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1133453854,
+        "path": "Stage 04/Goal Platform/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1145773186,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1150753713,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1153950745,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1154539951,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1158616107,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01/Panel Joint 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1166339964,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Right Shaft Wall/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1201902426,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1205163183,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1209289720,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1226641984,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1235693256,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1239023858,
+        "path": "Stage 04/Scene Art - Stage 04/Insulator Column",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1249377671,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Right Shaft Wall/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1259791411,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1276342523,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1276954393,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 7",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1296171504,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1308940746,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1340781142,
+        "path": "Stage 04/Scene Art - Stage 04/Insulator Column",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1360983833,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Lower Ambient Band",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1372546305,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Upper Divider/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1375968552,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Bay Edge",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1395936369,
+        "path": "Stage 04/Goal Platform/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1404593039,
+        "path": "Stage 04/Scene Art - Stage 04/Field Area",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1413555908,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1464110616,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Right Shaft Wall/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1501404754,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1501420439,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1514738553,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1516000669,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1577218697,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 13",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1585117343,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1586343930,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1623030168,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1635748998,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Theme Backdrop - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1657657588,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1658959549,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1661860680,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Upper Divider/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1671628611,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1722981958,
+        "path": "Stage 04/Map Layout - Stage 04/Route 04/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1726633189,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Right Shaft Wall/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1733017883,
+        "path": "Stage 04/Map Layout - Stage 04/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1744304787,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Ceramic Insulator",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1749762259,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1753444030,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1767791922,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1789744030,
+        "path": "Stage 04/Map Layout - Stage 04/Route 03/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1791874104,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Backdrop",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1840441913,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1866447048,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1867784563,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Upper Divider/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1898637130,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 0",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1900800046,
+        "path": "Stage 04/Map Layout - Stage 04/Route 01/Rivet - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1900956187,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Facility Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1902182685,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Facility Feeder - Hand Placed (1)",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1904783666,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1918826460,
+        "path": "Stage 04/Map Layout - Stage 04/Structure Details - Editable Sprites/Upper Chamber Back",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1922036099,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Architecture - No Collision/Field Chamber Rail",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1933406962,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Return Conduit",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1939285457,
+        "path": "Stage 04/Previous Simple Layout - Stage 04 (Disabled)/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2045343820,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Route Markings - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2075111327,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Facility Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2087711984,
+        "path": "Stage 04/Presentation - Stage 04 (Editable)/Background - No Collision/Facility Feeder - Hand Placed (2)",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2119681124,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Distant Light 12",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2123744185,
+        "path": "Stage 04/Goal Platform/Platform Edge Details/Stone Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2128758712,
+        "path": "Stage 04/Map Layout - Stage 04/Obstacles - Solid Scene Objects/Obstacle Return Divider/Face Inset",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2144035717,
+        "path": "Stage 04/Map Theme - 13 EPSILON ERIDANI / MAP 05/Horizon Layer 3",
+        "action": "decoration renderer disabled"
+      }
+    ],
+    "vectors": [],
+    "newDocuments": 3,
+    "oldDocuments": 830,
+    "newSha256": "770b02d0952f742a2a63ce6f7b16f62892f1b21441046ce6b3598012294f9289"
+  },
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\Stage\\Stage_05.unity",
+    "overlay": {
+      "go": 821000000000000051,
+      "transform": 821000000000000052,
+      "renderer": 821000000000000053,
+      "parent": 1175509296,
+      "neutral": 1175509295
+    },
+    "replaced": [
+      {
+        "id": 94485189,
+        "path": "GearLever/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 612087689,
+        "path": "GearLever/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 906386523,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 02",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 907167349,
+        "path": "GearLever (1)/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1476933288,
+        "path": "GearLever (1)/Visual",
+        "action": "existing Normal_Block"
+      },
+      {
+        "id": 1864316936,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 01",
+        "action": "existing Normal_Block"
+      }
+    ],
+    "disabled": [
+      {
+        "id": 13192586,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 4",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 16055513,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Cross Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 18896721,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 24929914,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 42379967,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 67606543,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 110620065,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 112949748,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Triangular Truss",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 157235241,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/World Highlight",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 177497961,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Baseline Grid",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 199450477,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 11",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 199582894,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 02/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 202506986,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 225243212,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Power Station Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 237859858,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 252421644,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 253562120,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Star Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 268471035,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 282193054,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 283504983,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Lower Ambient Band",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 300625021,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Bridge Support",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 312548102,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 322726709,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 367895620,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 384211503,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 02/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 384230416,
+        "path": "Stage 05/Scene Art - Stage 05/Stage Underline",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 404830321,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 446805565,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Triangular Truss",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 450236812,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Bridge Support",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 463394994,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 477059313,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 484898050,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 485341410,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 492512241,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 497857248,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 02/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 512425725,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 532600062,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 13",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 544513856,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant World",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 562912545,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Descent Marker 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 601160228,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 01/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 626056066,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 666556769,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 689180326,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Bridge Support",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 695106775,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 698813165,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Baseline Grid",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 718485238,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 731533692,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 733244213,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Cross Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 754052132,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 768798871,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Theme Backdrop - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 774632720,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 816602995,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 819975618,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Upper Busbar",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 832927420,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Triangular Truss",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 854412803,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 864192011,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Power Station Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 887930763,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 01/Panel Joint 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 926889602,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Power Station Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 928201461,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 976234914,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 987708058,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 02/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 990800946,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 997783807,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 7",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1016325021,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1018364658,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Lower Chord",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1021783842,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1024779262,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Cross Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1064895598,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1074237169,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 12",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1080672697,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Cross Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1155443375,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 01/Panel Joint 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1161526052,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1186987064,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1215496458,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1217189480,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Triangular Truss",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1217218056,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Power Station Bay",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1236749327,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1247212355,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Descent Marker 1",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1314397089,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1320590024,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Descent Marker 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1320726999,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1338231703,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1359532348,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Lower Chord",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1386033463,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Triangular Truss",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1386391932,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1389301869,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1422442924,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1427079592,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1437491708,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 02/Panel Joint 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1444711324,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1466597248,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Back Panel",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1472737093,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 0",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1505340690,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1520113017,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1520398026,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1524858792,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Triangular Truss",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1537760694,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1541200211,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1554122538,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1574400757,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1579175681,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Backdrop",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1637186566,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Shaft Depth Mark",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1672060983,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1682448932,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1722248325,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1728515113,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 9",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1751674946,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 01/Lower Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1758375397,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1785516920,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1811556638,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Cross Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1812790679,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Bridge Cross Brace - Hand Placed",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1838423204,
+        "path": "Stage 05/Map Layout - Stage 05/Structure Details - Editable Sprites/Bridge Support",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1866537019,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1872624153,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 14",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1881660845,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 3",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1893522259,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 5",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1903366328,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1905743641,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 8",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1957572977,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 2",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1962359585,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Halo",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1979496814,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 6",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 1986828175,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Architecture - No Collision/Light - Core",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2007039604,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Distant Light 10",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2040516337,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Light - Lens",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2072308206,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2093595153,
+        "path": "Stage 05/Presentation - Stage 05 (Editable)/Background - No Collision/Bay Joint",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2107857358,
+        "path": "Stage 05/Previous Simple Layout - Stage 05 (Disabled)/Route 01/Top Edge - Editable",
+        "action": "decoration renderer disabled"
+      },
+      {
+        "id": 2129274256,
+        "path": "Stage 05/Map Theme - 19 VV CEPHEI A / MAP 11/Horizon Layer 4",
+        "action": "decoration renderer disabled"
+      }
+    ],
+    "vectors": [],
+    "newDocuments": 3,
+    "oldDocuments": 773,
+    "newSha256": "68495594726171b14ed37b49ded26e4db88dd9642d7530058d1c1bf9c3c3ecec"
+  },
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\sungwook.unity",
+    "overlay": {
+      "go": 821000000000000061,
+      "transform": 821000000000000062,
+      "renderer": 821000000000000063,
+      "parent": 6529087885999073748,
+      "neutral": 3393557877859267339
+    },
+    "replaced": [],
+    "disabled": [],
+    "vectors": [],
+    "newDocuments": 3,
+    "oldDocuments": 3692,
+    "newSha256": "47a5ba752f9dc404997867e897a2300dfb3249595c63e102cae25fefbbca824d"
+  },
+  {
+    "scene": "Assets\\@Project\\@sung_wook\\@Game\\00_Scenes\\sungwook_ElectricBounce.unity",
+    "overlay": {
+      "go": 821000000000000071,
+      "transform": 821000000000000072,
+      "renderer": 821000000000000073,
+      "parent": 6529087885999073748,
+      "neutral": 3393557877859267339
+    },
+    "replaced": [],
+    "disabled": [],
+    "vectors": [
+      1992958452
+    ],
+    "newDocuments": 3,
+    "oldDocuments": 269,
+    "newSha256": "a08f183727408951f64e4a16ae9db41ed86aa188aa0dbc5dcffa49cbaf2a203e"
+  }
+]

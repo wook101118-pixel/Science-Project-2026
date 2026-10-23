@@ -1,39 +1,54 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace sung_wook
 {
+                 
+                                                     
+                                                  
+                  
+    [DisallowMultipleComponent]
+    [RequireComponent(typeof(GearLever))]
     public class GearLeverController : MonoBehaviour
     {
         private GearLever gearLever;
-        private Camera _mainCamera;
-        private Vector3 mousePosition;
-        
-        private LeverReader leverReader;
-        [SerializeField]
-        private LayerMask _raycastLayerMask;
-        
+
+                                                     
+        [SerializeField] private LayerMask _raycastLayerMask;
+        [SerializeField] private global::LeverReader _leverReader;
+        [SerializeField] private StageLever2D stageLever;
+
+        public global::LeverReader Reader => _leverReader;
+        public StageLever2D StageLever => stageLever;
+        public float LeverValue => stageLever != null ? stageLever.Value : 0f;
+        public LayerMask RaycastLayerMask => _raycastLayerMask;
+
+        private void Reset() => ResolveReferences();
+
         private void Awake()
         {
-            _mainCamera = Camera.main;
-            leverReader = GetComponentInChildren<LeverReader>();
-            gearLever = GetComponent<GearLever>();
+            ResolveReferences();
+            if (gearLever != null) gearLever.Setup();
         }
 
-        private void Update()
+                                                              
+        public void ConfigureLever(StageLever2D inputLever)
         {
-            
+            stageLever = inputLever;
+            if (stageLever != null && stageLever.Reader != null) _leverReader = stageLever.Reader;
+            ResolveReferences();
+            if (gearLever != null) gearLever.Setup();
         }
 
-        private void OnClick()
+                                                                       
+        private void ResolveReferences()
         {
-            Vector2 worldPos = _mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 0f, _raycastLayerMask);
-        
-            if (hit.collider != null)
+            if (gearLever == null) gearLever = GetComponent<GearLever>();
+            if (stageLever == null) stageLever = GetComponentInChildren<StageLever2D>(true);
+            if (_leverReader == null && stageLever != null) _leverReader = stageLever.Reader;
+            if (_leverReader == null) _leverReader = GetComponentInChildren<global::LeverReader>(true);
+            if (stageLever != null && stageLever.Reader == null && _leverReader != null)
             {
-                Debug.Log(gearLever.CurrentState);
+                stageLever.Configure(_leverReader);
             }
         }
     }

@@ -1,0 +1,95 @@
+{
+  "id": "QA-P1-STANDALONE-TERRAIN-03-04",
+  "priority": "P1",
+  "title": "Windows 실행 빌드에서 3·4번 스테이지의 정적 발판 충돌이 사라짐",
+  "status": "런타임 확인. 프로덕션 수정 없음.",
+  "confidence": "높음: 입력 없는 실제 실행 빌드에서 자연 로드 오류 16개와 활성 비트리거 TilemapCollider shapeCount=0/bounds=0을 함께 확인. 진단 호출 중 오류는 0개.",
+  "summary": "Editor에서 동일 저장 씬의 실제 경로 검증은 통과했지만, Windows Development 빌드에서는 3번 정적 지형 충돌체 6개와 4번 정적 지형 충돌체 10개에 물리 shape가 생성되지 않았다. 4번은 조작 없이 3초 관찰하는 동안 시작 바닥을 통과해 공이 y=-78.190185546875까지 추락했다. 실제 실행 빌드의 정상 캠페인 진행을 막는 문제이다.",
+  "environment": {
+    "unity": "6000.3.19f1",
+    "build": "Windows standalone Development",
+    "graphicsApi": "Direct3D11",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "processId": 24932,
+    "probe": "tmp/QaSceneSmokeProbe.cs",
+    "mutation": "입력·공 위치·속도·힘·중력·학습 조건 수정 없이 공유 비동기 씬 전환 후 idle 관찰. 목표 FPS/vSync와 개발 콘솔 overlay만 QA 실행 중 조정. PlayerPrefs 보존 확인."
+  },
+  "reproduction": [
+    "현재 저장된 소스·씬·프리팹으로 Windows 실행 빌드를 만든다. QA probe는 격리 복사본 빌드에만 포함한다.",
+    "실행 파일에 --qa-scene-smoke --qa-report=<절대 JSON 경로>를 전달해 실행한다. 첫 씬 MainMenu를 시작하고 기존 SceneTransitionController의 비동기 로드/페이드로 Stage_02→03→04→05를 차례로 불러온다.",
+    "각 씬의 초기 페이드 후 0.5초 정착을 기다리고 입력 없이 3초 관찰한다. Stage 3의 준비 상태는 원래 코드대로 공을 고정하므로 공의 추락 여부만으로 바닥 정상 여부를 판정하지 않는다.",
+    "Stage 3 로드에서 Sprite outline generation failed 오류 6개, Stage 4 로드에서 같은 오류 10개를 확인한다.",
+    "Stage 3의 활성·enabled·비트리거·compositeOperation=None인 TilemapCollider2D 6개와 Stage 4의 동일 조건 10개가 모두 shapeCount=0, boundsSize=(0,0,0)임을 확인한다.",
+    "Stage 4의 공 x=-3, y=-78.190185546875와 시작 바닥 관통을 확인한다. 입력이나 teleport 없이 재현된다."
+  ],
+  "expected": "보이는 Starting Floor/Route/Goal Platform/Boundary 타일에 기존 설계와 같은 정적 충돌이 존재해야 한다. Stage 4의 시작 공은 바닥에 닿아 자동 바운스하며 정상 플레이 영역을 유지해야 한다. Editor와 standalone에서 같은 저장 지형이 같은 물리 지지면을 제공해야 한다.",
+  "observed": {
+    "naturalCampaignErrors": 16,
+    "diagnosticErrors": 0,
+    "missingScripts": 0,
+    "preferencesUnchanged": true,
+    "errorMessage": "Sprite outline generation failed - could not read texture pixel data. Did you forget to make the texture readable?",
+    "stage3": {
+      "scene": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+      "sampleFrames": 180,
+      "sampleSeconds": 3,
+      "naturalLoadErrors": 6,
+      "missingPhysicalTilemaps": ["Starting Floor Tilemap", "Right Boundary Tilemap", "Route 01 Tilemap", "Route 02 Tilemap", "Route 03 Tilemap", "Goal Platform Tilemap"],
+      "colliderState": "모두 enabled=true, activeInHierarchy=true, isTrigger=false, compositeOperation=None, shapeCount=0, boundsSize=(0,0,0)",
+      "playerPosition": { "x": -3, "y": -3.34999990463257 },
+      "note": "Stage 3의 원래 준비 상태 FreezeAll 때문에 공은 출발점에 고정되어 있다. 이 고정 상태는 정상 지형의 증거가 아니다. 남아 있는 실제 고체는 레버/플레이어와 이동 장애물 3개이며 정적 Route/Goal 바닥의 대체가 아니다.",
+      "screenshot": "Logs/QaSceneSmoke_24932_02_Stage_03.png"
+    },
+    "stage4": {
+      "scene": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+      "sampleFrames": 180,
+      "sampleSeconds": 3,
+      "naturalLoadErrors": 10,
+      "missingPhysicalTilemaps": ["Starting Floor Tilemap", "Right Boundary Tilemap", "Obstacle Upper Divider Tilemap", "Obstacle Right Shaft Wall Tilemap", "Obstacle Return Divider Tilemap", "Route 01 Tilemap", "Route 02 Tilemap", "Route 03 Tilemap", "Route 04 Tilemap", "Goal Platform Tilemap"],
+      "colliderState": "모두 enabled=true, activeInHierarchy=true, isTrigger=false, compositeOperation=None, shapeCount=0, boundsSize=(0,0,0)",
+      "playerPosition": { "x": -3, "y": -78.190185546875 },
+      "note": "활성 비트리거 충돌체 중 Tilemap 외에는 레버 2개와 플레이어만 남아 있어 시작 바닥/경로/벽을 대체할 고체가 없다.",
+      "screenshot": "Logs/QaSceneSmoke_24932_03_Stage_04.png"
+    },
+    "controls": {
+      "stage2": "자연 오류 0. 원본 TilemapCollider는 compositeOperation=Merge로 shapeCount=0이지만 같은 오브젝트 CompositeCollider2D에 shapeCount=1/pathCount=1/boundsSize≈(24,8,0)이 있어 정상이다.",
+      "stage5": "자연 오류 0. 원본 TilemapCollider는 compositeOperation=Merge로 shapeCount=0이지만 CompositeCollider2D에 shapeCount=2/pathCount=2/boundsSize≈(21,9,0)이 있어 정상이다.",
+      "legacy": "Stage_01과 apple_wine의 이번 짧은 smoke 관찰은 오류 0이며 이 문제의 영향 범위에 포함하지 않는다."
+    }
+  },
+  "sourceAnchors": [
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage03_Terrain.prefab",
+      "line": 1256,
+      "description": "Starting Floor Tilemap의 활성 비트리거 TilemapCollider2D. 1287행 compositeOperation=0(None). 같은 프리팹에 Route/Goal/Boundary 총6개가 저장됨. 실제 실행 결과는 shapeCount=0."
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage04_Terrain.prefab",
+      "line": 1010,
+      "description": "Starting Floor Tilemap의 활성 비트리거 TilemapCollider2D(1016 enabled=1,1039 isTrigger=0,1041 compositeOperation=0). 같은 프리팹의 정적 지형10개가 모두 실제 실행에서 shapeCount=0."
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/09_Tile/Normal_Block_0.asset",
+      "line": 36,
+      "description": "공유 Tile의 m_ColliderType=1(Sprite). Stage3/4 지형이 사용하는 tile GUID는3409f095d95fe8149bf33a22b0093674. 해당 asset의 sprite GUID는722c3c5c68bb3ff4a86ac7c11b654af9."
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/05_Texture/Normal_Block.aseprite.meta",
+      "line": 27,
+      "description": "원본 texture isReadable=0. 298행 generatePhysicsShape=0,41행 spriteGenerateFallbackPhysicsShape=0. 자연 로드 outline 생성 오류와 연관된 강한 단서이며 단독으로 직렬화 근본 원인을 확정하지는 않음."
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Editor/ElectricStageTerrainBuilder.cs",
+      "line": 104,
+      "description": "지형을 Tilemap으로 바꾼 뒤 기존 BoxCollider2D를 disabled 처리한다. 186행은 SetColliderType(Grid)를 호출하지만 현재 standalone 결과에는 물리 충돌이 생성되지 않으므로 저장/빌드/재로드 후 Grid 충돌 보존을 추가 확인해야 한다. Editor에서만 재실행해 passing하는 검증으로 충분하지 않음."
+    }
+  ],
+  "rootCause": {
+    "confirmed": "실행 빌드에서 Stage3/4의 지정된 정적 TilemapCollider 물리 형상이 없음. 자연 outline 생성 오류가 발생하며 Stage4 시작 바닥을 실제 관통함.",
+    "suspected": "Sprite ColliderType의 공유 tile, physics shape 생성 비활성·non-readable texture, 저장된 per-cell Grid override/Tile flags 재로드 처리 중 차이가 관련될 가능성이 높음.",
+    "notYetConfirmed": "어느 serialized cell flag 또는 importer/build 동작이 Grid override를 잃게 만드는지에 대한 최종 근본 원인. 모든 에셋을 readable로 바꾸는 것으로 해결된다고 단정하면 안 된다."
+  },
+  "suggestedFix": "기존 스프라이트·배치·색상은 유지하면서 3·4번 지형의 실제 collision shape가 저장/재로드/Windows 빌드에서 안정적으로 생성되게 수정한다. 예: 의도한 사각 Grid 충돌이 공유 Tile과 각 cell에 영구 보존되도록 하거나 기존 스프라이트의 물리 shape를 저장해 runtime outline 재생성을 없앤다. 필요시 기존 정적 BoxCollider 보존 방식도 비교한다. 수정 후 Editor 경로와 Windows 실제 지형 shape·3번 비교발사 후 착지·4번 idle 바운스·정상 완주를 함께 재검증해야 한다.",
+  "evidence": ["Logs/QA_SceneSmoke.json", "Logs/QaSceneSmoke_24932_02_Stage_03.png", "Logs/QaSceneSmoke_24932_03_Stage_04.png"],
+  "evidenceLimits": "Development 빌드/현재 GPU에서 재현되었고 Release 빌드 및 다른 하드웨어는 미검증. 그러나 정상 활성 충돌체의 물리 형상 누락과 입력 없는 바닥 관통은 이 환경에서 확정이다. QA probe의 Sprite.GetPhysicsShapeCount 호출 전 자연 로드 오류가 기록됐으며 diagnosticErrorCount=0이므로 진단 호출이 만든 오류로 설명되지 않는다."
+}

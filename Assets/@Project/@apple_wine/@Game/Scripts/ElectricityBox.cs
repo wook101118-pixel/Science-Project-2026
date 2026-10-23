@@ -5,7 +5,7 @@ namespace apple_wine
 {
     public class ElectricityBox : MonoBehaviour
     {
-        //[SerializeField]private 
+                                  
             
         private ElectricCharge _electricCharge;
         private bool _isNegative;

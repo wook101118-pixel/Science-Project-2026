@@ -1,0 +1,6473 @@
+{
+  "status": "passed",
+  "date": "2026-10-21",
+  "createdUtc": "2026-10-21T11:08:38.1680157Z",
+  "features": [
+    "Default-collapsed help and contextual task/rejection feedback",
+    "Live polarity selection preserving position, velocity, stars and learning",
+    "Real field ascent, neutral descent, negative-charge braking route",
+    "Stronger normal braking and safe checkpoint recovery",
+    "Optional challenges and persistent personal records"
+  ],
+  "build": {
+    "status": "passed",
+    "startedUtc": "2026-10-21T11:01:11.1065168Z",
+    "finishedUtc": "2026-10-21T11:01:25.1315818Z",
+    "unityVersion": "6000.3.19f1",
+    "project": "C:/Users/wook1/AppData/Local/Temp/CodexUnityVisualBuild",
+    "output": "C:/Users/wook1/AppData/Local/Temp/CodexUnityVisualBuild/Builds/GameplayRelease/Scince.exe",
+    "target": "StandaloneWindows64",
+    "graphicsApi": "Direct3D11",
+    "developmentBuild": false,
+    "runInBackground": true,
+    "companyName": "DefaultCompany",
+    "productName": "Scince",
+    "result": "Succeeded",
+    "totalBytes": "125678984",
+    "durationSeconds": 13.6721826,
+    "totalErrors": 0,
+    "totalWarnings": 3,
+    "scenes": [
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/MainMenu.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+      "Assets/@Project/@apple_wine/@Game/Scenes/apple_wine.unity",
+      "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_01.unity"
+    ],
+    "errors": [],
+    "note": "Builds existing enabled scenes with an opt-in development-only runtime probe. Only clone PlayerSettings are changed. Source assets, company/product identity, and visual resources are preserved."
+  },
+  "executableSha256": "BE173935C3A51228D4C391853C12B73B916F2F4CD22E86711B6E81BE2FE7794D",
+  "functionalChecksPassed": 175.0,
+  "functionalChecksFailed": 0,
+  "setupChecksPassed": 4,
+  "checks": [
+    {
+      "name": "Gameplay_Improvements",
+      "passed": 36,
+      "report": "C:\\Users\\wook1\\GitBub-Unity\\Science-Project-2026\\Logs\\Gameplay_Improvements.json"
+    },
+    {
+      "name": "Gameplay_Cards",
+      "passed": 28,
+      "report": "C:\\Users\\wook1\\GitBub-Unity\\Science-Project-2026\\Logs\\Gameplay_Cards.json"
+    },
+    {
+      "name": "Gameplay_Controls",
+      "passed": 63,
+      "report": "C:\\Users\\wook1\\GitBub-Unity\\Science-Project-2026\\Logs\\Gameplay_Controls.json"
+    },
+    {
+      "name": "Gameplay_UiAudio",
+      "passed": 33,
+      "report": "C:\\Users\\wook1\\GitBub-Unity\\Science-Project-2026\\Logs\\Gameplay_UiAudio.json"
+    },
+    {
+      "name": "Gameplay_MasteryRead",
+      "passed": 15,
+      "report": "C:\\Users\\wook1\\GitBub-Unity\\Science-Project-2026\\Logs\\Gameplay_MasteryRead.json"
+    }
+  ],
+  "routes": [
+    {
+      "stage": 2,
+      "status": "passed",
+      "details": "Natural collection and exit callbacks observed; unchanged saved physics and authored collision surfaces.",
+      "phase": "Exit",
+      "seconds": 4.819998264312744,
+      "peakY": 3.9322333335876465,
+      "highestBallEdge": 4.4322333335876465,
+      "cameraTop": 6.599999904632568,
+      "launchVoltage": 0.0,
+      "mass": 1.0,
+      "gravityScale": 1.0,
+      "jumpForce": 7.0,
+      "maxSpeed": 7.0,
+      "acceleration": 5.0,
+      "deceleration": 9.0,
+      "retryCount": 0,
+      "start": {
+        "x": -3.0,
+        "y": -3.3499999046325684
+      },
+      "finish": {
+        "x": 7.862754821777344,
+        "y": 0.5005876421928406
+      },
+      "actualChargeEvent": true,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "learningSatisfied": true,
+      "stayedWithinTopBoundary": true,
+      "realFirstLanding": false,
+      "realSecondLanding": false,
+      "physicsSettingsUnchanged": true,
+      "fieldAscentObserved": false,
+      "neutralFieldDescentObserved": false,
+      "negativeFieldBrakeObserved": false,
+      "fieldAscentMeters": 0.0,
+      "neutralFieldDescentMeters": 0.0,
+      "negativeFieldBrakeSeconds": 0.0,
+      "missingSolidTerrainShapes": 0,
+      "terrain": [
+        {
+          "name": "GearLever (1)",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -7.600000381469727,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0000004768371582,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "PlatForm",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "Merge",
+          "shapeCount": 0,
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "PlatForm",
+          "type": "CompositeCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -1.0000147819519043,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "size": {
+            "x": 23.999969482421875,
+            "y": 8.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "GearLever",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -8.800000190734863,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Contact Electrode",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -4.300000190734863,
+            "y": -3.700000047683716,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.6499998569488525,
+            "y": 0.34999990463256836,
+            "z": 0.0
+          }
+        }
+      ],
+      "contacts": [
+        "PlatForm",
+        "Contact Electrode"
+      ],
+      "trace": [
+        {
+          "time": 0.019999992102384567,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Contact",
+          "position": {
+            "x": -3.0,
+            "y": -3.3499999046325684
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.1799999326467514,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Contact",
+          "position": {
+            "x": -3.0,
+            "y": -3.4912636280059814
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -1.5695992708206177
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.33999988436698914,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": -2.4949216842651367,
+            "y": -2.6205716133117676
+          },
+          "velocity": {
+            "x": 3.4199981689453125,
+            "y": 5.626600742340088
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.4999998211860657,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": -1.8757222890853882,
+            "y": -1.8615796566009521
+          },
+          "velocity": {
+            "x": 4.219997406005859,
+            "y": 4.05700159072876
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.6599997878074646,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": -1.1285231113433838,
+            "y": -1.3537235260009766
+          },
+          "velocity": {
+            "x": 5.019996643066406,
+            "y": 2.4874024391174316
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.8199996948242188,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": -0.2533239722251892,
+            "y": -1.0970031023025513
+          },
+          "velocity": {
+            "x": 5.819995880126953,
+            "y": 0.9178032875061035
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.9799996614456177,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 0.7498748898506165,
+            "y": -1.0914185047149658
+          },
+          "velocity": {
+            "x": 6.6199951171875,
+            "y": -0.6517960429191589
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.1399996280670166,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 1.4953925609588623,
+            "y": -1.2548682689666748
+          },
+          "velocity": {
+            "x": -8.218323273467831E-06,
+            "y": -0.28038695454597473
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.2999995946884155,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 1.4950556755065918,
+            "y": -1.389148473739624
+          },
+          "velocity": {
+            "x": -3.7357211112976074E-05,
+            "y": -1.2739259004592896
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.459999442100525,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 1.4950008392333984,
+            "y": -0.9824044704437256
+          },
+          "velocity": {
+            "x": 0.00017757713794708252,
+            "y": 6.0552849769592285
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.6199994087219238,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 1.5670291185379028,
+            "y": -0.1548231691122055
+          },
+          "velocity": {
+            "x": 0.800177276134491,
+            "y": 4.4856858253479
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.7799993753433228,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 1.7670574188232422,
+            "y": 0.4216224253177643
+          },
+          "velocity": {
+            "x": 1.6001765727996826,
+            "y": 2.9160866737365723
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.9399993419647217,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 2.095085620880127,
+            "y": 0.7469322681427002
+          },
+          "velocity": {
+            "x": 2.4001758098602295,
+            "y": 1.3464875221252441
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.099999189376831,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 2.5511133670806885,
+            "y": 0.8211063146591187
+          },
+          "velocity": {
+            "x": 3.2001750469207764,
+            "y": -0.22311174869537354
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.2599992752075195,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 3.135141134262085,
+            "y": 0.6441445350646973
+          },
+          "velocity": {
+            "x": 4.000174522399902,
+            "y": -1.7927110195159912
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.419999122619629,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 3.4950993061065674,
+            "y": 0.9691709280014038
+          },
+          "velocity": {
+            "x": 0.0001491159200668335,
+            "y": 5.043738842010498
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.5799992084503174,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 3.5511021614074707,
+            "y": 1.628504991531372
+          },
+          "velocity": {
+            "x": 0.7001419067382812,
+            "y": 3.434140205383301
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.7399990558624268,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 3.7351248264312744,
+            "y": 2.03670334815979
+          },
+          "velocity": {
+            "x": 1.5001413822174072,
+            "y": 1.8645410537719727
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.899998903274536,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.047147750854492,
+            "y": 2.1937661170959473
+          },
+          "velocity": {
+            "x": 2.300140619277954,
+            "y": 0.29494184255599976
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.0599989891052246,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.3863701820373535,
+            "y": 2.0996928215026855
+          },
+          "velocity": {
+            "x": 1.9801409244537354,
+            "y": -1.2746574878692627
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.219998836517334,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.640792369842529,
+            "y": 1.754483938217163
+          },
+          "velocity": {
+            "x": 1.3801411390304565,
+            "y": -2.844256639480591
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.3799989223480225,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 4.755157947540283,
+            "y": 2.0251128673553467
+          },
+          "velocity": {
+            "x": 0.39999985694885254,
+            "y": 6.215200424194336
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.539998769760132,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 4.891158103942871,
+            "y": 2.8782806396484375
+          },
+          "velocity": {
+            "x": 1.1999995708465576,
+            "y": 4.645601272583008
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.699998617172241,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 5.155158042907715,
+            "y": 3.4803128242492676
+          },
+          "velocity": {
+            "x": 1.9999988079071045,
+            "y": 3.0760021209716797
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.8599987030029297,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 5.547157287597656,
+            "y": 3.8312089443206787
+          },
+          "velocity": {
+            "x": 2.7999980449676514,
+            "y": 1.5064029693603516
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.019998550415039,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 6.067156791687012,
+            "y": 3.930969476699829
+          },
+          "velocity": {
+            "x": 3.5999972820281982,
+            "y": -0.06319627165794373
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.179998397827148,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 6.63675594329834,
+            "y": 3.7795941829681396
+          },
+          "velocity": {
+            "x": 3.2799975872039795,
+            "y": -1.6327955722808838
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.339998245239258,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.071155548095703,
+            "y": 3.3770833015441895
+          },
+          "velocity": {
+            "x": 2.399998426437378,
+            "y": -3.202394723892212
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.499998569488525,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.398355007171631,
+            "y": 2.7234363555908203
+          },
+          "velocity": {
+            "x": 1.7999988794326782,
+            "y": -4.771994113922119
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.659998416900635,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.646355152130127,
+            "y": 1.8186538219451904
+          },
+          "velocity": {
+            "x": 1.47999906539917,
+            "y": -6.341593265533447
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.819998264312744,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.8431549072265625,
+            "y": 0.6627354025840759
+          },
+          "velocity": {
+            "x": 1.1599993705749512,
+            "y": -7.911192417144775
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "status": "passed",
+      "details": "Natural collection and exit callbacks observed; unchanged saved physics and authored collision surfaces.",
+      "phase": "Exit",
+      "seconds": 9.939996719360352,
+      "peakY": 1.832255482673645,
+      "highestBallEdge": 2.3322553634643555,
+      "cameraTop": 6.599999904632568,
+      "launchVoltage": 0.0,
+      "mass": 1.0,
+      "gravityScale": 1.0,
+      "jumpForce": 7.0,
+      "maxSpeed": 7.0,
+      "acceleration": 5.0,
+      "deceleration": 9.0,
+      "retryCount": 0,
+      "start": {
+        "x": -3.0,
+        "y": -3.3499999046325684
+      },
+      "finish": {
+        "x": 9.234957695007324,
+        "y": 0.7188982963562012
+      },
+      "actualChargeEvent": false,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "learningSatisfied": true,
+      "stayedWithinTopBoundary": true,
+      "realFirstLanding": false,
+      "realSecondLanding": false,
+      "physicsSettingsUnchanged": true,
+      "fieldAscentObserved": false,
+      "neutralFieldDescentObserved": false,
+      "negativeFieldBrakeObserved": false,
+      "fieldAscentMeters": 0.0,
+      "neutralFieldDescentMeters": 0.0,
+      "negativeFieldBrakeSeconds": 0.0,
+      "missingSolidTerrainShapes": 0,
+      "terrain": [
+        {
+          "name": "GearLever (1)",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -7.600000381469727,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0000004768371582,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "GearLever",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -8.800000190734863,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Obstacle Blue Falling Stone 01",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": 3.0999999046325684,
+            "y": 2.799999952316284,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.820000171661377,
+            "y": 0.6500000953674316,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Obstacle Blue Falling Stone 02",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": 5.300000190734863,
+            "y": 2.799999952316284,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.8199996948242188,
+            "y": 0.6500000953674316,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Obstacle Blue Falling Stone 03",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": 7.5,
+            "y": 2.799999952316284,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.8199996948242188,
+            "y": 0.6500000953674316,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Starting Floor Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 13,
+          "center": {
+            "x": -6.5,
+            "y": -4.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 13.0,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Right Boundary Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 8,
+          "center": {
+            "x": 10.5,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0,
+            "y": 8.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 01 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 4,
+          "center": {
+            "x": 2.0,
+            "y": -2.4000000953674316,
+            "z": 0.0
+          },
+          "size": {
+            "x": 3.1999998092651367,
+            "y": 0.40000009536743164,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 02 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 2,
+          "center": {
+            "x": 5.0,
+            "y": -2.799999952316284,
+            "z": 0.0
+          },
+          "size": {
+            "x": 2.0,
+            "y": 0.40000009536743164,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 03 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 2,
+          "center": {
+            "x": 7.5,
+            "y": -1.2999999523162842,
+            "z": 0.0
+          },
+          "size": {
+            "x": 2.0,
+            "y": 0.40000009536743164,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Goal Platform Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 2,
+          "center": {
+            "x": 9.5,
+            "y": -1.2999999523162842,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.5999984741210938,
+            "y": 0.40000009536743164,
+            "z": 0.0
+          }
+        }
+      ],
+      "contacts": [
+        "Route 01 Tilemap",
+        "Obstacle Blue Falling Stone 01",
+        "Obstacle Blue Falling Stone 02",
+        "Route 02 Tilemap",
+        "Route 03 Tilemap",
+        "Obstacle Blue Falling Stone 03"
+      ],
+      "trace": [
+        {
+          "time": 0.019999980926513672,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Baseline",
+          "position": {
+            "x": -3.0,
+            "y": -3.3499999046325684
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.17999982833862305,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "ChangeDistance",
+          "position": {
+            "x": -3.0,
+            "y": -3.3499999046325684
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.3399996757507324,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.5547919273376465,
+            "y": -2.9247355461120605
+          },
+          "velocity": {
+            "x": 7.300140380859375,
+            "y": 6.89154052734375
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.4999995231628418,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -1.5091700553894043,
+            "y": -1.9633532762527466
+          },
+          "velocity": {
+            "x": 6.040141582489014,
+            "y": 5.321941375732422
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.6599998474121094,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -0.643547773361206,
+            "y": -1.253106951713562
+          },
+          "velocity": {
+            "x": 4.780142784118652,
+            "y": 3.7523422241210938
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.8199996948242188,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": 0.006074912846088409,
+            "y": -0.793996274471283
+          },
+          "velocity": {
+            "x": 3.520143985748291,
+            "y": 2.1827430725097656
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 0.9799995422363281,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": 0.4972977936267853,
+            "y": -0.586021363735199
+          },
+          "velocity": {
+            "x": 2.620144844055176,
+            "y": 0.6131439208984375
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.1399993896484375,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": 0.8661209940910339,
+            "y": -0.6291822791099548
+          },
+          "velocity": {
+            "x": 2.0801453590393066,
+            "y": -0.9564554691314697
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.2999992370605469,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": 1.1449439525604248,
+            "y": -0.9234789609909058
+          },
+          "velocity": {
+            "x": 1.5401455163955688,
+            "y": -2.526054620742798
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.4599995613098145,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": 1.3553669452667236,
+            "y": -1.4689115285873413
+          },
+          "velocity": {
+            "x": 1.1801456212997437,
+            "y": -4.095654010772705
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.6199994087219238,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.4418883323669434,
+            "y": -1.0540165901184082
+          },
+          "velocity": {
+            "x": 0.4999998211860657,
+            "y": 6.01900053024292
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.7799992561340332,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.5938881635665894,
+            "y": -0.2322407215833664
+          },
+          "velocity": {
+            "x": 1.299999475479126,
+            "y": 4.449401378631592
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 1.9399991035461426,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.8738878965377808,
+            "y": 0.33839935064315796
+          },
+          "velocity": {
+            "x": 2.099998712539673,
+            "y": 2.8798022270202637
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.099998950958252,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.191721200942993,
+            "y": 0.5985921025276184
+          },
+          "velocity": {
+            "x": -0.23797424137592316,
+            "y": -0.9193758368492126
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.2599992752075195,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.1892802715301514,
+            "y": 0.2833443582057953
+          },
+          "velocity": {
+            "x": 0.07115987688302994,
+            "y": -2.6371400356292725
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.419999122619629,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.254896879196167,
+            "y": -0.2759086489677429
+          },
+          "velocity": {
+            "x": 0.7499520778656006,
+            "y": -4.180094242095947
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.5799989700317383,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.4468891620635986,
+            "y": -1.0859873294830322
+          },
+          "velocity": {
+            "x": 1.5499515533447266,
+            "y": -5.749693393707275
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.7399988174438477,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.639371871948242,
+            "y": -1.2987004518508911
+          },
+          "velocity": {
+            "x": 0.2999998927116394,
+            "y": 6.411400318145752
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.899998664855957,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.7133536338806152,
+            "y": -0.6911468505859375
+          },
+          "velocity": {
+            "x": 0.19999992847442627,
+            "y": -0.3923998475074768
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.0599985122680664,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.8173534870147705,
+            "y": -0.8951946496963501
+          },
+          "velocity": {
+            "x": 0.9999996423721313,
+            "y": -1.9619990587234497
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.219998359680176,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.0493533611297607,
+            "y": -1.3503782749176025
+          },
+          "velocity": {
+            "x": 1.7999989986419678,
+            "y": -3.5315983295440674
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.3799991607666016,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.2780916690826416,
+            "y": -1.2987004518508911
+          },
+          "velocity": {
+            "x": 0.7949591279029846,
+            "y": 6.411400318145752
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.539999008178711,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.477285146713257,
+            "y": -0.4141407012939453
+          },
+          "velocity": {
+            "x": 1.5949585437774658,
+            "y": 4.841801166534424
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.6999988555908203,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.793278217315674,
+            "y": 0.2192833125591278
+          },
+          "velocity": {
+            "x": 2.1149580478668213,
+            "y": 3.2722020149230957
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.8599987030029297,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.069271564483643,
+            "y": 0.6015715599060059
+          },
+          "velocity": {
+            "x": 1.5149582624435425,
+            "y": 1.7026028633117676
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.019998550415039,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.271664619445801,
+            "y": 0.7327240705490112
+          },
+          "velocity": {
+            "x": 1.1949584484100342,
+            "y": 0.13300365209579468
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.179998397827148,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.422857761383057,
+            "y": 0.6127407550811768
+          },
+          "velocity": {
+            "x": 0.8749586343765259,
+            "y": -1.4365956783294678
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.339998245239258,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.507716655731201,
+            "y": 0.3310988247394562
+          },
+          "velocity": {
+            "x": -1.32176673412323,
+            "y": 1.467666745185852
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.499998092651367,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.380603313446045,
+            "y": 0.48801732063293457
+          },
+          "velocity": {
+            "x": -0.3932429552078247,
+            "y": 0.5048414468765259
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.659997940063477,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.383543968200684,
+            "y": 0.4434242844581604
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -0.8060553073883057
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.819997787475586,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.413544178009033,
+            "y": 0.18999160826206207
+          },
+          "velocity": {
+            "x": 0.4999998211860657,
+            "y": -2.2556545734405518
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.979998588562012,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.531944274902344,
+            "y": -0.3121768534183502
+          },
+          "velocity": {
+            "x": 0.7399997115135193,
+            "y": -3.82525372505188
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.139998435974121,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.6271443367004395,
+            "y": -1.0654810667037964
+          },
+          "velocity": {
+            "x": 0.41999977827072144,
+            "y": -5.394853115081787
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.2999982833862305,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.699143886566162,
+            "y": -2.0699210166931152
+          },
+          "velocity": {
+            "x": 0.3799997568130493,
+            "y": -6.964452266693115
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.45999813079834,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 4.757495403289795,
+            "y": -1.2254972457885742
+          },
+          "velocity": {
+            "x": 0.6999997496604919,
+            "y": 5.626600742340088
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.619997978210449,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 4.941495418548584,
+            "y": -0.46650534868240356
+          },
+          "velocity": {
+            "x": 1.4999992847442627,
+            "y": 4.05700159072876
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.779997825622559,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 5.253495216369629,
+            "y": 0.04135078936815262
+          },
+          "velocity": {
+            "x": 2.2999985218048096,
+            "y": 2.4874024391174316
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.939997673034668,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 5.6934943199157715,
+            "y": 0.2980711758136749
+          },
+          "velocity": {
+            "x": 3.0999977588653564,
+            "y": 0.9178032875061035
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.099997520446777,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 6.110293865203857,
+            "y": 0.3036557734012604
+          },
+          "velocity": {
+            "x": 2.219998598098755,
+            "y": -0.6517960429191589
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.259997367858887,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 6.431093692779541,
+            "y": 0.05810458958148956
+          },
+          "velocity": {
+            "x": 1.8999989032745361,
+            "y": -2.221395254135132
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.419997215270996,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 6.672693729400635,
+            "y": -0.4385823607444763
+          },
+          "velocity": {
+            "x": 1.2999991178512573,
+            "y": -3.79099440574646
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.579998016357422,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 6.755093574523926,
+            "y": 0.04054450988769531
+          },
+          "velocity": {
+            "x": 0.4999997615814209,
+            "y": 6.01900053024292
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.739997863769531,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 6.895893573760986,
+            "y": 0.8623203635215759
+          },
+          "velocity": {
+            "x": 1.0199995040893555,
+            "y": 4.449401378631592
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.899997711181641,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 7.0190935134887695,
+            "y": 1.4329603910446167
+          },
+          "velocity": {
+            "x": 0.6999995708465576,
+            "y": 2.8798022270202637
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.05999755859375,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 7.119093418121338,
+            "y": 1.752464771270752
+          },
+          "velocity": {
+            "x": 0.6599995493888855,
+            "y": 1.3102030754089355
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.219997406005859,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 7.190293312072754,
+            "y": 1.8208333253860474
+          },
+          "velocity": {
+            "x": 0.33999961614608765,
+            "y": -0.25939619541168213
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.379997253417969,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 7.243893146514893,
+            "y": 1.638066053390503
+          },
+          "velocity": {
+            "x": 0.2999995946884155,
+            "y": -1.8289954662322998
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.539997100830078,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 7.285492897033691,
+            "y": 1.2041630744934082
+          },
+          "velocity": {
+            "x": 0.2599995732307434,
+            "y": -3.398594617843628
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.6999969482421875,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 7.320692539215088,
+            "y": 0.5191242694854736
+          },
+          "velocity": {
+            "x": 0.21999956667423248,
+            "y": -4.968194007873535
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.859996795654297,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.343892574310303,
+            "y": -0.4170503318309784
+          },
+          "velocity": {
+            "x": 0.17999960482120514,
+            "y": -6.537793159484863
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.019996643066406,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.394413471221924,
+            "y": 0.16197079420089722
+          },
+          "velocity": {
+            "x": 0.5999997854232788,
+            "y": 5.822800636291504
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.179997444152832,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.562413215637207,
+            "y": 0.9523546695709229
+          },
+          "velocity": {
+            "x": 1.3999993801116943,
+            "y": 4.253201484680176
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.339997291564941,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.745818614959717,
+            "y": 1.1991713047027588
+          },
+          "velocity": {
+            "x": 0.3234260678291321,
+            "y": -2.007829189300537
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.49999713897705,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.869566917419434,
+            "y": 0.7366549372673035
+          },
+          "velocity": {
+            "x": 1.1234257221221924,
+            "y": -3.5774283409118652
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.65999698638916,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.121315002441406,
+            "y": 0.023002736270427704
+          },
+          "velocity": {
+            "x": 1.9234249591827393,
+            "y": -5.147027492523193
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.81999683380127,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.349759101867676,
+            "y": -0.32739704847335815
+          },
+          "velocity": {
+            "x": 0.19999992847442627,
+            "y": 6.607600212097168
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.979996681213379,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.45375919342041,
+            "y": 0.5885546803474426
+          },
+          "velocity": {
+            "x": 0.9999996423721313,
+            "y": 5.03800106048584
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.139996528625488,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.663359642028809,
+            "y": 1.253370761871338
+          },
+          "velocity": {
+            "x": 1.2399994134902954,
+            "y": 3.4684019088745117
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.299996376037598,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.844160079956055,
+            "y": 1.6670509576797485
+          },
+          "velocity": {
+            "x": 0.9199997186660767,
+            "y": 1.8988027572631836
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.459996223449707,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.984959602355957,
+            "y": 1.8295954465866089
+          },
+          "velocity": {
+            "x": 0.8799997568130493,
+            "y": 0.3292035758495331
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.619996070861816,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 9.09135913848877,
+            "y": 1.7410041093826294
+          },
+          "velocity": {
+            "x": 0.5599998235702515,
+            "y": -1.2403957843780518
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.779996871948242,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 9.174558639526367,
+            "y": 1.40127694606781
+          },
+          "velocity": {
+            "x": 0.5199998021125793,
+            "y": -2.80999493598938
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.939996719360352,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 9.228958129882812,
+            "y": 0.8104141354560852
+          },
+          "velocity": {
+            "x": 0.1999998837709427,
+            "y": -4.379594326019287
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "status": "passed",
+      "details": "Natural collection and exit callbacks observed; unchanged saved physics and authored collision surfaces. Real negative-charge field ascent >=1 m, post-star neutral field descent >=1 m, and restored upward electric force >=0.1 s observed on the authored return route.",
+      "phase": "Exit",
+      "seconds": 11.399996757507324,
+      "peakY": 4.932255744934082,
+      "highestBallEdge": 5.432255744934082,
+      "cameraTop": 6.599999904632568,
+      "launchVoltage": 0.0,
+      "mass": 1.0,
+      "gravityScale": 1.0,
+      "jumpForce": 7.0,
+      "maxSpeed": 7.0,
+      "acceleration": 5.0,
+      "deceleration": 9.0,
+      "retryCount": 0,
+      "start": {
+        "x": -3.0,
+        "y": -3.3499999046325684
+      },
+      "finish": {
+        "x": 1.7902764081954956,
+        "y": -2.3929450511932373
+      },
+      "actualChargeEvent": false,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "learningSatisfied": true,
+      "stayedWithinTopBoundary": true,
+      "realFirstLanding": false,
+      "realSecondLanding": false,
+      "physicsSettingsUnchanged": true,
+      "fieldAscentObserved": true,
+      "neutralFieldDescentObserved": true,
+      "negativeFieldBrakeObserved": true,
+      "fieldAscentMeters": 3.330089569091797,
+      "neutralFieldDescentMeters": 1.7588180303573608,
+      "negativeFieldBrakeSeconds": 0.119999960064888,
+      "missingSolidTerrainShapes": 0,
+      "terrain": [
+        {
+          "name": "GearLever (1)",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -7.600000381469727,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0000004768371582,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "GearLever",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -8.800000190734863,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Starting Floor Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 13,
+          "center": {
+            "x": -6.5,
+            "y": -4.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 13.0,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Right Boundary Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 8,
+          "center": {
+            "x": 10.5,
+            "y": -1.0,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0,
+            "y": 8.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Obstacle Upper Divider Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": 2.5999999046325684,
+            "y": -0.30000001192092896,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.4499998092651367,
+            "y": 0.8000000715255737,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Obstacle Right Shaft Wall Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": 7.800000190734863,
+            "y": -0.9500000476837158,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.4500007629394531,
+            "y": 5.800000190734863,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Obstacle Return Divider Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": 2.799999952316284,
+            "y": -0.75,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.6999998092651367,
+            "y": 0.3500000238418579,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 01 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 3,
+          "center": {
+            "x": -0.3999999761581421,
+            "y": 0.40000003576278687,
+            "z": 0.0
+          },
+          "size": {
+            "x": 2.799999952316284,
+            "y": 0.3999999761581421,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 02 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 3,
+          "center": {
+            "x": 2.3499999046325684,
+            "y": 1.7999999523162842,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.8999998569488525,
+            "y": 0.40000009536743164,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 03 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 3,
+          "center": {
+            "x": 6.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "size": {
+            "x": 2.4000000953674316,
+            "y": 0.4000000059604645,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Route 04 Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 3,
+          "center": {
+            "x": 4.0,
+            "y": -2.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 2.200000286102295,
+            "y": 0.40000009536743164,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Goal Platform Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 3,
+          "center": {
+            "x": 1.0999999046325684,
+            "y": -4.400000095367432,
+            "z": 0.0
+          },
+          "size": {
+            "x": 3.0,
+            "y": 0.39999961853027344,
+            "z": 0.0
+          }
+        }
+      ],
+      "contacts": [
+        "Route 01 Tilemap",
+        "Route 02 Tilemap",
+        "Route 03 Tilemap",
+        "Route 04 Tilemap",
+        "Obstacle Upper Divider Tilemap"
+      ],
+      "trace": [
+        {
+          "time": 0.020000457763671875,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "FieldLift",
+          "position": {
+            "x": -3.0,
+            "y": -3.3499999046325684
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 0.18000125885009766,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "FieldLift",
+          "position": {
+            "x": -3.0,
+            "y": -3.203263759613037
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 1.630399465560913
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 0.34000110626220703,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "FieldLift",
+          "position": {
+            "x": -3.0,
+            "y": -2.795663356781006
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 3.2607991695404053
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 0.5000009536743164,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "FieldLift",
+          "position": {
+            "x": -3.0,
+            "y": -2.127200126647949
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 4.891197681427002
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 0.6600008010864258,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "FieldLift",
+          "position": {
+            "x": -3.0,
+            "y": -1.1978731155395508
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 6.521595478057861
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 0.8200006484985352,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "FieldLift",
+          "position": {
+            "x": -3.0,
+            "y": -0.007682427763938904
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 8.151993751525879
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 0.9800004959106445,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.997999906539917,
+            "y": 1.2193721532821655
+          },
+          "velocity": {
+            "x": 0.09999996423721313,
+            "y": 6.982394218444824
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.140000343322754,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.9100000858306885,
+            "y": 2.1952908039093018
+          },
+          "velocity": {
+            "x": 0.8999996781349182,
+            "y": 5.412795066833496
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.3000001907348633,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.694000244140625,
+            "y": 2.920073986053467
+          },
+          "velocity": {
+            "x": 1.6999990940093994,
+            "y": 3.843195915222168
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.4600000381469727,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.3500006198883057,
+            "y": 3.393721103668213
+          },
+          "velocity": {
+            "x": 2.4999983310699463,
+            "y": 2.27359676361084
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.619999885559082,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -1.9052011966705322,
+            "y": 3.6162326335906982
+          },
+          "velocity": {
+            "x": 2.7199981212615967,
+            "y": 0.7039976119995117
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.7799997329711914,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -1.5348014831542969,
+            "y": 3.5876083374023438
+          },
+          "velocity": {
+            "x": 1.999998688697815,
+            "y": -0.8656017780303955
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.9399995803833008,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -1.2580018043518066,
+            "y": 3.3078482151031494
+          },
+          "velocity": {
+            "x": 1.4599988460540771,
+            "y": -2.4352009296417236
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.09999942779541,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -1.0460021495819092,
+            "y": 2.7769522666931152
+          },
+          "velocity": {
+            "x": 1.099998950958252,
+            "y": -4.004800319671631
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.2599992752075195,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -0.8844025135040283,
+            "y": 1.9949206113815308
+          },
+          "velocity": {
+            "x": 0.9199990034103394,
+            "y": -5.574399471282959
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.419999122619629,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -0.777202844619751,
+            "y": 1.1047065258026123
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 7.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.5799989700317383,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -0.7052029371261597,
+            "y": 2.083442211151123
+          },
+          "velocity": {
+            "x": 0.7999997138977051,
+            "y": 5.430400848388672
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.7399988174438477,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -0.505203127861023,
+            "y": 2.811042070388794
+          },
+          "velocity": {
+            "x": 1.599999189376831,
+            "y": 3.8608016967773438
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.899998664855957,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -0.1772034466266632,
+            "y": 3.287506341934204
+          },
+          "velocity": {
+            "x": 2.399998426437378,
+            "y": 2.2912025451660156
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 3.0599985122680664,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 0.2787960469722748,
+            "y": 3.5128345489501953
+          },
+          "velocity": {
+            "x": 3.199997663497925,
+            "y": 0.7216033935546875
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 3.219998359680176,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 0.7619954943656921,
+            "y": 3.487027168273926
+          },
+          "velocity": {
+            "x": 2.5999982357025146,
+            "y": -0.8479959964752197
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 3.380000114440918,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.1323951482772827,
+            "y": 3.2100839614868164
+          },
+          "velocity": {
+            "x": 1.999998688697815,
+            "y": -2.417595148086548
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 3.5399999618530273,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.406794786453247,
+            "y": 2.682004928588867
+          },
+          "velocity": {
+            "x": 1.3999989032745361,
+            "y": -3.987194299697876
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 3.6999998092651367,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.498080849647522,
+            "y": 3.145514726638794
+          },
+          "velocity": {
+            "x": 0.4999998211860657,
+            "y": 6.01900053024292
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 3.859999656677246,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.644480586051941,
+            "y": 3.9672906398773193
+          },
+          "velocity": {
+            "x": 1.019999623298645,
+            "y": 4.449401378631592
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.0199995040893555,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.7956805229187012,
+            "y": 4.537930965423584
+          },
+          "velocity": {
+            "x": 0.9799997210502625,
+            "y": 2.8798022270202637
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.179999351501465,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.9124804735183716,
+            "y": 4.85743522644043
+          },
+          "velocity": {
+            "x": 0.6599997878074646,
+            "y": 1.3102030754089355
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.339999198913574,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.0004804134368896,
+            "y": 4.9258036613464355
+          },
+          "velocity": {
+            "x": 0.6199997663497925,
+            "y": -0.25939619541168213
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.499999046325684,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.0652804374694824,
+            "y": 4.743036270141602
+          },
+          "velocity": {
+            "x": 0.29999983310699463,
+            "y": -1.8289954662322998
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.659998893737793,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.112480401992798,
+            "y": 4.309133529663086
+          },
+          "velocity": {
+            "x": 0.2599998116493225,
+            "y": -3.398594617843628
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.819998741149902,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.1476802825927734,
+            "y": 3.6240944862365723
+          },
+          "velocity": {
+            "x": 0.21999980509281158,
+            "y": -4.968194007873535
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 4.979998588562012,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 2.176480293273926,
+            "y": 2.687919855117798
+          },
+          "velocity": {
+            "x": 0.17999981343746185,
+            "y": -6.537793159484863
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 5.139998435974121,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 2.22727370262146,
+            "y": 3.2619707584381104
+          },
+          "velocity": {
+            "x": 0.5999997854232788,
+            "y": 5.822800636291504
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 5.2999982833862305,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 2.395273447036743,
+            "y": 4.05235481262207
+          },
+          "velocity": {
+            "x": 1.3999993801116943,
+            "y": 4.253201484680176
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 5.45999813079834,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 2.6912732124328613,
+            "y": 4.591602802276611
+          },
+          "velocity": {
+            "x": 2.199998617172241,
+            "y": 2.6836023330688477
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 5.619997978210449,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 3.1152727603912354,
+            "y": 4.879715442657471
+          },
+          "velocity": {
+            "x": 2.999997854232788,
+            "y": 1.1140031814575195
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 5.779997825622559,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 3.6672723293304443,
+            "y": 4.916691780090332
+          },
+          "velocity": {
+            "x": 3.799997091293335,
+            "y": -0.45559611916542053
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 5.939997673034668,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 4.212871551513672,
+            "y": 4.7025322914123535
+          },
+          "velocity": {
+            "x": 2.9199979305267334,
+            "y": -2.025195360183716
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 6.099997520446777,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 4.6344709396362305,
+            "y": 4.237237453460693
+          },
+          "velocity": {
+            "x": 2.3199985027313232,
+            "y": -3.594794511795044
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 6.259997367858887,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 4.948870658874512,
+            "y": 3.5208065509796143
+          },
+          "velocity": {
+            "x": 1.7199989557266235,
+            "y": -5.164393901824951
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 6.419999122619629,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 5.184070587158203,
+            "y": 2.5532400608062744
+          },
+          "velocity": {
+            "x": 1.3999991416931152,
+            "y": -6.733993053436279
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 6.579998970031738,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 2",
+          "position": {
+            "x": 5.368070125579834,
+            "y": 1.3345377445220947
+          },
+          "velocity": {
+            "x": 1.0799994468688965,
+            "y": -8.303592681884766
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 6.739998817443848,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 5.425592422485352,
+            "y": 1.2251347303390503
+          },
+          "velocity": {
+            "x": -0.27999991178512573,
+            "y": 6.215200424194336
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 6.899998664855957,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 5.308792591094971,
+            "y": 2.0783026218414307
+          },
+          "velocity": {
+            "x": -1.0799996852874756,
+            "y": 4.645601272583008
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 7.059998512268066,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 5.063992500305176,
+            "y": 2.6803348064422607
+          },
+          "velocity": {
+            "x": -1.8799989223480225,
+            "y": 3.0760021209716797
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 7.219998359680176,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.825592994689941,
+            "y": 3.031230926513672
+          },
+          "velocity": {
+            "x": -1.2799991369247437,
+            "y": 1.5064029693603516
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 7.379998207092285,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.638393402099609,
+            "y": 3.1309914588928223
+          },
+          "velocity": {
+            "x": -0.9599994421005249,
+            "y": -0.06319627165794373
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 7.5399980545043945,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.5023932456970215,
+            "y": 2.979616165161133
+          },
+          "velocity": {
+            "x": -0.6399995684623718,
+            "y": -1.6327955722808838
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 7.699997901916504,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.400793552398682,
+            "y": 2.5771050453186035
+          },
+          "velocity": {
+            "x": -0.5999995470046997,
+            "y": -3.202394723892212
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 7.859997749328613,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.322393894195557,
+            "y": 1.923458218574524
+          },
+          "velocity": {
+            "x": -0.5599995255470276,
+            "y": -4.771994113922119
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 8.019997596740723,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.2671942710876465,
+            "y": 1.0186755657196045
+          },
+          "velocity": {
+            "x": -0.23999960720539093,
+            "y": -6.341593265533447
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 8.179997444152832,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.2183942794799805,
+            "y": -0.13724282383918762
+          },
+          "velocity": {
+            "x": -0.1999995857477188,
+            "y": -7.911192417144775
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 8.339997291564941,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Route 3",
+          "position": {
+            "x": 4.187194347381592,
+            "y": -1.544297218322754
+          },
+          "velocity": {
+            "x": -0.15999957919120789,
+            "y": -9.480794906616211
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 8.49999713897705,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 4.1394500732421875,
+            "y": -1.0375605821609497
+          },
+          "velocity": {
+            "x": -0.5999997854232788,
+            "y": 5.822800636291504
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 8.65999698638916,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 3.9714503288269043,
+            "y": -0.24717676639556885
+          },
+          "velocity": {
+            "x": -1.3999993801116943,
+            "y": 4.253201484680176
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 8.81999683380127,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 3.675450563430786,
+            "y": 0.2920713424682617
+          },
+          "velocity": {
+            "x": -2.199998617172241,
+            "y": 2.6836023330688477
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 8.979996681213379,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 3.262650966644287,
+            "y": 0.5801836848258972
+          },
+          "velocity": {
+            "x": -2.7199981212615967,
+            "y": 1.1140031814575195
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 9.139996528625488,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.9010512828826904,
+            "y": 0.6171602606773376
+          },
+          "velocity": {
+            "x": -2.1199986934661865,
+            "y": -0.45559611916542053
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 9.299996376037598,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.7091095447540283,
+            "y": 1.0833841562271118
+          },
+          "velocity": {
+            "x": -0.27999991178512573,
+            "y": -0.3923998475074768
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 9.459996223449707,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.5923097133636475,
+            "y": 0.879336416721344
+          },
+          "velocity": {
+            "x": -1.0799996852874756,
+            "y": -1.9619990587234497
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 9.61999797821045,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.4490647315979004,
+            "y": 0.8726029396057129
+          },
+          "velocity": {
+            "x": -0.19999992847442627,
+            "y": 6.607600212097168
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 9.779997825622559,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.3943605422973633,
+            "y": 1.0127522945404053
+          },
+          "velocity": {
+            "x": -0.5999997854232788,
+            "y": -1.1771994829177856
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 9.939997673034668,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.259960651397705,
+            "y": 0.6831365823745728
+          },
+          "velocity": {
+            "x": -0.8399996757507324,
+            "y": -2.7467987537384033
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 10.099997520446777,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.16650390625,
+            "y": 1.0964291095733643
+          },
+          "velocity": {
+            "x": -0.09999996423721313,
+            "y": -0.19619989395141602
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 10.259997367858887,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.0897040367126465,
+            "y": 0.9237732887268066
+          },
+          "velocity": {
+            "x": -0.6199997663497925,
+            "y": -1.7657991647720337
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 10.419997215270996,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 2.019304037094116,
+            "y": 0.49998167157173157
+          },
+          "velocity": {
+            "x": -0.29999983310699463,
+            "y": -3.3353984355926514
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 10.579997062683105,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 1.9150757789611816,
+            "y": 1.091232180595398
+          },
+          "velocity": {
+            "x": -0.09999996423721313,
+            "y": -0.1961999237537384
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 10.739996910095215,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 1.8830758333206177,
+            "y": 0.9185763597488403
+          },
+          "velocity": {
+            "x": -0.0599999725818634,
+            "y": -1.7657991647720337
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 10.899996757507324,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 1.8574758768081665,
+            "y": 0.49478474259376526
+          },
+          "velocity": {
+            "x": -0.02000001072883606,
+            "y": -3.3353984355926514
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 11.059996604919434,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 1.8378758430480957,
+            "y": -0.18014270067214966
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -4.904997825622559
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 11.219996452331543,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 0.0,
+          "phase": "Exit",
+          "position": {
+            "x": 1.8226760625839233,
+            "y": -1.106205940246582
+          },
+          "velocity": {
+            "x": -0.019999995827674866,
+            "y": -6.474596977233887
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        },
+        {
+          "time": 11.379996299743652,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": -1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 1.7982763051986694,
+            "y": -2.163405179977417
+          },
+          "velocity": {
+            "x": -0.19999992847442627,
+            "y": -6.044198036193848
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 20.0
+          },
+          "stars": 1,
+          "learning": false,
+          "inField": true
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "status": "passed",
+      "details": "Natural collection and exit callbacks observed; unchanged saved physics and authored collision surfaces. Actual launch must be 50 V +/-0.01 V and both saved platforms must receive real top contacts.",
+      "phase": "Exit",
+      "seconds": 11.439996719360352,
+      "peakY": 5.9322381019592285,
+      "highestBallEdge": 6.4322381019592285,
+      "cameraTop": 9.199999809265137,
+      "launchVoltage": 50.00504684448242,
+      "mass": 1.0,
+      "gravityScale": 1.0,
+      "jumpForce": 7.0,
+      "maxSpeed": 7.0,
+      "acceleration": 5.0,
+      "deceleration": 9.0,
+      "retryCount": 0,
+      "start": {
+        "x": -3.0,
+        "y": -3.3499999046325684
+      },
+      "finish": {
+        "x": 9.191909790039062,
+        "y": -2.0895681381225586
+      },
+      "actualChargeEvent": false,
+      "realStarEvent": true,
+      "realGoalEvent": true,
+      "learningSatisfied": true,
+      "stayedWithinTopBoundary": true,
+      "realFirstLanding": true,
+      "realSecondLanding": true,
+      "physicsSettingsUnchanged": true,
+      "fieldAscentObserved": false,
+      "neutralFieldDescentObserved": false,
+      "negativeFieldBrakeObserved": false,
+      "fieldAscentMeters": 0.0,
+      "neutralFieldDescentMeters": 0.0,
+      "negativeFieldBrakeSeconds": 0.0,
+      "missingSolidTerrainShapes": 0,
+      "terrain": [
+        {
+          "name": "GearLever (1)",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -7.600000381469727,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0000004768371582,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "GearLever",
+          "type": "BoxCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 1,
+          "center": {
+            "x": -8.800000190734863,
+            "y": -3.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Platform_Tilemap",
+          "type": "TilemapCollider2D",
+          "compositeOperation": "Merge",
+          "shapeCount": 0,
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "size": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "name": "Platform_Tilemap",
+          "type": "CompositeCollider2D",
+          "compositeOperation": "None",
+          "shapeCount": 2,
+          "center": {
+            "x": 0.4999852180480957,
+            "y": -0.5,
+            "z": 0.0
+          },
+          "size": {
+            "x": 20.999969482421875,
+            "y": 9.0,
+            "z": 0.0
+          }
+        }
+      ],
+      "contacts": [
+        "Platform_Tilemap"
+      ],
+      "trace": [
+        {
+          "time": 0.020000457763671875,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -3.3499999046325684
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.18000030517578125,
+          "input": 0.0,
+          "voltage": 3.9999983310699463,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -3.4912636280059814
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -1.5695992708206177
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.3400001525878906,
+          "input": 0.0,
+          "voltage": 7.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -2.621135950088501
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 5.626600742340088
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.5,
+          "input": 0.0,
+          "voltage": 11.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.8621439933776855
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 4.05700159072876
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.6599998474121094,
+          "input": 0.0,
+          "voltage": 15.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.35428786277771
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 2.4874024391174316
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.8199996948242188,
+          "input": 0.0,
+          "voltage": 19.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.0975674390792847
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.9178032875061035
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 0.9799995422363281,
+          "input": 0.0,
+          "voltage": 23.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.0919828414916992
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -0.6517960429191589
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.1399993896484375,
+          "input": 0.0,
+          "voltage": 27.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.3375340700149536
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -2.221395254135132
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.2999992370605469,
+          "input": 0.0,
+          "voltage": 31.999998092651367,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.8342210054397583
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -3.79099440574646
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.4599990844726562,
+          "input": 0.0,
+          "voltage": 35.999996185302734,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -2.5820438861846924
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -5.360593795776367
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.6199989318847656,
+          "input": 0.0,
+          "voltage": 39.999996185302734,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -3.495628595352173
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 7.0
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.7800006866455078,
+          "input": 0.0,
+          "voltage": 43.999996185302734,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -2.516892910003662
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 5.430400848388672
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 1.9400005340576172,
+          "input": 0.0,
+          "voltage": 47.999996185302734,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.7892929315567017
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 3.8608016967773438
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.1000003814697266,
+          "input": 0.0,
+          "voltage": 50.00504684448242,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.312828779220581
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 2.2912025451660156
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.260000228881836,
+          "input": 0.0,
+          "voltage": 50.00504684448242,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.0875003337860107
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 0.7216033935546875
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.4200000762939453,
+          "input": 0.0,
+          "voltage": 50.00504684448242,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.1133077144622803
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -0.8479959964752197
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.5799999237060547,
+          "input": 0.0,
+          "voltage": 50.00504684448242,
+          "signedCharge": 1.0,
+          "phase": "Charge",
+          "position": {
+            "x": -3.0,
+            "y": -1.3902509212493896
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": -2.417595148086548
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": false,
+          "inField": false
+        },
+        {
+          "time": 2.739999771118164,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -3.0,
+            "y": -1.6424999237060547
+          },
+          "velocity": {
+            "x": 0.0,
+            "y": 9.804304122924805
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 2.8999996185302734,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.94599986076355,
+            "y": -0.21507596969604492
+          },
+          "velocity": {
+            "x": 0.5999997854232788,
+            "y": 8.234701156616211
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.059999465942383,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.860799551010132,
+            "y": 0.9612118005752563
+          },
+          "velocity": {
+            "x": 0.4199998378753662,
+            "y": 6.665101528167725
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.219999313354492,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.793599843978882,
+            "y": 1.8863637447357178
+          },
+          "velocity": {
+            "x": 0.4199998378753662,
+            "y": 5.0955023765563965
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.3799991607666016,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.747999429702759,
+            "y": 2.560379981994629
+          },
+          "velocity": {
+            "x": 0.2399999052286148,
+            "y": 3.5259032249450684
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.539999008178711,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.653599500656128,
+            "y": 2.9832603931427
+          },
+          "velocity": {
+            "x": 0.9399996399879456,
+            "y": 1.9563040733337402
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.6999988555908203,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.431199789047241,
+            "y": 3.1550049781799316
+          },
+          "velocity": {
+            "x": 1.7399990558624268,
+            "y": 0.3867048919200897
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 3.8599987030029297,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -2.0808002948760986,
+            "y": 3.0756139755249023
+          },
+          "velocity": {
+            "x": 2.5399982929229736,
+            "y": -1.1828944683074951
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.019998550415039,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 0",
+          "position": {
+            "x": -1.6908007860183716,
+            "y": 2.745086908340454
+          },
+          "velocity": {
+            "x": 2.099998712539673,
+            "y": -2.7524936199188232
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.179998397827148,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -1.4769278764724731,
+            "y": 3.0255777835845947
+          },
+          "velocity": {
+            "x": 0.9050498008728027,
+            "y": 6.215200424194336
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.339998245239258,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -1.260120153427124,
+            "y": 3.8787455558776855
+          },
+          "velocity": {
+            "x": 1.7050490379333496,
+            "y": 4.645601272583008
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.499998092651367,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -0.9153125286102295,
+            "y": 4.480777740478516
+          },
+          "velocity": {
+            "x": 2.5050482749938965,
+            "y": 3.0760021209716797
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.659997940063477,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": -0.44250503182411194,
+            "y": 4.831674098968506
+          },
+          "velocity": {
+            "x": 3.3050475120544434,
+            "y": 1.5064029693603516
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.819997787475586,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 0.15830227732658386,
+            "y": 4.931434631347656
+          },
+          "velocity": {
+            "x": 4.10504674911499,
+            "y": -0.06319627165794373
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 4.979997634887695,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 0.8871093988418579,
+            "y": 4.780059337615967
+          },
+          "velocity": {
+            "x": 4.905045986175537,
+            "y": -1.6327955722808838
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.139997482299805,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 1.738316297531128,
+            "y": 4.3775482177734375
+          },
+          "velocity": {
+            "x": 5.425045490264893,
+            "y": -3.202394723892212
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.299997329711914,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.4767234325408936,
+            "y": 3.7239012718200684
+          },
+          "velocity": {
+            "x": 3.985046863555908,
+            "y": -4.771994113922119
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.459997177124023,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.722813844680786,
+            "y": 3.9289779663085938
+          },
+          "velocity": {
+            "x": 0.39999985694885254,
+            "y": 6.215200424194336
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.619997024536133,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 2.858813762664795,
+            "y": 4.782145977020264
+          },
+          "velocity": {
+            "x": 1.1999995708465576,
+            "y": 4.645601272583008
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.779996871948242,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.1228134632110596,
+            "y": 5.3841776847839355
+          },
+          "velocity": {
+            "x": 1.9999988079071045,
+            "y": 3.0760021209716797
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 5.939996719360352,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.4868133068084717,
+            "y": 5.735074043273926
+          },
+          "velocity": {
+            "x": 2.2399985790252686,
+            "y": 1.5064029693603516
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.099996566772461,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 3.7884128093719482,
+            "y": 5.834834575653076
+          },
+          "velocity": {
+            "x": 1.6399987936019897,
+            "y": -0.06319627165794373
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.25999641418457,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.016412734985352,
+            "y": 5.683459281921387
+          },
+          "velocity": {
+            "x": 1.3199989795684814,
+            "y": -1.6327955722808838
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.420000076293945,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Route 1",
+          "position": {
+            "x": 4.187612533569336,
+            "y": 5.280948162078857
+          },
+          "velocity": {
+            "x": 0.9999992251396179,
+            "y": -3.202394723892212
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.579999923706055,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.318812370300293,
+            "y": 4.627301216125488
+          },
+          "velocity": {
+            "x": 0.9599992036819458,
+            "y": -4.771994113922119
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.739999771118164,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.544412136077881,
+            "y": 3.7225184440612793
+          },
+          "velocity": {
+            "x": 1.7599985599517822,
+            "y": -6.341593265533447
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 6.899999618530273,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.65178108215332,
+            "y": 4.261953353881836
+          },
+          "velocity": {
+            "x": 0.5999997854232788,
+            "y": 5.822800636291504
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.059999465942383,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 4.8197808265686035,
+            "y": 5.052337169647217
+          },
+          "velocity": {
+            "x": 1.3999993801116943,
+            "y": 4.253201484680176
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.219999313354492,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 5.115780830383301,
+            "y": 5.591585159301758
+          },
+          "velocity": {
+            "x": 2.199998617172241,
+            "y": 2.6836023330688477
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.379999160766602,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 5.539780139923096,
+            "y": 5.879697799682617
+          },
+          "velocity": {
+            "x": 2.999997854232788,
+            "y": 1.1140031814575195
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.539999008178711,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 6.074979305267334,
+            "y": 5.9166741371154785
+          },
+          "velocity": {
+            "x": 3.239997625350952,
+            "y": -0.45559611916542053
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.69999885559082,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 6.525378704071045,
+            "y": 5.7025146484375
+          },
+          "velocity": {
+            "x": 2.3599984645843506,
+            "y": -2.025195360183716
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 7.85999870300293,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 6.862978458404541,
+            "y": 5.23721981048584
+          },
+          "velocity": {
+            "x": 1.7599987983703613,
+            "y": -3.594794511795044
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.019998550415039,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.121378421783447,
+            "y": 4.52078914642334
+          },
+          "velocity": {
+            "x": 1.4399988651275635,
+            "y": -5.164393901824951
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.179998397827148,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.3117780685424805,
+            "y": 3.553222179412842
+          },
+          "velocity": {
+            "x": 1.1199991703033447,
+            "y": -6.733993053436279
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.339998245239258,
+          "input": -1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.640439987182617,
+            "y": 4.0933308601379395
+          },
+          "velocity": {
+            "x": 1.7187116146087646,
+            "y": 5.822800636291504
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.499998092651367,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.785833835601807,
+            "y": 4.88371467590332
+          },
+          "velocity": {
+            "x": 0.27871203422546387,
+            "y": 4.253201484680176
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.659997940063477,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.818427562713623,
+            "y": 5.422962665557861
+          },
+          "velocity": {
+            "x": 0.23871202766895294,
+            "y": 2.6836023330688477
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.819997787475586,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.844621658325195,
+            "y": 5.711075305938721
+          },
+          "velocity": {
+            "x": 0.1987120658159256,
+            "y": 1.1140031814575195
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 8.979997634887695,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.864415645599365,
+            "y": 5.748051643371582
+          },
+          "velocity": {
+            "x": 0.15871208906173706,
+            "y": -0.45559611916542053
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.139997482299805,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.879215717315674,
+            "y": 5.5338921546936035
+          },
+          "velocity": {
+            "x": 0.19999992847442627,
+            "y": -2.025195360183716
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.299997329711914,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.888015270233154,
+            "y": 5.068597316741943
+          },
+          "velocity": {
+            "x": 0.09999996423721313,
+            "y": -3.594794511795044
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.459997177124023,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.89601469039917,
+            "y": 4.352166652679443
+          },
+          "velocity": {
+            "x": 0.09999996423721313,
+            "y": -5.164393901824951
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.619997024536133,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.9040141105651855,
+            "y": 3.3845996856689453
+          },
+          "velocity": {
+            "x": 0.09999996423721313,
+            "y": -6.733993053436279
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.779996871948242,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.912013530731201,
+            "y": 2.1658973693847656
+          },
+          "velocity": {
+            "x": 0.09999996423721313,
+            "y": -8.303592681884766
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 9.939996719360352,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Star",
+          "position": {
+            "x": 7.920012950897217,
+            "y": 0.6960587501525879
+          },
+          "velocity": {
+            "x": 0.09999996423721313,
+            "y": -9.87319564819336
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 0,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 10.099996566772461,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 7.962013244628906,
+            "y": -1.024916172027588
+          },
+          "velocity": {
+            "x": 0.5999997854232788,
+            "y": -11.442798614501953
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 10.25999641418457,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.130013465881348,
+            "y": -2.9970271587371826
+          },
+          "velocity": {
+            "x": 1.3999993801116943,
+            "y": -13.012401580810547
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 10.41999626159668,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.231110572814941,
+            "y": -2.738011360168457
+          },
+          "velocity": {
+            "x": 0.5999997854232788,
+            "y": 5.822800636291504
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 10.579996109008789,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.399110794067383,
+            "y": -1.9476275444030762
+          },
+          "velocity": {
+            "x": 1.3999993801116943,
+            "y": 4.253201484680176
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 10.739995956420898,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.644710540771484,
+            "y": -1.4083794355392456
+          },
+          "velocity": {
+            "x": 1.3599992990493774,
+            "y": 2.6836023330688477
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 10.899995803833008,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.822310447692871,
+            "y": -1.1202670335769653
+          },
+          "velocity": {
+            "x": 1.0399994850158691,
+            "y": 1.1140031814575195
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 11.059995651245117,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 8.971110343933105,
+            "y": -1.083290457725525
+          },
+          "velocity": {
+            "x": 0.7199995517730713,
+            "y": -0.45559611916542053
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 11.219995498657227,
+          "input": 0.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 9.079910278320312,
+            "y": -1.2974497079849243
+          },
+          "velocity": {
+            "x": 0.6799995303153992,
+            "y": -2.025195360183716
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        },
+        {
+          "time": 11.379995346069336,
+          "input": 1.0,
+          "voltage": 0.0,
+          "signedCharge": 1.0,
+          "phase": "Exit",
+          "position": {
+            "x": 9.159910202026367,
+            "y": -1.762744665145874
+          },
+          "velocity": {
+            "x": 0.3599995970726013,
+            "y": -3.594794511795044
+          },
+          "electricForce": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "stars": 1,
+          "learning": true,
+          "inField": false
+        }
+      ]
+    }
+  ],
+  "finalGameComplete": true,
+  "sceneSmoke": {
+    "campaignErrors": 0,
+    "sceneCount": 7,
+    "legacyErrors": 0,
+    "diagnosticErrors": 0,
+    "missingScripts": 0
+  },
+  "handling": {
+    "reversalZeroSeconds": 0.7799997329711914,
+    "stopSeconds": 0.7799997329711914,
+    "stopDistance": 2.652402877807617,
+    "preservedElectricImpulseSpeed": 5.0
+  },
+  "assetPreservation": {
+    "status": "passed",
+    "createdUtc": "2026-10-21T11:06:26.9595692Z",
+    "scope": "Assets/@Project/@sung_wook/@Game",
+    "method": "Read-only SHA256 comparison to Gameplay_BeforeHashes.json. Source files are never written. Scene reversals are in memory only. Visual YAML blocks are matched by original fileID and property name.",
+    "baselineFiles": 391,
+    "unchangedFiles": 373,
+    "changedFiles": [
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+        "before": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448",
+        "after": "1B8520EA4E7750E3D2A677B5F9CB405480AEA7771F5884FD9638614DE786BBA6"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+        "before": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE",
+        "after": "E0E9F7D99F1C980804A0A8364518F3DEE09D0B9120EAD533433B3C5B9B87C130"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+        "before": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8",
+        "after": "59A43B627787BD4B152253FF6CCA83984340E94B7C55C48993EE28CCEFE1363E"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+        "before": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C",
+        "after": "2294EF561E30735A4DC759065FB07CF1696FAC23510D9A415BB01F43D41FA5E1"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/CollapsiblePanel.cs",
+        "before": "DE111F9F7CEC21D24147B8BA6ABB24D95AE4A611762FECEFC14CE7B406956D97",
+        "after": "49D8A050F714C9121AAD7BC71E9AF78FE8816C508F0801AA0DC5DA9D5D14B92F"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DistanceLauncher2D.cs",
+        "before": "01F264CAE5B4D769DBAAB88784F8B817B467A4BA3F7A22CAE479843879FCFB81",
+        "after": "2F85B78E2B59E4B7E942C68C6A0D3D40207CEE5963422125A2096B67086D9DDD"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricBall2D.cs",
+        "before": "4B41BCA7245385B67F5E855C745197BBE82DF493059862E21155F1E2F842402D",
+        "after": "36A28F4256A87F14FE70FD6EF58497A66A5DC3F1D80647BA79D10C4FB02C55DE"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricComparisonRecord.cs",
+        "before": "0CE6EF19942FAF547306E9C3DE96840BD43E766FD43382F26E0CFAE6DC55B5E3",
+        "after": "85BE18EBB096E065E8D5749D5FCFD0219A7259C529683E976410E661EA6D0326"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningController2D.cs",
+        "before": "D7BCD50847E1C7C185C1ED8070A817E1A09C702F30EF12FAEEAE0C0F999B7DE2",
+        "after": "E65E5CD544C20A15D9557944DF8FABCFE6E5AF7D67A25E60B4B8194E7F16BC13"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningInput2D.cs",
+        "before": "31BB3119E5E641B1D40F7501E940E00FB3BCCAD4BB58A0E56B21D8DF1B4A1347",
+        "after": "BCC09A0B7D0D0E7E1B4351D47EE456E4741833B7773F8FD180FED97527797645"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageHudView.cs",
+        "before": "936521B0A8336F0C983E5F127845BBEC9F9607DBD3623F3DBEF88064B0233EF9",
+        "after": "5A5D859DAE3E20D54279A59BBAC481B01BBF9947C04CC7A3BBB696FF374AF1D0"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageInput2D.cs",
+        "before": "A67AA95A6ABCFC8B51A18DD04C57B77FFA47925B23CE6F124500724EC49EB10B",
+        "after": "D786845400A1E346B7168441F7596D3632EE5DBE8D2B88DE81B66E7B17832E70"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSelector.cs",
+        "before": "2FB6ED5BC210C52EB4287FD501CF1477731864A1034FC8F06211C62CC12A0452",
+        "after": "2F911A7B6442127A4E421D23A22AAA394F8ED4C05090314EA9724689B47347F5"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSession2D.cs",
+        "before": "B96A3C9FCC4B03AB72AD3F4F985EB9CE0574D9AB951A0026A4F700AE8DD44505",
+        "after": "90D1EC421DCEB7B681113B4123D8A3CA5180FDBC18577A3AB899AF09A1B4D60B"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/VoltageLauncher2D.cs",
+        "before": "6F1BCB0D32310D9A15596AE074E64D92B8B1B25B3D4C25909EB80ED77C423DE5",
+        "after": "9947EE30955C8CADE9A698113B8718816354D8BCA04169B5C2AA74CFE70FEAC9"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerMovement.cs",
+        "before": "F7D94C32BCA4A3C80B25F4161010E5FF82FED5A83E3C5228C877905F765B60FF",
+        "after": "5EE65F8A83043D0094334CF158156C27BCDC1FA5E104DF7B0912E727A8172B03"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab",
+        "before": "DC63DF8A7D9603999D8F8A288DD1D0605ABB7B34EE497123FF09194756A1BEEE",
+        "after": "CBE74986C959999A79A3F8774DED9BB8D92170A4ADE25694A458BA4E715A1D5F"
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab",
+        "before": "3D97EB594AE39D07E85B79B7B5032A4A5C27E9B3F48BB9BFD99AD96011435EFD",
+        "after": "65D20D371BD392AA46953D1FE18B6AAB59DADE046F71B127BF0BD568A64623E3"
+      }
+    ],
+    "missingFiles": [],
+    "addedFiles": [
+      "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs",
+      "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs.meta"
+    ],
+    "newFilesAudit": {
+      "expectedFunctionalFiles": [
+        "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs",
+        "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs.meta"
+      ],
+      "unexpected": [],
+      "noNewArt": true
+    },
+    "existingMediaAndMaterials": {
+      "count": 30,
+      "changed": [],
+      "allUnchanged": true,
+      "byExtension": [
+        {
+          "Name": ".aseprite",
+          "Count": 19
+        },
+        {
+          "Name": ".mat",
+          "Count": 1
+        },
+        {
+          "Name": ".ogg",
+          "Count": 3
+        },
+        {
+          "Name": ".otf",
+          "Count": 2
+        },
+        {
+          "Name": ".png",
+          "Count": 1
+        },
+        {
+          "Name": ".shadergraph",
+          "Count": 1
+        },
+        {
+          "Name": ".ttf",
+          "Count": 3
+        }
+      ]
+    },
+    "existingMetadata": {
+      "count": 199,
+      "changed": [],
+      "allUnchanged": true
+    },
+    "uiVisualResourceFields": [
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab",
+        "comparedVisualFieldBlocks": 74,
+        "unchanged": true,
+        "differentVisualFields": []
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab",
+        "comparedVisualFieldBlocks": 68,
+        "unchanged": true,
+        "differentVisualFields": []
+      }
+    ],
+    "allowedTypographyChange": "Learning_Objective_Panel help-toggle label keeps its original font asset/material/colors; m_fontSize and m_fontSizeBase change 85 to 30 to display the Korean open/close label. Font resource preservation does not mean unchanged text size.",
+    "sceneReversalChecks": [
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+        "reversedDecelerationFields": 1,
+        "expectedBeforeHash": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448",
+        "reversedHash": "3D9197B80420C18F1C3CC7C577D3E25134C2BFB48391B59303B0D582ECB38448",
+        "exactBaselineAfterMemoryReversal": true
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+        "reversedDecelerationFields": 1,
+        "expectedBeforeHash": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE",
+        "reversedHash": "F2156934FA56B6A912B6FA533C5466979C5F1902DDB8F703007ECA7D3662F9EE",
+        "exactBaselineAfterMemoryReversal": true
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+        "reversedDecelerationFields": 1,
+        "expectedBeforeHash": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C",
+        "reversedHash": "380DC3ED7EA0F51991D466BAEF9F816AF63C8D0FC7A95D109A4058344411CA7C",
+        "exactBaselineAfterMemoryReversal": true
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+        "reversedDecelerationFields": 1,
+        "fieldWidthAndRailChanges": [
+          {
+            "document": "1404593038",
+            "before": "  m_LocalPosition: {x: -3, y: -1.95, z: 0}",
+            "after": "  m_LocalPosition: {x: 1.55, y: -1.95, z: 0}"
+          },
+          {
+            "document": "1404593038",
+            "before": "  m_LocalScale: {x: 2.2, y: 3.88, z: 1}",
+            "after": "  m_LocalScale: {x: 11.3, y: 3.88, z: 1}"
+          },
+          {
+            "document": "737160925",
+            "before": "  m_LocalPosition: {x: -1.65, y: -1.8, z: 0}",
+            "after": "  m_LocalPosition: {x: 7.45, y: -1.8, z: 0}"
+          },
+          {
+            "prefabInstance": "6883389185584763296",
+            "target": "4621037390891271464",
+            "property": "m_Offset.x",
+            "addedValue": "4.55"
+          },
+          {
+            "prefabInstance": "6883389185584763296",
+            "target": "4621037390891271464",
+            "property": "m_Size.x",
+            "addedValue": "11.3"
+          },
+          {
+            "prefabInstance": "6883389185584763296",
+            "target": "6206326342329191123",
+            "property": "m_LocalPosition.x",
+            "addedValue": "4.55"
+          },
+          {
+            "prefabInstance": "6883389185584763296",
+            "target": "6206326342329191123",
+            "property": "m_LocalScale.x",
+            "addedValue": "11.3"
+          },
+          {
+            "prefabInstance": "6883389185584763296",
+            "target": "6008083732987843087",
+            "property": "m_LocalPosition.x",
+            "addedValue": "4.55"
+          },
+          {
+            "prefabInstance": "6883389185584763296",
+            "target": "6008083732987843087",
+            "property": "m_LocalScale.x",
+            "addedValue": "11.3"
+          }
+        ],
+        "expectedBeforeHash": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8",
+        "reversedHash": "69E9091221307850D9C54573F4B1E7E7ED7C52DEAB269CB5B053EC30F32274F8",
+        "exactBaselineAfterMemoryReversal": true
+      }
+    ],
+    "launcherSerializedDefaults": [
+      {
+        "file": "DistanceLauncher2D.cs",
+        "parameterCount": 9,
+        "unchanged": true,
+        "parameters": [
+          "        [SerializeField] private Polarity sourcePolarity = Polarity.Positive;",
+          "        [SerializeField, Range(0f, 10f)] private float sourceMagnitude = 1f;",
+          "        [SerializeField] private float coulombConstant = 16f;",
+          "        [SerializeField] private float minimumDistance = 0.5f;",
+          "        [SerializeField] private float maximumForce = 80f;",
+          "        [SerializeField] private float pulseSeconds = 0.4f;",
+          "        [SerializeField] private float activationRadius = 3f;",
+          "        [SerializeField] private float cooldown = 0.5f;",
+          "        [SerializeField] private bool keyboardLaunch = true;"
+        ]
+      },
+      {
+        "file": "VoltageLauncher2D.cs",
+        "parameterCount": 6,
+        "unchanged": true,
+        "parameters": [
+          "        [SerializeField, Min(0.01f)] private float maximumVoltage = 100f;",
+          "        [SerializeField, Min(0f)] private float chargeRate = 25f;",
+          "        [SerializeField, Min(0f)] private float leakRate;",
+          "        [SerializeField, Min(0f)] private float targetVoltage = 50f;",
+          "        [SerializeField, Min(0f)] private float cooldown = 0.5f;",
+          "        [SerializeField] private bool keyboardLaunch = true;"
+        ]
+      }
+    ],
+    "movementSerializedDefaults": {
+      "parameterCount": 5,
+      "unchangedExceptDeclaredDeceleration": true,
+      "allowedChange": "deceleration 3 to 9",
+      "before": [
+        "        [SerializeField] private float jumpForce = 7f;",
+        "        [SerializeField] private float moveSpeed = 4f;",
+        "        [SerializeField] private float maxMoveSpeed = 7f;",
+        "        [SerializeField] private float acceleration = 5f;",
+        "        [SerializeField] private float deceleration = 3f;"
+      ],
+      "after": [
+        "        [SerializeField] private float jumpForce = 7f;",
+        "        [SerializeField] private float moveSpeed = 4f;",
+        "        [SerializeField] private float maxMoveSpeed = 7f;",
+        "        [SerializeField] private float acceleration = 5f;",
+        "        [SerializeField] private float deceleration = 9f;"
+      ]
+    },
+    "unchangedPhysicsSources": [
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricMath.cs",
+        "hashUnchanged": true
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ContactCharger2D.cs",
+        "hashUnchanged": true
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/UniformField2D.cs",
+        "hashUnchanged": true
+      },
+      {
+        "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricForceSample.cs",
+        "hashUnchanged": true
+      }
+    ],
+    "explicitBehaviorChanges": [
+      "PlayerMovement no-input/opposite-direction braking deceleration: 3 to 9; jump/acceleration/mass/gravity/launch energy are preserved.",
+      "Stage04 existing field/plate width is expanded for the polarity traversal; force magnitude, voltage, vertical field extent and plate separation are preserved.",
+      "Functional checkpoint recovery, mandatory Stage04 traversal records, feedback/help UI and optional challenge persistence are intentional changes."
+    ],
+    "auditLimit": "Baseline covers the 391 files under the sung_wook game folder, not every unrelated asset in the Unity project. This is an asset/data preservation audit, not a replacement for runtime play verification."
+  },
+  "sourceBuildHashes": [
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_02.unity",
+      "sha256": "1B8520EA4E7750E3D2A677B5F9CB405480AEA7771F5884FD9638614DE786BBA6",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_03.unity",
+      "sha256": "E0E9F7D99F1C980804A0A8364518F3DEE09D0B9120EAD533433B3C5B9B87C130",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_04.unity",
+      "sha256": "59A43B627787BD4B152253FF6CCA83984340E94B7C55C48993EE28CCEFE1363E",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/Stage/Stage_05.unity",
+      "sha256": "2294EF561E30735A4DC759065FB07CF1696FAC23510D9A415BB01F43D41FA5E1",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/CollapsiblePanel.cs",
+      "sha256": "49D8A050F714C9121AAD7BC71E9AF78FE8816C508F0801AA0DC5DA9D5D14B92F",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DistanceLauncher2D.cs",
+      "sha256": "2F85B78E2B59E4B7E942C68C6A0D3D40207CEE5963422125A2096B67086D9DDD",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricBall2D.cs",
+      "sha256": "36A28F4256A87F14FE70FD6EF58497A66A5DC3F1D80647BA79D10C4FB02C55DE",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricComparisonRecord.cs",
+      "sha256": "85BE18EBB096E065E8D5749D5FCFD0219A7259C529683E976410E661EA6D0326",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningController2D.cs",
+      "sha256": "E65E5CD544C20A15D9557944DF8FABCFE6E5AF7D67A25E60B4B8194E7F16BC13",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricLearningInput2D.cs",
+      "sha256": "BCC09A0B7D0D0E7E1B4351D47EE456E4741833B7773F8FD180FED97527797645",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageHudView.cs",
+      "sha256": "5A5D859DAE3E20D54279A59BBAC481B01BBF9947C04CC7A3BBB696FF374AF1D0",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageInput2D.cs",
+      "sha256": "D786845400A1E346B7168441F7596D3632EE5DBE8D2B88DE81B66E7B17832E70",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSelector.cs",
+      "sha256": "2F911A7B6442127A4E421D23A22AAA394F8ED4C05090314EA9724689B47347F5",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageSession2D.cs",
+      "sha256": "90D1EC421DCEB7B681113B4123D8A3CA5180FDBC18577A3AB899AF09A1B4D60B",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/VoltageLauncher2D.cs",
+      "sha256": "9947EE30955C8CADE9A698113B8718816354D8BCA04169B5C2AA74CFE70FEAC9",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerMovement.cs",
+      "sha256": "5EE65F8A83043D0094334CF158156C27BCDC1FA5E104DF7B0912E727A8172B03",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/Learning_Objective_Panel.prefab",
+      "sha256": "CBE74986C959999A79A3F8774DED9BB8D92170A4ADE25694A458BA4E715A1D5F",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/StageHUD.prefab",
+      "sha256": "65D20D371BD392AA46953D1FE18B6AAB59DADE046F71B127BF0BD568A64623E3",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs",
+      "sha256": "F8EC86550776B98B08EBD688F9116366806B5F49E1D16222B7204EB8153B0EB4",
+      "cloneMatches": true
+    },
+    {
+      "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/ElectricStageChallenge2D.cs.meta",
+      "sha256": "20F4B346E7A0A26A3035AA4F51E359CD6693235513955D3CE4410878D220ADE1",
+      "cloneMatches": true
+    }
+  ],
+  "preferencesRestored": true,
+  "limitations": [
+    "Automated API-input routes with real physics/star/goal events, not a human playthrough.",
+    "Virtual InputSystem devices and explicit isolation fixtures verify input and negative cases separately from no-teleport routes.",
+    "Single Windows PC and short samples. No measured human enjoyment, learning outcome or long-run stability claim."
+  ],
+  "executable": "C:/Users/wook1/AppData/Local/Temp/CodexUnityVisualBuild/Builds/GameplayRelease/Scince.exe"
+}

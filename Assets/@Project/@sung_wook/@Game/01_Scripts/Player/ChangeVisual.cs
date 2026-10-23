@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace sung_wook
 {
+                                                                          
     public class ChangeVisual : MonoBehaviour
     {
         public GameObject root;
@@ -11,42 +10,59 @@ namespace sung_wook
         public GameObject _neutralVisual;
         public GameObject _positiveVisual;
         public GameObject _negativeVisual;
+        [SerializeField] protected GameObject existingNeutralVisual;
 
         private GameObject[] _visuals;
 
-        public PlayerStateType CurrentVisualState { get; private set; }
+        public PlayerStateType CurrentVisualState { get; protected set; }
         
-        private void Awake()
-        {
-            // 추후 모든 스크립트의 Setup은 GameManager가 담당
-            Setup();
-        }
+        protected virtual void Awake() => Setup();
 
-        public void Setup()
-        { 
-            _visuals                                     = new GameObject[3];
-            _visuals[(int)PlayerStateType.Neutral]    = CreateGameObject(_neutralVisual, "NeutralVisual");
-            _visuals[(int)PlayerStateType.Positive]   = CreateGameObject(_positiveVisual, "PositiveVisual");
-            _visuals[(int)PlayerStateType.Negative]   = CreateGameObject(_negativeVisual, "NegativeVisual");
+                                                                        
+        public virtual void Setup()
+        {
+            if (_visuals != null) return;
+            if (root == null) root = gameObject;
+                                                               
+            if (existingNeutralVisual == null)
+            {
+                Transform authoredVisual = root.transform.Find("Visual");
+                if (authoredVisual != null) existingNeutralVisual = authoredVisual.gameObject;
+            }
+            _visuals = new GameObject[3];
+            _visuals[(int)PlayerStateType.Neutral] = existingNeutralVisual != null
+                ? existingNeutralVisual : CreateGameObject(_neutralVisual, "NeutralVisual");
+            _visuals[(int)PlayerStateType.Positive] = CreateGameObject(_positiveVisual, "PositiveVisual");
+            _visuals[(int)PlayerStateType.Negative] = CreateGameObject(_negativeVisual, "NegativeVisual");
+            foreach (GameObject visual in _visuals)
+            {
+                if (visual != null) visual.SetActive(false);
+            }
             
-            _visuals[(int)CurrentVisualState].SetActive(true);
+            if (_visuals[(int)CurrentVisualState] != null)
+                _visuals[(int)CurrentVisualState].SetActive(true);
         }
 
         private GameObject CreateGameObject(GameObject go, string name = "GameObject")
         {
+            if (go == null) return null;
             GameObject visual = Instantiate(go, root.transform);
             visual.name = name;
             visual.SetActive(false);
             return visual;
         }
         
-        public void VisualChange(PlayerStateType newState)
+                                                                 
+        public virtual void VisualChange(PlayerStateType newState)
         {
-            _visuals[(int)CurrentVisualState]?.SetActive(false);
+            Setup();
+            if (_visuals[(int)CurrentVisualState] != null)
+                _visuals[(int)CurrentVisualState].SetActive(false);
             
             CurrentVisualState = newState;
             
-            _visuals[(int)CurrentVisualState]?.SetActive(true);
+            if (_visuals[(int)CurrentVisualState] != null)
+                _visuals[(int)CurrentVisualState].SetActive(true);
         }
     }
 }

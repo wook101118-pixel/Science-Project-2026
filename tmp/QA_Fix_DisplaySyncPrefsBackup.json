@@ -1,0 +1,19 @@
+{
+    "company": "DefaultCompany",
+    "product": "Scince",
+    "hasWidth": false,
+    "hasHeight": false,
+    "hasFullscreen": false,
+    "hasVolume": false,
+    "hasMute": false,
+    "restored": true,
+    "width": 0,
+    "height": 0,
+    "fullscreen": 0,
+    "mute": 0,
+    "expectedWidth": 1440,
+    "expectedHeight": 810,
+    "writerPid": 21436,
+    "volume": 0.0,
+    "expectedFullscreen": false
+}

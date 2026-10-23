@@ -1,0 +1,94 @@
+{
+  "scope": "메뉴, 일시정지, 설정 공유와 저장, 효과음, 비동기 씬 전환, HUD의 정적 검토 및 Windows D3D11 실제 실행 빌드 검사. 원본 생산 파일 수정 없음.",
+  "productionModified": false,
+  "findings": [
+    {
+      "id": "UI-EXT-MODE",
+      "priority": "P2",
+      "title": "설정창 밖에서 바뀐 전체화면 모드가 설정 UI 및 자체 저장값에 동기화되지 않음",
+      "status": "confirmed-runtime-direct-Screen-mode-change; native-AltEnter-not-dispatched",
+      "source": "Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/DisplayPreferences.cs",
+      "lines": [
+        23,
+        47,
+        84,
+        93,
+        106
+      ],
+      "additionalSource": "ProjectSettings/ProjectSettings.asset:112 allowFullscreenSwitch=1; DisplaySettingsView.cs:41",
+      "reproduction": "창 모드로 설정한 뒤 Alt+Enter로 전체화면을 전환하고 설정창을 다시 연다. 표시값은 캐시된 창 모드이며, 이미 선택된 창 모드 옵션은 값 변경 이벤트가 발생하지 않아 바로 되돌릴 수 없다. 먼저 전체화면 항목을 선택하고 다시 창 모드를 선택해야 한다.",
+      "actual": "IsFullscreen이 초기 로드 및 SetFullscreen에서만 갱신되며 Screen.fullScreen 변경을 관찰하는 경로가 없다. 저장되는 자체 키 또한 캐시 값이다.",
+      "expected": "지원하는 시스템 단축키로 실제 모드가 변한 후에도 설정창과 다음 실행 복원값이 실제 모드와 일치해야 한다.",
+      "caveat": "Alt+Enter 실제 입력 재현은 아직 수행하지 않았다. 임시 probe는 동일한 Screen.fullScreenMode 변경으로 상태 불일치를 관찰한다. 정적 원인과 직접 API 재현, 실제 단축키 검증을 구분해야 한다.",
+      "runtimeEvidence": "Logs/QA_UiAudio.json: actual Screen.fullScreen=True, cached DisplayPreferences.IsFullscreen=False, dropdown=1 after direct Screen.fullScreenMode change."
+    }
+  ],
+  "reviewedCorrectPaths": [
+    "MainMenuController의 중복 시작 및 설정창 열림 중 시작 가드",
+    "PauseMenuController의 설정창 중 Resume/Restart/MainMenu 호출 차단과 Esc 두 단계 복귀",
+    "SFX 설정 UI OnEnable/OnDisable 대칭 구독, 무알림 UI 새로고침, 변경 즉시 PlayerPrefs.Save",
+    "SFX 실제 AudioSource 전체에 mute 및 gain 갱신, gameplay와 UI 소리의 일시정지 구분",
+    "SceneTransitionController의 동기 busy 가드, unscaled 페이드, 완전 차폐 후 async 활성화",
+    "잘못된 씬 경로의 로드 거부 및 초기 실패 시 previousTimeScale 복원",
+    "ElectricGameCompleteView와 PauseMenuController의 씬 전환 시 timeScale 소유권 처리"
+  ],
+  "falsePositivesRejected": [
+    "Common Controls의 2~5 선택 문구는 비활성 legacy Learning UI Canvas에 있으므로 실행 화면에 보인다는 확인 없이 안내 결함으로 분류하지 않음.",
+    "매 프레임 HUD 문자열 갱신은 코드상 존재하지만 측정된 성능 저하 증거가 없으므로 성능 결함으로 분류하지 않음.",
+    "모든 모니터·해상도·장시간 안정성이 검증되었다고 간주하지 않음."
+  ],
+  "preparedProbe": "tmp/QaUiAudioProbe.cs",
+  "probeRoslynCompile": "passed",
+  "runtime": {
+    "report": "Logs/QA_UiAudio.json",
+    "startedUtc": "2026-10-21T09:03:35Z",
+    "finishedUtc": "2026-10-21T09:03:46Z",
+    "checks": 33,
+    "passed": 32,
+    "failed": 1,
+    "failedCheck": "runtime-no-unexpected-error",
+    "spriteOutlineErrors": 16,
+    "originalFivePreferenceKeysRestored": true,
+    "resolution": "640x480",
+    "layoutOutsideScreen": 0,
+    "layoutLegacyHeightTruncation": 0,
+    "modeMismatchReproduced": true,
+    "productionModified": false
+  },
+  "assetRuntimeIssue": {
+    "id": "RUNTIME-SPRITE-OUTLINE",
+    "priority": "P2 pending collider diagnostics; do not claim P1 yet",
+    "status": "confirmed-runtime-error; physics impact not yet established",
+    "message": "Sprite outline generation failed - could not read texture pixel data. Did you forget to make the texture readable?",
+    "evidence": "Logs/QA_UiAudio.log:168-173 6 errors at Stage03 load, :232-241 10 errors at Stage04 load; messages occur before GearLever.Awake, not from the temporary probe.",
+    "suspectedCause": "6 Stage03 terrain TilemapCollider2D components and 10 Stage04 components match error counts. Tile asset uses Sprite collider mode while Normal_Block.aseprite has isReadable=0 and no generated/fallback physics shape. Per-cell Grid overrides exist in prefab m_AllTileFlags=2147483649, so exact engine regeneration reason and collision impact require runtime shape diagnostics.",
+    "sources": [
+      "Assets/@Project/@sung_wook/@Game/09_Tile/Normal_Block_0.asset:36",
+      "Assets/@Project/@sung_wook/@Game/05_Texture/Normal_Block.aseprite.meta:27",
+      "Assets/@Project/@sung_wook/@Game/05_Texture/Normal_Block.aseprite.meta:41",
+      "Assets/@Project/@sung_wook/@Game/05_Texture/Normal_Block.aseprite.meta:298",
+      "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage03_Terrain.prefab:176",
+      "Assets/@Project/@sung_wook/@Game/02_Prefabs/Modules/Terrain/Stage04_Terrain.prefab:166"
+    ]
+  },
+  "screenshotReview": {
+    "reviewed": 6,
+    "cleanSettingsAndStage02": 3,
+    "settingsConclusion": "Main and pause settings retain original gray/white styling and all volume, mute, mode, resolution and close/back controls are readable with no overlap or crop at 640x480.",
+    "stageConclusion": "Stage02 active TMP HUD and collapsible objective panel fit screen; no disabled legacy Common Controls visible. Stage03-05 screenshots are contaminated by the development console opening on the expected missing-scene guard and subsequent real sprite errors; clean captures required before complete visual sign-off.",
+    "reference": [
+      "Logs/QA_UiAudio-main-settings-low.png",
+      "Logs/QA_UiAudio-pause-settings-low.png",
+      "Logs/QA_UiAudio-stage02-low.png",
+      "Logs/QA_UiAudio-stage3-low.png",
+      "Logs/QA_UiAudio-stage4-low.png",
+      "Logs/QA_UiAudio-stage5-low.png"
+    ]
+  },
+  "limitations": [
+    "Sound source playback, clip, volume, mute and pause behavior verified; no human listening assessment of timbre or loudness balance.",
+    "Final menu frame mean 4.17 ms / max 5.57 ms for 1.5 seconds is contextual, not a full-stage or long-duration performance benchmark.",
+    "SFX and display durability across separate processes reuse the explicitly dated previous standalone validation; current probe verifies immediate saves and sharing, then restores all five keys.",
+    "Native Alt+Enter keyboard input was not dispatched; external mode mismatch was reproduced with direct Screen.fullScreenMode."
+  ]
+}

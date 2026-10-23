@@ -53,7 +53,7 @@ namespace sung_wook
             _bgmPlayer.playOnAwake = false;
             _bgmPlayer.loop = true;
             _bgmPlayer.volume = bgmVolume;
-            //_bgmPlayer.clip = bgmClip;
+                                        
         
             if (Camera.main)
                 _bgmEffect = Camera.main.GetComponent<AudioHighPassFilter>();

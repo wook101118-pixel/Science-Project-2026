@@ -1,0 +1,53 @@
+{
+  "scope": "Read-only controls, charge, force, visual QA. Production source/assets/preferences are unchanged. Runtime results are supplied separately by the parent-run opt-in QaControlProbe.",
+  "findings": [
+    {
+      "id": "CTRL-01",
+      "priority": 2,
+      "category": "handling",
+      "status": "confirmed-runtime",
+      "title": "An unused vertical movement key reduces horizontal keyboard movement by about 29%",
+      "source": "C:/Users/wook1/GitBub-Unity/Science-Project-2026/Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerController.cs",
+      "line": 24,
+      "relatedSource": "C:/Users/wook1/GitBub-Unity/Science-Project-2026/Assets/@Project/@sung_wook/@Game/04_InputSystem/Controls.inputactions",
+      "relatedLine": 34,
+      "repro": "Hold D; then keep D held and additionally press W or the Up arrow. The generated WASD composite uses the default normalized Dpad mode, so MoveVector changes from (1,0) to approximately (0.707,0.707). PlayerController consumes only x; vertical input is discarded. Target horizontal speed changes from 7 to 4.95 units/s despite unchanged right movement intent. The same issue applies to the other diagonal combinations.",
+      "evidence": "Controls.inputactions path Dpad has no mode override. The project-local installed Unity Input System Vector2Composite.cs (com.unity.inputsystem@21a28c3a6c83) lines 125/154/181 establish default mode DigitalNormalized=0. PlayerController.Update sends only MoveVector.x to SetMovex; PlayerMovement multiplies it by maxMoveSpeed.",
+      "impact": "An accidental W/S or up/down press changes jump range and horizontal movement. No documented vertical player movement consumes the discarded component.",
+      "suggestion": "For keyboard movement, use a one-dimensional horizontal binding or digital unnormalized composite, preserving analog stick intent separately. No change was made because this task requests a QA report.",
+      "runtimeCheck": "Logs/QA_Controls.json: unused-vertical-key-does-not-reduce-horizontal-input failed with D=1, D+W=0.707107. Target speeds 7 versus 4.949749 units/s."
+    },
+    {
+      "id": "CTRL-02",
+      "priority": 3,
+      "category": "handling-observation",
+      "status": "confirmed-runtime-observation",
+      "title": "Default stopping and reversal take substantial time relative to narrow platforms",
+      "source": "C:/Users/wook1/GitBub-Unity/Science-Project-2026/Assets/@Project/@sung_wook/@Game/01_Scripts/Player/PlayerMovement.cs",
+      "line": 46,
+      "repro": "Reach the saved 7 units/s horizontal cap. Release all movement keys without external electric momentum. Braking is 3 units/s², predicting 2.33 seconds and about 8.17 world units to stop. From +7 units/s, hold opposite direction: acceleration 5 predicts 1.4 seconds to stop and 2.8 seconds to reach -7.",
+      "evidence": "Saved Stage_02 player mass=1, linear damping=0, acceleration=5, deceleration=3, maxMoveSpeed=7. FixedUpdate uses MoveTowards(rate*fixedDeltaTime). Runtime probe measures actual distance/time and reversal rather than inferring feel solely from constants.",
+      "impact": "This can feel slippery on short landing pads and requires early braking. External launch/electric momentum is intentionally preserved on release until support contact; this part is documented behavior, not a proven defect.",
+      "suggestion": "Use the measured values in a manual playtest before changing tuning. Consider a stronger braking/air-control choice or an explicit inertia explanation only if that matches intended play. No universal acceptance requirement is assumed.",
+      "runtimeMeasurement": "Logs/QA_Controls.json: observed stop distance 8.096802 units in 2.339999 seconds; reversal zero crossing 1.42 seconds and full reversal 2.799999 seconds. Physics checks themselves passed."
+    }
+  ],
+  "staticChecks": [
+    "Space input uses wasPressedThisFrame in Update, not FixedUpdate; holding Space does not intentionally repeat state cycling.",
+    "Player.CycleState changes ElectricBall2D magnitude before changing Player state; SignedCharge derives from the same Player state, so actual force and visuals share the charge source.",
+    "Charge visual transitions use deltaTime; player polarity changes cross the neutral visual with magnitude alpha. Saved Stage_02 references existing Plus/Minus sprites and a 0.2 second transition.",
+    "ContactCharger2D reads lever SignedValue, applies source magnitude, updates both player magnitude and polarity on enter/stay, and does not overwrite separated ball charge.",
+    "Contact point-charge SI conversion uses a 30 microcoulomb charge unit and 1 metre/world unit, with minimum distance and a force cap. Read-only force samples share the applied force calculation.",
+    "DistanceLauncher2D and VoltageLauncher2D collect a single E request in Update and consume it once in FixedUpdate; disabling clears pending requests. Failed launch requests do not consume voltage.",
+    "Movement integrates horizontal acceleration in FixedUpdate; bounce requires Ground tag, downward/near-zero vertical velocity, upward support normal >=0.6 and a short cooldown. Wall/ceiling contacts do not intentionally auto-bounce.",
+    "Stage restart resets magnitude through ElectricLearningController2D.ResetLesson, so ElectricBall2D.ResetAt preserving magnitude by itself does not cause stage restart stale charge.",
+    "Force/voltage launcher physics in other stages explicitly use game units; they are teaching approximations, not SI-calibrated conductor simulations. HUD labels those non-SI samples as game units."
+  ],
+  "limitations": [
+    "The first controls fixture run placed its temporary floor at the earlier stationary ContactChargingStation position. The station MonoBehaviour was disabled but its Untagged Collider2D remained solid; this invalidated the floor-bounce test and could mask the wall/ceiling isolation. The temporary helper was corrected to place these three fixtures at x=2000, away from the source at x=1000. The initial ground test failure must not be reported as a production defect; use the parent's rerun result.",
+    "Runtime fixture tests relocate participants and create invisible temporary colliders; they cannot establish complete puzzle route playability, platform difficulty or subjective fun.",
+    "The fixture uses an Input System virtual keyboard/mouse and dispatches the production controller/mover methods explicitly. It verifies input decoding and production logic, not a human end-to-end manual controller playthrough.",
+    "Slope traversal, moving-platform friction over long sessions, high-refresh/low-refresh hardware comparisons and gamepad-only completion remain separate manual QA items unless the parent supplies additional coverage.",
+    "No production change, art creation, recoloring, commit or user preference mutation was performed by this QA subtask."
+  ]
+}

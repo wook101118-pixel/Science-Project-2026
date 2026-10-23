@@ -1,0 +1,538 @@
+{
+  "10935112": {
+    "name": "Field Zone",
+    "go": "10935111",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: -3, y: -1.95, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "31210234": {
+    "name": "Platform",
+    "go": "31210233",
+    "parent": "{fileID: 690917481}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "59556286": {
+    "name": "Stage 03",
+    "go": "59556284",
+    "parent": "{fileID: 644561891}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "87262609": {
+    "name": "Hexagon",
+    "go": "87262607",
+    "parent": "{fileID: 2007981189}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "196388444": {
+    "name": "Visual",
+    "go": "196388443",
+    "parent": "{fileID: 541017789}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "202163843": {
+    "name": "Lower Plate",
+    "go": "202163841",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: -3, y: -3.95, z: 0}",
+    "scale": "{x: 2.2, y: 0.12, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "246917238": {
+    "name": "Exit Label",
+    "go": "246917237",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: 1, y: 1.9, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "297893862": {
+    "name": "Star Label",
+    "go": "297893861",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: -0.65, y: 1.8000001, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "299190412": {
+    "name": "Goal Platform",
+    "go": "299190411",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: 0.7, y: -1.8, z: 0}",
+    "scale": "{x: 1.8, y: 0.3, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "313673056": {
+    "name": "Text (TMP)",
+    "go": "313673055",
+    "parent": "{fileID: 2055078703}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "333248037": {
+    "name": "BaseGameEntity",
+    "go": "333248035",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "367442326": {
+    "name": "Explanation",
+    "go": "367442325",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: -3, y: -1.45, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "436380086": {
+    "name": "Explanation",
+    "go": "436380085",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: -3, y: 0.4, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "448929602": {
+    "name": "Launch Zone",
+    "go": "448929600",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: -3, y: -2.875, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "473356092": {
+    "name": "Contact Position",
+    "go": "473356091",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: -3.4, y: -3.7, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "479516514": {
+    "name": "Star",
+    "go": "479516513",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: -0.65, y: -0.54999995, z: 0}",
+    "scale": "{x: 0.35, y: 0.35, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0.38268346, w: 0.9238795}"
+  },
+  "497602829": {
+    "name": "SoundManager",
+    "go": "497602826",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "519420032": {
+    "name": "Main Camera",
+    "go": "519420028",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: -10}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "525051558": {
+    "name": "Visual",
+    "go": "525051557",
+    "parent": "{fileID: 810757131}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "539654856": {
+    "name": "Exit",
+    "go": "539654855",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: 1, y: -0.9499999, z: 0}",
+    "scale": "{x: 0.55, y: 1.4, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "541017789": {
+    "name": "GearLever",
+    "go": "541017786",
+    "parent": "{fileID: 0}",
+    "pos": "{x: -0.45999956, y: -3.4, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "552635962": {
+    "name": "Restart Spawn",
+    "go": "552635961",
+    "parent": "{fileID: 644561891}",
+    "pos": "{x: -3, y: -3.35, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "619394802": {
+    "name": "Global Light 2D",
+    "go": "619394800",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "644561891": {
+    "name": "Electric Bounce Stages 02-05",
+    "go": "644561889",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "648229714": {
+    "name": "Contact Electrode",
+    "go": "648229713",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: -4.3, y: -3.7, z: 0}",
+    "scale": "{x: 0.65, y: 0.35, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "655936844": {
+    "name": "Exit Label",
+    "go": "655936843",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: 1, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "664556839": {
+    "name": "Rest Position",
+    "go": "664556838",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: -4.3, y: -3.7, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "674141908": {
+    "name": "Far Position",
+    "go": "674141907",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: -4.5, y: -4.85, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "690917481": {
+    "name": "Rectangle",
+    "go": "690917480",
+    "parent": "{fileID: 2007981189}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "810757131": {
+    "name": "GearLever (1)",
+    "go": "810757127",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 4.52, y: -1.53, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "827015753": {
+    "name": "Exit",
+    "go": "827015752",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: 1, y: 0.95000005, z: 0}",
+    "scale": "{x: 0.55, y: 1.4, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "902188650": {
+    "name": "Near Position",
+    "go": "902188649",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: -3.5, y: -3.85, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "910237780": {
+    "name": "Goal Platform",
+    "go": "910237779",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: 0.7, y: -0.5, z: 0}",
+    "scale": "{x: 1.8, y: 0.3, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "911312765": {
+    "name": "Text (TMP)",
+    "go": "911312764",
+    "parent": "{fileID: 525051558}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "975706357": {
+    "name": "Exit",
+    "go": "975706356",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: 1, y: -0.9499999, z: 0}",
+    "scale": "{x: 0.55, y: 1.4, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1007449820": {
+    "name": "Goal Platform",
+    "go": "1007449819",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: 0.7, y: -1.8, z: 0}",
+    "scale": "{x: 1.8, y: 0.3, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1055383524": {
+    "name": "Positive Plate",
+    "go": "1055383523",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: -3, y: -3.95, z: 0}",
+    "scale": "{x: 2.2, y: 0.12, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1101807621": {
+    "name": "Negative Plate",
+    "go": "1101807620",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: -3, y: -1.8, z: 0}",
+    "scale": "{x: 2.2, y: 0.12, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1115452826": {
+    "name": "Moving Charge Source",
+    "go": "1115452825",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: -4.5, y: -4.85, z: 0}",
+    "scale": "{x: 0.6, y: 0.3, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1116005491": {
+    "name": "Star Label",
+    "go": "1116005490",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: -0.65, y: 1.2, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1117528838": {
+    "name": "Exit",
+    "go": "1117528837",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: 1, y: 0.35000002, z: 0}",
+    "scale": "{x: 0.55, y: 1.4, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1123485939": {
+    "name": "Star",
+    "go": "1123485938",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: -0.65, y: 1.35, z: 0}",
+    "scale": "{x: 0.35, y: 0.35, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0.38268346, w: 0.9238795}"
+  },
+  "1151760417": {
+    "name": "Stage 02",
+    "go": "1151760416",
+    "parent": "{fileID: 644561891}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1211554686": {
+    "name": "Star",
+    "go": "1211554685",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: -0.65, y: 0.75, z: 0}",
+    "scale": "{x: 0.35, y: 0.35, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0.38268346, w: 0.9238795}"
+  },
+  "1280875470": {
+    "name": "Electric Bounce Lever Label",
+    "go": "1280875469",
+    "parent": "{fileID: 1011272120}",
+    "pos": "{x: -2.93, y: 0.21, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1325653984": {
+    "name": "Explanation",
+    "go": "1325653983",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: -3, y: -2.2, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1416116668": {
+    "name": "Visual",
+    "go": "1416116667",
+    "parent": "{fileID: 810757131}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1525045320": {
+    "name": "Background",
+    "go": "1525045319",
+    "parent": "{fileID: 87262609}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1554399941": {
+    "name": "EventSystem",
+    "go": "1554399938",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1570740919": {
+    "name": "Star",
+    "go": "1570740918",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: -0.65, y: -0.54999995, z: 0}",
+    "scale": "{x: 0.35, y: 0.35, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0.38268346, w: 0.9238795}"
+  },
+  "1637081940": {
+    "name": "Exit Label",
+    "go": "1637081939",
+    "parent": "{fileID: 1778529552}",
+    "pos": "{x: 1, y: 1.3, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1699549225": {
+    "name": "Exit Label",
+    "go": "1699549224",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: 1, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1751864582": {
+    "name": "GameManager",
+    "go": "1751864580",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1778529552": {
+    "name": "Stage 05",
+    "go": "1778529550",
+    "parent": "{fileID: 644561891}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1799359998": {
+    "name": "Explanation",
+    "go": "1799359997",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: -3, y: -2.2, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1803863370": {
+    "name": "Star Label",
+    "go": "1803863369",
+    "parent": "{fileID: 1151760417}",
+    "pos": "{x: -0.65, y: -0.099999905, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "1805973436": {
+    "name": "Text (TMP)",
+    "go": "1805973435",
+    "parent": "{fileID: 1416116668}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1889826864": {
+    "name": "Stage 04",
+    "go": "1889826863",
+    "parent": "{fileID: 644561891}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1896652458": {
+    "name": "Text (TMP)",
+    "go": "1896652457",
+    "parent": "{fileID: 196388444}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "1899029722": {
+    "name": "Goal Platform",
+    "go": "1899029721",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: 0.7, y: 0.1, z: 0}",
+    "scale": "{x: 1.8, y: 0.3, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "2007981189": {
+    "name": "GameMaps",
+    "go": "2007981188",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "2053960507": {
+    "name": "Upper Plate",
+    "go": "2053960505",
+    "parent": "{fileID: 1889826864}",
+    "pos": "{x: -3, y: 0.05, z: 0}",
+    "scale": "{x: 2.2, y: 0.12, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "2055078703": {
+    "name": "Visual",
+    "go": "2055078702",
+    "parent": "{fileID: 541017789}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "2087647264": {
+    "name": "Star Label",
+    "go": "2087647263",
+    "parent": "{fileID: 59556286}",
+    "pos": "{x: -0.65, y: -0.099999905, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "5516400766977652160": {
+    "name": "Text (TMP)",
+    "go": "750197353611204533",
+    "parent": "{fileID: 6529087885999073748}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: -0, y: -0, z: -0, w: 1}"
+  },
+  "6529087885999073748": {
+    "name": "Visual",
+    "go": "3393557877859267339",
+    "parent": "{fileID: 7257519822021493296}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  },
+  "7257519822021493296": {
+    "name": "Player",
+    "go": "2799913835828211945",
+    "parent": "{fileID: 0}",
+    "pos": "{x: 0, y: 0, z: 0}",
+    "scale": "{x: 1, y: 1, z: 1}",
+    "rotation": "{x: 0, y: 0, z: 0, w: 1}"
+  }
+}

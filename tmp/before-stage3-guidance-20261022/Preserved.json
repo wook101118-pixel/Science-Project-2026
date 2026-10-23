@@ -1,0 +1,22 @@
+[
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/00_Scenes/@InGame/MainMenu.unity",
+    "sha256": "EFE4192CA5ED0FBC38487B5AB23B50715E2E967959BDC1B15BEDBF06C794ABCC"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/02_Prefabs/UI/PauseMenu.prefab",
+    "sha256": "D1E083BFDC5210E2BB0CA2118CAC7BB175E1E924808FA774D83607BA2DD863FF"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/BGM.cs",
+    "sha256": "F5C989A0A6FB7D74D2A0B781C05633CAE8BF85A6285E17BAD2EDD27E9FABE019"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Sound/BGMPreferences.cs",
+    "sha256": "2E65D0F3579895394073D64DF6FB5DE04BD6C7986E1F015A6B9F185F608EDB07"
+  },
+  {
+    "path": "Assets/@Project/@sung_wook/@Game/01_Scripts/Sound/BGMSettingView.cs",
+    "sha256": "93AF0BAF80FF3CEA17BAB7C0B52C04F49F40B57B99643465D32D46EADC63BCD2"
+  }
+]

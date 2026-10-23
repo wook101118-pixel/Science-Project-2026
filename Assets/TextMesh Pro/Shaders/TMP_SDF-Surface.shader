@@ -26,7 +26,7 @@ Properties {
 
 	_ReflectFaceColor	    ("Face Color", Color) = (0,0,0,1)
 	_ReflectOutlineColor	("Outline Color", Color) = (0,0,0,1)
-	_Cube 					("Reflection Cubemap", Cube) = "black" { /* TexGen CubeReflect */ }
+	_Cube 					("Reflection Cubemap", Cube) = "black" {                          }
 	_EnvMatrixRotation  	("Texture Rotation", vector) = (0, 0, 0, 0)
 	_SpecColor		        ("Specular Color", Color) = (0,0,0,1)
 
@@ -42,7 +42,7 @@ Properties {
 	_WeightNormal		("Weight Normal", float) = 0
 	_WeightBold			("Weight Bold", float) = 0.5
 
-	// Should not be directly exposed to the user
+	                                             
 	_ShaderFlags		("Flags", float) = 0
 	_ScaleRatioA		("Scale RatioA", float) = 1
 	_ScaleRatioB		("Scale RatioB", float) = 1
@@ -61,8 +61,8 @@ Properties {
 	_VertexOffsetY		("Vertex OffsetY", float) = 0
 
 	_CullMode			("Cull Mode", Float) = 0
-	//_MaskCoord		("Mask Coords", vector) = (0,0,0,0)
-	//_MaskSoftness		("Mask Softness", float) = 0
+	                                                 
+	                                             
 }
 
 SubShader {
@@ -90,7 +90,7 @@ SubShader {
 		float2	uv_MainTex;
 		float2	uv2_FaceTex;
 		float2  uv2_OutlineTex;
-		float2	param;						// Weight, Scale
+		float2	param;						                
 		float3	viewDirEnv;
 	};
 
@@ -100,7 +100,7 @@ SubShader {
 
 	ENDCG
 
-	// Pass to render object as a shadow caster
+	                                           
 	Pass
 	{
 		Name "Caster"

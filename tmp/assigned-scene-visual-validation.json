@@ -1,0 +1,58 @@
+[
+  {
+    "scene": "Stage_01.unity",
+    "status": "passed",
+    "existingDocuments": 203,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 5,
+    "preexistingUnresolvedLocalRefs": 0
+  },
+  {
+    "scene": "Stage_02.unity",
+    "status": "passed",
+    "existingDocuments": 201,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 6,
+    "preexistingUnresolvedLocalRefs": 0
+  },
+  {
+    "scene": "Stage_03.unity",
+    "status": "passed",
+    "existingDocuments": 901,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 15,
+    "preexistingUnresolvedLocalRefs": 0
+  },
+  {
+    "scene": "Stage_04.unity",
+    "status": "passed",
+    "existingDocuments": 830,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 19,
+    "preexistingUnresolvedLocalRefs": 0
+  },
+  {
+    "scene": "Stage_05.unity",
+    "status": "passed",
+    "existingDocuments": 773,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 11,
+    "preexistingUnresolvedLocalRefs": 0
+  },
+  {
+    "scene": "sungwook.unity",
+    "status": "passed",
+    "existingDocuments": 3692,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 62,
+    "preexistingUnresolvedLocalRefs": 0
+  },
+  {
+    "scene": "sungwook_ElectricBounce.unity",
+    "status": "passed",
+    "existingDocuments": 269,
+    "addedDocuments": 3,
+    "physicsDocumentsPreserved": 27,
+    "preexistingUnresolvedLocalRefs": 0
+  }
+]

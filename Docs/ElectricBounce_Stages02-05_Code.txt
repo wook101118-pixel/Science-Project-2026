@@ -1,0 +1,630 @@
+전기 바운스: STAGE 02~05 구현 코드
+기준 프로젝트: Unity 6000.3.19f1 / Input System 1.19.0 / 2D 물리
+
+이 문서는 복사해서 사용할 C# 코드 원문이다. 씬이나 기존 스크립트에는 적용하지 않았다.
+각 FILE 구간 안의 코드만 같은 이름의 .cs 파일로 나누어 Assets 아래에 저장한다.
+추천 위치: Assets/@Project/@sung_wook/@Game/01_Scripts/ElectricBounce/
+namespace는 ScienceProject.ElectricBounce로 분리했다.
+
+1. 빠른 시작
+
+- 새 2D 테스트 씬을 만들고 아래 스크립트를 별도 공/장치에 붙인다.
+- Ball: SpriteRenderer + CircleCollider2D + Rigidbody2D(Dynamic) + ElectricBall2D.
+  Rigidbody2D: Mass=1, Gravity Scale=1, Linear Damping=0,
+  Collision Detection=Continuous, Interpolate=Interpolate, Freeze Rotation Z.
+  공의 부모 Scale은 (1,1,1), 반지름은 약 0.25로 시작한다.
+- Ground 레이어를 만들고 바닥의 Collider2D 오브젝트에 지정한다.
+  Ball의 Ground Layers에는 Ground만 선택한다. Physics Material의 Bounciness는 0.
+  Ball의 Bounce Speed=6이면 바닥에서 자동 점프한다.
+  발사 실험을 처음 배치할 때는 Bounce Speed=0으로 설정해 거리를 고정한다.
+- 좌우 이동은 A/D 또는 방향키. STAGE 03/05 발사는 E.
+  UI 버튼에서는 각 장치의 RequestLaunch()를 연결해도 된다.
+  발사는 정지 상태에서 출발하는 게임 규칙이므로 이전 속도를 초기화한다.
+- 기존 LeverMover와 LeverReader를 재사용한다.
+  LeverMover의 pivot, grabArea, MainCamera 태그 카메라를 연결한다.
+  LeverReader의 lever에도 LeverMover를 연결한다. maxAngle은 0보다 커야 한다.
+  StageLever2D를 추가하고 Reader에 해당 LeverReader를 연결한다.
+  기존 Percent의 초기값은 50이므로 Rest Raw=0.5, Active Raw=1이다.
+  반대로 당기는 레버는 Active Raw=0. 장치에서는 Value=0~1로 읽는다.
+  레버 없이 시험하려면 Reader를 비우고 Manual Value를 조절한다.
+  Slider(0~1)의 OnValueChanged를 StageLever2D.SetValue(float)에 연결해도 된다.
+  UI를 쓰면 EventSystem에 InputSystemUIInputModule을 사용한다.
+- 각 스테이지는 별도 씬으로 시작한다. 같은 공을 여러 장치에 연결하면 힘이 합산된다.
+- 아래 별/문 스크립트는 선택 기능이다. 문 On Cleared 이벤트에 클리어 UI 표시 등을 연결한다.
+  별: SpriteRenderer + CircleCollider2D + ElectricStar2D.
+  문: SpriteRenderer + BoxCollider2D + ElectricGoal2D, Required Stars=1.
+  두 Collider는 코드에서 Trigger로 설정한다. 공 레이어와의 충돌을 허용한다.
+
+현재 프로젝트와 함께 사용할 때:
+새 공에는 기존 Player, PlayerMovement, PlayerController, ChangeVisual 계열을 붙이지 않는다.
+기존 GameManager가 없는 테스트 씬을 사용한다. 기존 씬을 복제했다면 관리자 GameObject를
+비활성화하고 새 공을 만든다. 컴포넌트 체크만 해제하면 Awake 호출을 피하지 못할 수 있다.
+이유: 기존 GameManager는 매 Update에 모든 레버의 힘을 적용하며 Neutral==Neutral도
+통과한다. 기존 PlayerOwnedState는 Space로 전하를 바꾸고, PlayerMovement는 수평 속도를
+계속 보정한다. 이 예제의 전하/물리와 동시에 동작시키면 결과가 달라진다.
+기존 PlayerMovement.AddForce는 force 인자를 사용하지 않으므로 이 코드에서는 호출하지 않는다.
+
+2. 스테이지별 배치
+
+STAGE 02: 중성 공 접촉 대전
+- Ball Initial Polarity=Neutral, Charge Magnitude=1.
+- 전극: Rigidbody2D(Kinematic) + BoxCollider2D(Is Trigger 끔) + ContactCharger2D.
+- Ball, Lever, Rest Point, Contact Point를 연결한다.
+  Rest/Contact Point는 움직이는 전극의 자식이 아닌 별도 고정 Transform이어야 한다.
+  Contact Point를 공에 실제로 접촉하는 위치에 배치한다.
+- 전극의 Polarity=Positive. 닿기 전에는 중성, 실제 충돌 뒤에는 양전하가 된다.
+- 오른쪽 위로 날리려면 전극 중심이 공의 왼쪽 아래에 오도록 배치한다.
+  반발 방향은 전극 중심에서 공 중심으로 향한다. 전극을 공 오른쪽에 놓으면 왼쪽으로 밀린다.
+- 전극과 공의 Layer Collision Matrix에서 충돌을 허용한다.
+  Ground Layers에 전극 레이어를 넣지 않아 접촉 대전과 자동 바운스를 분리한다.
+
+STAGE 03: 거리 조절 점프
+- Ball Initial Polarity=Positive.
+- 빈 오브젝트에 DistanceLauncher2D를 붙이고 Ball, Lever, Source,
+  Far Point, Near Point를 연결한다. Source는 전극 그림이 달린 별도 Transform이다.
+- Source에는 고체 Collider를 붙이지 않는다. 이 장치는 거리별 전기 펄스를 모델링한다.
+  Far/Near Point는 Source의 자식이 아니어야 한다.
+- 공 중심이 (0,0)일 때 Far Point=(-1.5,-2), Near Point=(-0.45,-0.6)으로 시작한다.
+  두 위치를 공 기준 같은 직선에 놓으면 거리만 비교할 수 있다.
+  공 밑에는 별도의 발사 받침대를 둔다.
+- 레버 0이면 멀리, 1이면 가까이. E를 한 번 누를 때 전기 펄스 한 번을 적용한다.
+  힘은 k*q1*q2/r², 충격량은 힘*Pulse Seconds다.
+- 기본값/질량1: r=2.5이면 힘2.56, r=0.75이면 힘 약28.44.
+  Pulse Seconds=0.4이므로 출발 속력은 각각 약1.02, 11.38이다.
+  반대 부호/중성 공은 발사하지 않는다. 이 장치는 반발 발사 전용이다.
+
+STAGE 04: 전기장 방향 바꾸기
+- Ball Initial Polarity=Positive로 시작한다. 음전하/중성으로 바꿔 결과도 비교할 수 있다.
+- 영역: BoxCollider2D(Is Trigger 켬) + UniformField2D.
+- Ball, Lever, Lower Plate, Upper Plate를 연결한다.
+  두 Plate는 같은 x에 배치하고 영역은 두 판 사이를 덮도록 한다.
+  Plate 그림의 SpriteRenderer도 연결하면 극성에 맞춰 색을 바꾼다.
+- 레버 Value>=0.6: 아래 +, 위 -, 전기장은 위쪽.
+  레버 Value<=0.4: 아래 -, 위 +, 전기장은 아래쪽.
+  중간 범위에서는 마지막 방향을 유지한다.
+- 양전하는 전기장 방향, 음전하는 반대 방향, 중성은 전기력 0.
+  중성에도 중력은 계속 작용한다. 위쪽 전기력이 중력보다 작으면 상승하지 않는다.
+- Voltage=40, 판 간격2, q=1이면 힘20; 질량1/중력9.81에서 위로 가속된다.
+- 공 중심이 영역 안에 있는 동안 FixedUpdate마다 한 번만 힘을 준다.
+  자식 Collider가 여러 개라도 중복 적용하지 않는다.
+
+STAGE 05: 반데그라프 충전 점프
+- 빈 오브젝트에 VoltageLauncher2D.
+- Ball, Lever, Launch Zone(BoxCollider2D, Is Trigger 켬)을 연결한다.
+  Zone은 발사 받침대 위의 공 중심을 포함하도록 만든다.
+- Lower/Upper Plate Transform을 수직으로 놓고 연결한다. 판 간격은 고정한다.
+  아래 +, 위 -로 표시한다. 공 Initial Polarity=Positive.
+  발사 경로를 가로막는 고체 Collider는 Plate 그림에 붙이지 않는다.
+  오른쪽 출구로 이동할 때는 발사 후 D/오른쪽 방향키로 공을 조작한다.
+- 충전 레버를 당긴 정도에 비례해 전압이 시간에 따라 쌓인다.
+  UI Slider를 Voltage Gauge에 연결하면 0~1 충전량을 표시한다.
+  Maximum Voltage=100, Charge Rate=25이면 완전히 당겼을 때 약4초에 최대 충전.
+  Target Voltage=50은 눈금 표시/학습 목표용이며 발사를 막는 임계값은 아니다.
+  Gauge에 목표 눈금을 0.5 위치에 표시하고 On Target Reached에 안내 UI를 연결할 수 있다.
+- E를 누르면 공이 Zone 안에 있고 양전하이며 전압이 있을 때만 발사한다.
+  q*V의 전기적 일을 초기 운동 에너지로 바꾸는 짧은 가속 구간 모델이다.
+  v=sqrt(2*q*V/m). 같은 조건에서 전압4배 -> 속력2배 -> 이상적인 상승 높이4배.
+  발사 직전 속도는 초기화하며, 가속 구간에서의 중력/손실은 생략한다.
+  출구 이후 중력은 Rigidbody2D가 처리한다.
+- 성공한 발사에만 전압을 소비한다. 공이 없거나 중성/음전하이면 전압이 남는다.
+  충전 레버를 계속 당기고 있으면 발사 이후에도 다시 충전된다.
+- Stage 04의 UniformField2D를 같은 가속 구간에 추가하지 않는다.
+  전기장 힘과 qV 발사 에너지를 동시에 적용하면 에너지를 이중 계산한다.
+
+3. 코드
+
+===== FILE: ElectricMath.cs =====
+using System;
+
+namespace ScienceProject.ElectricBounce
+{
+    // 학습용 게임 단위. 실제 SI 전하량이나 쿨롱 상수를 그대로 넣는 모델이 아니다.
+    public static class ElectricMath
+    {
+        public static float CoulombForce(float q1, float q2, float distance,
+            float k, float minimumDistance, float maximumForce)
+        {
+            float r = Math.Max(Math.Abs(distance), Math.Max(0.01f, minimumDistance));
+            float force = Math.Max(0f, k) * q1 * q2 / (r * r);
+            float limit = Math.Max(0f, maximumForce);
+            return Math.Max(-limit, Math.Min(limit, force));
+        }
+
+        public static float FieldForce(float charge, float voltage, float gap)
+        {
+            return charge * voltage / Math.Max(0.01f, Math.Abs(gap));
+        }
+
+        public static float SpeedFromVoltage(float charge, float voltage, float mass)
+        {
+            float work = charge * voltage;
+            if (work <= 0f || mass <= 0f) return 0f;
+            return (float)Math.Sqrt(2f * work / mass);
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: ElectricBall2D.cs =====
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+namespace ScienceProject.ElectricBounce
+{
+    public enum Polarity { Negative = -1, Neutral = 0, Positive = 1 }
+
+    [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
+    public sealed class ElectricBall2D : MonoBehaviour
+    {
+        [SerializeField] private Polarity initialPolarity = Polarity.Neutral;
+        [SerializeField, Min(0.01f)] private float chargeMagnitude = 1f;
+        [SerializeField] private SpriteRenderer ballRenderer;
+        [SerializeField] private LayerMask groundLayers;
+        [SerializeField, Min(0f)] private float bounceSpeed = 6f;
+        [SerializeField, Min(0f)] private float moveSpeed = 5f;
+        [SerializeField, Min(0f)] private float acceleration = 20f;
+
+        public Rigidbody2D Body { get; private set; }
+        public Polarity CurrentPolarity { get; private set; }
+        public float SignedCharge => (int)CurrentPolarity * Mathf.Max(0f, chargeMagnitude);
+        public int Stars { get; private set; }
+        public bool CanReceiveForce => isActiveAndEnabled && Body != null
+            && Body.simulated && Body.bodyType == RigidbodyType2D.Dynamic;
+        private float inputX;
+        private float nextBounceTime;
+
+        private void Awake()
+        {
+            Body = GetComponent<Rigidbody2D>();
+            if (ballRenderer == null) ballRenderer = GetComponentInChildren<SpriteRenderer>();
+            SetPolarity(initialPolarity);
+        }
+
+        public void SetPolarity(Polarity value)
+        {
+            CurrentPolarity = value;
+            if (ballRenderer == null) return;
+            ballRenderer.color = value == Polarity.Positive ? Color.red
+                : value == Polarity.Negative ? new Color(0.1f, 0.45f, 1f) : Color.gray;
+        }
+
+        // UI 버튼/UnityEvent에서 호출할 수 있다.
+        public void SetPositive() => SetPolarity(Polarity.Positive);
+        public void SetNegative() => SetPolarity(Polarity.Negative);
+        public void SetNeutral() => SetPolarity(Polarity.Neutral);
+        public void CollectStar() => Stars++;
+
+        private void Update()
+        {
+            var keyboard = Keyboard.current;
+            inputX = 0f;
+            if (keyboard == null) return;
+            if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed) inputX -= 1f;
+            if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed) inputX += 1f;
+        }
+
+        private void FixedUpdate()
+        {
+            if (!CanReceiveForce || Mathf.Abs(inputX) < 0.01f) return;
+            // 무입력일 때는 전기력으로 얻은 수평 속도를 보존한다.
+            Vector2 velocity = Body.linearVelocity;
+            velocity.x = Mathf.MoveTowards(velocity.x, inputX * moveSpeed,
+                acceleration * Time.fixedDeltaTime);
+            Body.linearVelocity = velocity;
+        }
+
+        public void AddElectricForce(Vector2 force)
+        {
+            if (CanReceiveForce) Body.AddForce(force, ForceMode2D.Force);
+        }
+
+        public bool LaunchImpulse(Vector2 impulse)
+        {
+            if (!CanReceiveForce || impulse.sqrMagnitude <= 0f) return false;
+            Body.linearVelocity = Vector2.zero; // 정지 상태 출발 모델
+            Body.angularVelocity = 0f;
+            Body.AddForce(impulse, ForceMode2D.Impulse);
+            nextBounceTime = Time.fixedTime + 0.15f;
+            return true;
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision) => TryBounce(collision);
+        private void OnCollisionStay2D(Collision2D collision) => TryBounce(collision);
+
+        private void TryBounce(Collision2D collision)
+        {
+            if (!CanReceiveForce || bounceSpeed <= 0f || Time.fixedTime < nextBounceTime)
+                return;
+            if ((groundLayers.value & (1 << collision.gameObject.layer)) == 0) return;
+            if (Body.linearVelocity.y > 0.1f) return;
+            for (int i = 0; i < collision.contactCount; i++)
+            {
+                if (Vector2.Dot(collision.GetContact(i).normal, Vector2.up) < 0.6f) continue;
+                Vector2 velocity = Body.linearVelocity;
+                velocity.y = bounceSpeed;
+                Body.linearVelocity = velocity;
+                nextBounceTime = Time.fixedTime + 0.1f;
+                break; // 바닥 접촉만 바운스. 벽/천장 접촉 제외.
+            }
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: StageLever2D.cs =====
+using UnityEngine;
+
+namespace ScienceProject.ElectricBounce
+{
+    public sealed class StageLever2D : MonoBehaviour
+    {
+        [SerializeField] private global::LeverReader reader;
+        [SerializeField, Range(0f, 1f)] private float restRaw = 0.5f;
+        [SerializeField, Range(0f, 1f)] private float activeRaw = 1f;
+        [SerializeField, Range(0f, 1f)] private float manualValue;
+
+        public float Value
+        {
+            get
+            {
+                if (reader == null) return manualValue;
+                float span = activeRaw - restRaw;
+                if (Mathf.Abs(span) < 0.001f) return 0f;
+                float raw = Mathf.Clamp01(reader.Percent / 100f);
+                return Mathf.Clamp01((raw - restRaw) / span);
+            }
+        }
+
+        public void SetValue(float value) => manualValue = Mathf.Clamp01(value);
+    }
+}
+===== END FILE =====
+
+===== FILE: ContactCharger2D.cs =====
+using UnityEngine;
+
+namespace ScienceProject.ElectricBounce
+{
+    [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
+    public sealed class ContactCharger2D : MonoBehaviour
+    {
+        [SerializeField] private ElectricBall2D ball;
+        [SerializeField] private StageLever2D lever;
+        [SerializeField] private Transform restPoint;
+        [SerializeField] private Transform contactPoint;
+        [SerializeField] private Polarity polarity = Polarity.Positive;
+        [SerializeField, Min(0.01f)] private float chargeMagnitude = 1f;
+        [SerializeField, Min(0f)] private float coulombConstant = 10f;
+        [SerializeField, Min(0.01f)] private float minimumDistance = 0.5f;
+        [SerializeField, Min(0f)] private float maximumForce = 60f;
+        [SerializeField, Min(0f)] private float influenceRadius = 4f;
+        [SerializeField, Min(0.01f)] private float moveSpeed = 3f;
+        private Rigidbody2D electrodeBody;
+
+        private void Awake()
+        {
+            electrodeBody = GetComponent<Rigidbody2D>();
+            electrodeBody.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        private void FixedUpdate()
+        {
+            if (lever != null && restPoint != null && contactPoint != null)
+            {
+                Vector2 target = Vector2.Lerp(restPoint.position, contactPoint.position, lever.Value);
+                electrodeBody.MovePosition(Vector2.MoveTowards(electrodeBody.position, target,
+                    moveSpeed * Time.fixedDeltaTime));
+            }
+            if (ball == null || !ball.CanReceiveForce) return;
+            Vector2 offset = ball.Body.worldCenterOfMass - electrodeBody.worldCenterOfMass;
+            float distance = offset.magnitude;
+            if (distance < 0.001f || distance > influenceRadius) return;
+            float sourceCharge = (int)polarity * chargeMagnitude;
+            float force = ElectricMath.CoulombForce(ball.SignedCharge, sourceCharge, distance,
+                coulombConstant, minimumDistance, maximumForce);
+            ball.AddElectricForce(offset / distance * force);
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision) => ChargeOnContact(collision);
+        private void OnCollisionStay2D(Collision2D collision) => ChargeOnContact(collision);
+
+        private void ChargeOnContact(Collision2D collision)
+        {
+            if (!isActiveAndEnabled || ball == null || !ball.CanReceiveForce) return;
+            var touchedBall = collision.collider.GetComponentInParent<ElectricBall2D>();
+            if (touchedBall == ball) ball.SetPolarity(polarity);
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: DistanceLauncher2D.cs =====
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+namespace ScienceProject.ElectricBounce
+{
+    public sealed class DistanceLauncher2D : MonoBehaviour
+    {
+        [SerializeField] private ElectricBall2D ball;
+        [SerializeField] private StageLever2D lever;
+        [SerializeField] private Transform source;
+        [SerializeField] private Transform farPoint;
+        [SerializeField] private Transform nearPoint;
+        [SerializeField] private Polarity sourcePolarity = Polarity.Positive;
+        [SerializeField, Min(0.01f)] private float sourceMagnitude = 1f;
+        [SerializeField, Min(0f)] private float coulombConstant = 16f;
+        [SerializeField, Min(0.01f)] private float minimumDistance = 0.5f;
+        [SerializeField, Min(0f)] private float maximumForce = 80f;
+        [SerializeField, Min(0.01f)] private float pulseSeconds = 0.4f;
+        [SerializeField, Min(0f)] private float activationRadius = 3f;
+        [SerializeField, Min(0f)] private float cooldown = 0.5f;
+        [SerializeField] private bool keyboardLaunch = true;
+        private bool launchRequested;
+        private float nextLaunchTime;
+
+        public void RequestLaunch() => launchRequested = true;
+        private void OnDisable() => launchRequested = false;
+
+        private void Update()
+        {
+            if (keyboardLaunch && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+                RequestLaunch();
+        }
+
+        private void FixedUpdate()
+        {
+            if (source != null && farPoint != null && nearPoint != null && lever != null)
+                source.position = Vector3.Lerp(farPoint.position, nearPoint.position, lever.Value);
+            if (!launchRequested) return;
+            launchRequested = false;
+            if (ball == null || !ball.CanReceiveForce || source == null
+                || Time.fixedTime < nextLaunchTime) return;
+            Vector2 offset = ball.Body.worldCenterOfMass - (Vector2)source.position;
+            float distance = offset.magnitude;
+            if (distance < 0.001f || distance > activationRadius) return;
+            float sourceCharge = (int)sourcePolarity * sourceMagnitude;
+            if (ball.SignedCharge * sourceCharge <= 0f) return;
+            float force = ElectricMath.CoulombForce(ball.SignedCharge, sourceCharge, distance,
+                coulombConstant, minimumDistance, maximumForce);
+            if (ball.LaunchImpulse(offset / distance * force * pulseSeconds))
+                nextLaunchTime = Time.fixedTime + cooldown;
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: UniformField2D.cs =====
+using UnityEngine;
+
+namespace ScienceProject.ElectricBounce
+{
+    [RequireComponent(typeof(BoxCollider2D))]
+    public sealed class UniformField2D : MonoBehaviour
+    {
+        [SerializeField] private ElectricBall2D ball;
+        [SerializeField] private StageLever2D lever;
+        [SerializeField] private Transform lowerPlate;
+        [SerializeField] private Transform upperPlate;
+        [SerializeField] private SpriteRenderer lowerRenderer;
+        [SerializeField] private SpriteRenderer upperRenderer;
+        [SerializeField, Min(0f)] private float voltage = 40f;
+        [SerializeField, Min(0f)] private float maximumForce = 100f;
+        private BoxCollider2D zone;
+        private bool lowerIsPositive;
+
+        public Vector2 FieldDirection { get; private set; }
+
+        private void Awake()
+        {
+            zone = GetComponent<BoxCollider2D>();
+            zone.isTrigger = true;
+        }
+
+        private void FixedUpdate()
+        {
+            if (lever == null || lowerPlate == null || upperPlate == null) return;
+            if (lever.Value >= 0.6f) lowerIsPositive = true;
+            else if (lever.Value <= 0.4f) lowerIsPositive = false;
+            Color positive = Color.red;
+            Color negative = new Color(0.1f, 0.45f, 1f);
+            if (lowerRenderer != null) lowerRenderer.color = lowerIsPositive ? positive : negative;
+            if (upperRenderer != null) upperRenderer.color = lowerIsPositive ? negative : positive;
+            Vector2 axis = upperPlate.position - lowerPlate.position;
+            FieldDirection = axis.normalized * (lowerIsPositive ? 1f : -1f);
+            if (axis.sqrMagnitude < 0.0001f || !zone.enabled
+                || ball == null || !ball.CanReceiveForce) return;
+            if (!zone.OverlapPoint(ball.Body.worldCenterOfMass)) return;
+            float force = ElectricMath.FieldForce(ball.SignedCharge, voltage, axis.magnitude);
+            force = Mathf.Clamp(force, -maximumForce, maximumForce);
+            ball.AddElectricForce(FieldDirection * force);
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: VoltageLauncher2D.cs =====
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
+namespace ScienceProject.ElectricBounce
+{
+    public sealed class VoltageLauncher2D : MonoBehaviour
+    {
+        [SerializeField] private ElectricBall2D ball;
+        [SerializeField] private StageLever2D lever;
+        [SerializeField] private BoxCollider2D launchZone;
+        [SerializeField] private Transform lowerPlate;
+        [SerializeField] private Transform upperPlate;
+        [SerializeField] private Slider voltageGauge;
+        [SerializeField, Min(0.01f)] private float maximumVoltage = 100f;
+        [SerializeField, Min(0f)] private float chargeRate = 25f;
+        [SerializeField, Min(0f)] private float leakRate;
+        [SerializeField, Min(0f)] private float targetVoltage = 50f;
+        [SerializeField, Min(0f)] private float cooldown = 0.5f;
+        [SerializeField] private bool keyboardLaunch = true;
+        [SerializeField] private UnityEvent onTargetReached = new UnityEvent();
+        [SerializeField] private UnityEvent onLaunched = new UnityEvent();
+
+        public float Voltage { get; private set; }
+        public bool IsAtTarget => Voltage >= targetVoltage;
+        private bool targetReported;
+        private bool launchRequested;
+        private float nextLaunchTime;
+
+        private void Awake()
+        {
+            if (voltageGauge == null) return;
+            voltageGauge.minValue = 0f;
+            voltageGauge.maxValue = 1f;
+            voltageGauge.wholeNumbers = false;
+            voltageGauge.interactable = false;
+            voltageGauge.SetValueWithoutNotify(0f);
+        }
+
+        public void RequestLaunch() => launchRequested = true;
+        private void OnDisable() => launchRequested = false;
+
+        private void Update()
+        {
+            if (keyboardLaunch && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+                RequestLaunch();
+        }
+
+        private void FixedUpdate()
+        {
+            float input = lever != null ? lever.Value : 0f;
+            float rate = input > 0.01f ? chargeRate * input : -leakRate;
+            Voltage = Mathf.Clamp(Voltage + rate * Time.fixedDeltaTime, 0f, maximumVoltage);
+            if (IsAtTarget && !targetReported)
+            {
+                targetReported = true;
+                onTargetReached.Invoke();
+            }
+            if (!IsAtTarget) targetReported = false;
+            if (launchRequested)
+            {
+                launchRequested = false;
+                TryLaunch();
+            }
+            if (voltageGauge != null)
+                voltageGauge.SetValueWithoutNotify(Voltage / Mathf.Max(0.01f, maximumVoltage));
+        }
+
+        private void TryLaunch()
+        {
+            if (Time.fixedTime < nextLaunchTime || ball == null || !ball.CanReceiveForce
+                || launchZone == null || !launchZone.isActiveAndEnabled
+                || lowerPlate == null || upperPlate == null) return;
+            if (!launchZone.OverlapPoint(ball.Body.worldCenterOfMass)) return;
+            Vector2 axis = upperPlate.position - lowerPlate.position;
+            if (axis.sqrMagnitude < 0.0001f) return;
+            float speed = ElectricMath.SpeedFromVoltage(ball.SignedCharge, Voltage, ball.Body.mass);
+            if (speed <= 0f) return;
+            if (!ball.LaunchImpulse(axis.normalized * speed * ball.Body.mass)) return;
+            Voltage = 0f; // 성공한 발사에만 저장 전압 소비
+            targetReported = false;
+            nextLaunchTime = Time.fixedTime + cooldown;
+            onLaunched.Invoke();
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: ElectricStar2D.cs =====
+using UnityEngine;
+using UnityEngine.Events;
+
+namespace ScienceProject.ElectricBounce
+{
+    [RequireComponent(typeof(CircleCollider2D))]
+    public sealed class ElectricStar2D : MonoBehaviour
+    {
+        [SerializeField] private UnityEvent onCollected = new UnityEvent();
+        private bool collected;
+
+        private void Awake() => GetComponent<Collider2D>().isTrigger = true;
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (!isActiveAndEnabled || collected) return;
+            var ball = other.GetComponentInParent<ElectricBall2D>();
+            if (ball == null || !ball.CanReceiveForce) return;
+            collected = true;
+            ball.CollectStar();
+            onCollected.Invoke();
+            gameObject.SetActive(false);
+        }
+    }
+}
+===== END FILE =====
+
+===== FILE: ElectricGoal2D.cs =====
+using UnityEngine;
+using UnityEngine.Events;
+
+namespace ScienceProject.ElectricBounce
+{
+    [RequireComponent(typeof(BoxCollider2D))]
+    public sealed class ElectricGoal2D : MonoBehaviour
+    {
+        [SerializeField, Min(0)] private int requiredStars = 1;
+        [SerializeField] private UnityEvent onCleared = new UnityEvent();
+        private bool cleared;
+
+        private void Awake() => GetComponent<Collider2D>().isTrigger = true;
+        private void OnTriggerEnter2D(Collider2D other) => TryClear(other);
+        private void OnTriggerStay2D(Collider2D other) => TryClear(other);
+
+        private void TryClear(Collider2D other)
+        {
+            if (!isActiveAndEnabled || cleared) return;
+            var ball = other.GetComponentInParent<ElectricBall2D>();
+            if (ball == null || !ball.CanReceiveForce || ball.Stars < requiredStars) return;
+            cleared = true;
+            ball.Body.linearVelocity = Vector2.zero;
+            ball.Body.simulated = false;
+            ball.enabled = false;
+            onCleared.Invoke();
+        }
+    }
+}
+===== END FILE =====
+
+4. 학습 모델과 확인 항목
+
+모든 전하량/전압/힘은 학습용 게임 단위다. 실제 SI 정전기 시뮬레이터가 아니다.
+STAGE 02 전극은 전하를 유지하는 공급원으로 가정한다. 두 고립 도체 사이의 전하 보존,
+금속의 정전기 유도, 접촉 형상, 공기 저항, 절연 파괴 등은 생략한다.
+중성 금속도 실제로는 분극되어 끌릴 수 있지만 이 예제는 접촉 대전 이후의 움직임에 집중한다.
+STAGE 03은 고정 시간 전기 펄스, STAGE 04는 균일장, STAGE 05는 전위차의 일을 사용한다.
+STAGE 05의 발전기 내부 벨트/돔 전하 분포와 전원 회로는 충전 게이지로 단순화했다.
+힘 제한/최소 거리 제한에 도달하면 거리 비례 관계는 더 이상 그대로 유지되지 않는다.
+ForceMode2D.Force에는 deltaTime을 다시 곱하지 않는다. 지속 힘은 FixedUpdate에서 적용한다.
+충격량의 pulseSeconds는 한 번의 펄스 지속 시간이며 프레임 시간과 별개다.
+
+플레이 모드 수동 확인:
+1) 접촉 전 중성 공은 회색이며 전기력이 0. 접촉하면 빨간색이 되고 전극에서 멀어진다.
+2) 같은 공/같은 위치에서 Source만 가까이 하면 E 발사 속력이 커진다.
+   검증 중에는 좌우 키를 누르지 않고 Bounce Speed=0, Linear Damping=0으로 둔다.
+3) 중성 공에는 전기장 힘이 없고, 양/음전하에서는 방향이 반대다.
+   공 중심이 영역을 벗어나면 힘 적용이 즉시 멈춘다.
+4) 전압25와100에서 질량1/전하1의 출발 속력은 약7.07과14.14다.
+5) 공이 발사 영역 밖에 있거나 중성이면 E를 눌러도 전압이 사라지지 않는다.
+6) E를 계속 누르고 있어도 재발사하지 않는다. 다시 눌러야 다음 요청이 생긴다.
+7) 별을 여러 Collider로 접촉해도 한 번만 획득하고, 별 없이 문에 닿으면 클리어되지 않는다.
+
+작성 시 확인:
+- 코드 9개와 현재 프로젝트의 LeverReader/LeverMover를 함께 추출해
+  로컬 Unity 참조 DLL을 사용한 C# 컴파일을 확인했다.
+- 전하 부호, 최소 거리, 힘 상한, 전기장 방향의 부호, 전압-속력 관계 등
+  순수 계산 검증 11개를 통과했다.
+- 실제 씬을 구성한 Unity Play Mode 검증은 하지 않았다. 위 수동 확인을 따라 조정한다.
+
+API 참고:
+[Unity Rigidbody2D.AddForce](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody2D.AddForce.html)
+
+범위: 동작용 C# 원문과 씬 연결 설명. 이미지의 그래픽, 점선 궤적, 레벨 전체 배치,
+사운드, 저장, 다음 씬 로딩 및 실패 후 재시작 UI는 포함하지 않는다.
